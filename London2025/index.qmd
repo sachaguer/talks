@@ -130,3 +130,56 @@ Credit: RAS
 - Percent-level effect
 - Polluted by shape noise
 - Requires a large number of galaxies
+
+## The Ultraviolet Near-Infrared Opitcal Northern Survey ([Gwyn et al., 2025](https://arxiv.org/abs/2503.13783)){style="font-size: 24px;"}
+
+![](images/unions.jpg)
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 250px;
+   left: 50px;
+">$r$, $u$ bands</div>
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 250px;
+   left: 500px;
+">$i$ band</div>
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 260px;
+   left: 920px;
+">$g$, $z$ bands</div>
+
+## The landscape of lensing surveys
+
+![](images/landscape_lensing.png){.absolute right=-200 bottom=100 height=500}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Technical specifications of UNIONS:
+
+- Target area: $~ 5,000$ deg$^2$
+- Depth: 24.5 ($r$-band)
+- Seeing: $~0.69"$ ($r$-band)
+- Processing with \texttt{ShapePipe} ([Farrens et al., 2022](https://arxiv.org/abs/2206.14689))
+- $~100$ million galaxies
+:::
+
+::::
+
+## Cosmology with cosmic shear
+
+![Credit: S. Farrens](images/cosmic_shear_pipeline.png)
