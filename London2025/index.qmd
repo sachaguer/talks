@@ -1,0 +1,132 @@
+---
+title: "Constraining cosmology with weak gravitational lensing"
+subtitle: "lessons learned from the Ultraviolet Near-Infrared Optical Northern Survey (UNIONS)"
+author: "Sacha Guerrini"
+format:
+  revealjs: 
+    theme: default
+    slide-number: true
+    chalkboard:
+        buttons: false
+    preview-links: auto
+    footer: |
+        <div class="footer-logos">
+        <div class="logo-cea">
+        <img src="images/logo_cea.jpeg" alt="CEA" />
+        </div>
+        <div class="logo-crop">
+        <img src="images/cosmostat_logo.jpeg" alt="CosmoStat" />
+        </div>
+        <div class="logo-white-bg">
+        <img src="images/unions_logo.png" alt="UNIONS" />
+        </div>
+        </div>
+    title-slide-attributes:
+      data-background-image: "images/Perseus_euclid.jpg"
+      data-background-size: cover
+      data-background-position: center
+    css: styles.css
+---
+
+## Cosmological context: $\Lambda$CDM{style="font-size: 20px;"}
+
+![Credit: NAOJ](images/cosmology.jpg)
+
+
+\begin{align}
+\left.
+\begin{array}{cc}
+H_0 & \text{Expansion rate}\\ 
+\Omega_m & \text{Matter density}\\ 
+\Omega_b & \text{Baryon density}\\ 
+\sigma_8 & \text{Clumpiness}\\ 
+w & \text{EoS of dark energy}
+\end{array}
+\right\} \text{Constrained using Bayesian inference}
+\end{align}
+
+
+## Cosmological probes and history of the Universe{style="font-size: 20px;"}
+
+![Credit: NAOJ](images/cosmology.jpg)
+
+::: {.fragment}
+<div class="box-cmb"></div>
+<div class="green-contour">
+ <img src="images/cmb.jpg" alt="CMB" width=180px/>
+ <div style="
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    position: absolute;
+    bottom: 235px;
+    left: 100px
+ ">CMB</div>
+</div>
+:::
+
+::: {.fragment}
+<div class="box-reionization"></div>
+<div class="yellow-contour">
+ <img src="images/radio.jpeg" alt="21cm" width=250px/>
+ <div style="
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    position: absolute;
+    bottom: 240px;
+    left: 400px
+ ">21cm/intensity mapping</div>
+</div>
+:::
+
+::: {.fragment}
+<div class="box-lss"></div> 
+ <div class="gc-contour">
+ <img src="images/gc.jpeg" alt="galaxy clustering" width=180px/>
+ <div style="
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    position: absolute;
+    bottom: 350px;
+    left: 1100px
+ ">Galaxy clustering</div>
+</div>
+:::
+
+::: {.fragment}
+<div class="wl-contour">
+ <img src="images/wl.jpg" alt="weak lensing" width=250px/>
+ <div style="
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    position: absolute;
+    bottom: 150px;
+    left: 1060px
+ ">Weak lensing</div>
+ </div>
+:::
+
+
+## {background-video="images/grav_lensing.mp4"}
+
+<div style="
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: -200px
+">
+Credit: RAS
+</div>
+
+## Weak gravitational lensing
+
+![Credit: ESA](images/weak_lensing.png)
+
+- Percent-level effect
+- Polluted by shape noise
+- Requires a large number of galaxies

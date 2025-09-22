@@ -1,0 +1,107 @@
+/* Title slide title */
+.reveal .quarto-title-block {
+  color: #ffffff !important;  /* Replace with your desired color */
+}
+
+.reveal .quarto-title-block h1 {
+    color: #ffffff!important; 
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Move the footer lower */
+.reveal .footer-logos {
+  position: absolute;    /* Keep it positioned relative to the slide */
+  bottom: -50px;          /* Distance from the bottom of the slide */
+  width: 100%;           /* Ensure it stretches across the slide */
+  text-align: center;    /* Optional: center the logos */
+}
+
+/* cropping wrapper */
+.logo-crop {
+  height: 82px;     /* visible height */
+  width: 474px;
+  overflow: hidden; /* hides overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-white-bg img {
+  background-color: white;
+  height: 82px;           /* adjust as needed */
+  width: auto;
+}
+
+.logo-cea img {
+    height: 82px;
+    width: auto;
+}
+
+.box-cmb {
+  width: 40px;
+  height: 210px;
+  margin: 20px auto;
+  border: 3px solid rgb(14, 170, 14);
+  position: absolute;
+  bottom: 325px;
+  left: 160px;
+}
+
+.box-reionization {
+  width: 240px;
+  height: 210px;
+  margin: 20px auto;
+  border: 3px solid rgb(240, 236, 20);
+  position: absolute;
+  bottom: 325px;
+  left: 350px;
+}
+
+.box-lss {
+  width: 245px;
+  height: 210px;
+  margin: 20px auto;
+  border: 3px solid rgb(240, 20, 20);
+  position: absolute;
+  bottom: 325px;
+  left: 750px;
+}
+
+.green-contour img {
+    border: 3px solid rgb(14, 170, 14);
+    position: absolute;
+    bottom: 40px;
+}
+
+.yellow-contour img {
+    border: 3px solid rgb(240, 236, 20);
+    position: absolute;
+    bottom: 40px;
+    left: 400px
+}
+
+.wl-contour img {
+    border: 3px solid rgb(240, 20, 20);
+    position: absolute;
+    bottom: 40px;
+    left: 800px
+}
+
+.gc-contour img {
+    border: 3px solid rgb(240, 20, 20);
+    position: absolute;
+    bottom: 400px;
+    left: 1050px
+}
+
+.white-title h2, 
+.white-title h1, 
+.white-title h3 {
+  color: white !important;
+}
