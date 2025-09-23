@@ -50,10 +50,10 @@ w & \text{EoS of dark energy}
 
 ![Credit: NAOJ](images/cosmology.jpg)
 
-::: {.fragment}
+<div class="fragment">
 <div class="box-cmb"></div>
 <div class="green-contour">
- <img src="images/cmb.jpg" alt="CMB" width=180px/>
+ <img src="images/cmb.jpg" alt="CMB" width="180px">
  <div style="
     text-align: center;
     margin-top: 5px;
@@ -63,12 +63,12 @@ w & \text{EoS of dark energy}
     left: 100px
  ">CMB</div>
 </div>
-:::
+</div>
 
-::: {.fragment}
+<div class="fragment">
 <div class="box-reionization"></div>
 <div class="yellow-contour">
- <img src="images/radio.jpeg" alt="21cm" width=250px/>
+ <img src="images/radio.jpeg" alt="21cm" width="250px" />
  <div style="
     text-align: center;
     margin-top: 5px;
@@ -78,12 +78,12 @@ w & \text{EoS of dark energy}
     left: 400px
  ">21cm/intensity mapping</div>
 </div>
-:::
+</div>
 
-::: {.fragment}
+<div class="fragment">
 <div class="box-lss"></div> 
  <div class="gc-contour">
- <img src="images/gc.jpeg" alt="galaxy clustering" width=180px/>
+ <img src="images/gc.jpeg" alt="galaxy clustering" width="180px" />
  <div style="
     text-align: center;
     margin-top: 5px;
@@ -92,12 +92,12 @@ w & \text{EoS of dark energy}
     bottom: 350px;
     left: 1100px
  ">Galaxy clustering</div>
+ </div>
 </div>
-:::
 
-::: {.fragment}
+<div class="fragment">
 <div class="wl-contour">
- <img src="images/wl.jpg" alt="weak lensing" width=250px/>
+ <img src="images/wl.jpg" alt="weak lensing" width="250px" />
  <div style="
     text-align: center;
     margin-top: 5px;
@@ -107,7 +107,7 @@ w & \text{EoS of dark energy}
     left: 1060px
  ">Weak lensing</div>
  </div>
-:::
+</div>
 
 
 ## {background-video="images/grav_lensing.mp4"}
@@ -131,7 +131,7 @@ Credit: RAS
 - Polluted by shape noise
 - Requires a large number of galaxies
 
-## The Ultraviolet Near-Infrared Opitcal Northern Survey ([Gwyn et al., 2025](https://arxiv.org/abs/2503.13783)){style="font-size: 24px;"}
+## The Ultraviolet Near-Infrared Optical Northern Survey ([Gwyn et al., 2025](https://arxiv.org/abs/2503.13783)){style="font-size: 24px;"}
 
 ![](images/unions.jpg)
 
@@ -183,3 +183,72 @@ Technical specifications of UNIONS:
 ## Cosmology with cosmic shear
 
 ![Credit: S. Farrens](images/cosmic_shear_pipeline.png)
+
+::: {.fragment}
+<div class="first-part"></div>
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: rgb(240, 20, 20);
+   font-size: 24px;
+   position: absolute;
+   bottom: 280px;
+   left: 870px;
+   width: 200px;
+">I\. PSF diagnostics</div>
+:::
+
+::: {.fragment}
+<div class="second-part"></div>
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: rgb(14, 170, 14);
+   font-size: 24px;
+   position: absolute;
+   bottom: 180px;
+   left: -168px;
+   width: 200px;
+">II\. Cosmic shear with 2pt-statistics</div>
+:::
+
+::: {.fragment}
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: rgb(38, 65, 238);
+   font-size: 24px;
+   position: absolute;
+   bottom: 140px;
+   left: -168px;
+   width: 200px;
+">III\. And beyond</div>
+:::
+
+## PSF diagnostics
+
+<div style="
+position: absolute;
+left: 50%;
+top: 20%;
+transform: translate(-50%, -50%);
+text-align: center;
+">
+\begin{align}
+   e = \epsilon^\mathrm{s} + (1 + m)\gamma^\mathrm{true} + c
+\end{align}
+</div>
+
+## Test slide
+
+<div style="
+width:200px
+">
+```{r, engine = 'tikz'}
+\begin{tikzpicture}
+ \draw (0,0) circle (1cm);
+ %\pause
+ \draw (0,0) circle (2cm);
+\end{tikzpicture}
+```
+</div>

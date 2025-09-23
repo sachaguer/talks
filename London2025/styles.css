@@ -105,3 +105,23 @@
 .white-title h3 {
   color: white !important;
 }
+
+.first-part {
+  width: 800px;
+  height: 155px;
+  margin: 20px auto;
+  border: 3px solid rgb(240, 20, 20);
+  position: absolute;
+  bottom: 100px;
+  left: 240px;
+}
+
+.second-part {
+  width: 150px;
+  height: 155px;
+  margin: 20px auto;
+  border: 3px solid rgb(14, 170, 14);
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+}
