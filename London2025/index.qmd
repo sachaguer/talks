@@ -3,7 +3,7 @@ title: "Constraining cosmology with weak gravitational lensing"
 subtitle: "lessons learned from the Ultraviolet Near-Infrared Optical Northern Survey (UNIONS)"
 author: "Sacha Guerrini"
 format:
-  revealjs: 
+   revealjs: 
     theme: default
     slide-number: true
     chalkboard:
@@ -230,25 +230,122 @@ Technical specifications of UNIONS:
 <div style="
 position: absolute;
 left: 50%;
-top: 20%;
+top: 30%;
 transform: translate(-50%, -50%);
 text-align: center;
+width:800px;
+height: 200px;
+overflow: hidden;
 ">
-\begin{align}
-   e = \epsilon^\mathrm{s} + (1 + m)\gamma^\mathrm{true} + c
-\end{align}
-</div>
 
-## Test slide
-
-<div style="
-width:200px
-">
 ```{r, engine = 'tikz'}
-\begin{tikzpicture}
- \draw (0,0) circle (1cm);
- %\pause
- \draw (0,0) circle (2cm);
+\usetikzlibrary{positioning} 
+\usetikzlibrary{calc}
+
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  % Define the terms as nodes
+  \definecolor{mygreen}{rgb}{0.05, 0.68, 0.05}
+
+  \node[text=mygreen] (term1) {Intrinsic ellipticity};
+  \node[right=1.5cm of term1, text=red] (term2) {Multiplicative bias};
+  \node[right=1.5cm of term2, text=red] (term3) {Additive bias};
+  
+  % Full equation with a box around epsilon^s
+  \node[above=1.5 cm of term2] (eq) {
+    $e = 
+      \tikz[baseline=(es.base)] \node[draw=mygreen, rectangle] (es) {$\epsilon^\mathrm{s}$}; 
+      + (1 + 
+      \tikz[baseline=(m.base)] \node[draw=red, rectangle] (m) {m};
+      )\gamma^\mathrm{true} +
+      \tikz[baseline=(c.base)] \node[draw=red, rectangle] (c) {c};$
+  };
+
+  \coordinate (left-arrow) at ($(eq.south) + (-1.5cm,0)$);
+  \coordinate (right-arrow) at ($(eq.south) + (2.3cm,0)$);
+  \coordinate (middle-arrow) at ($(eq.south) + (0.3cm,0)$);
+
+  % Arrows from labels to equation terms
+  \draw[->, mygreen] (term1.north) -- (left-arrow);
+  \draw[->, red] (term2.north) -- (middle-arrow);
+  \draw[->, red] (term3.north) -- (right-arrow);
 \end{tikzpicture}
 ```
+
+
 </div>
+
+<div style="
+   position: absolute;
+   bottom: 10px;
+   left: 150px
+">
+<img src="images/mandelbaum_2018.png" alt="galaxy clustering" width="1000px" />
+</div>
+<div style="
+   font-size: 16pt;
+   height: 60px;
+   width: 250px;
+   position: absolute;
+   left: 900px;
+   bottom: 0px;
+">Credit: Mandelbaum (2018)</div>
+
+## 
+
+![](images/psf_size.gif)
+
+![](images/psf_anisotropy.gif)
+
+<div style="
+   font-size: 24pt;
+   height: 60px;
+   width: 250px;
+   position: absolute;
+   left: 100px;
+   bottom: 400px;
+">PSF size error</div>
+
+<div style="
+   font-size: 24pt;
+   height: 60px;
+   width: 250px;
+   position: absolute;
+   left: 100px;
+   bottom: 50px;
+">PSF anisotropy</div>
+
+<div style="
+   font-size: 16pt;
+   height: 60px;
+   width: 250px;
+   position: absolute;
+   left: 900px;
+   bottom: 0px;
+">Credit: A. Navarro</div>
+
+## {background-image="images/Perseus_euclid.jpg" background-size="cover"}
+
+```{r, engine='tikz', dev='svg', fig.width=16, fig.height=9}
+\begin{tikzpicture}[x=1cm, y=1cm, scale=1]
+  % Fix bounding box to slide aspect ratio (16:9, e.g. 16x9 cm)
+  \useasboundingbox (0,0) rectangle (16,9);
+
+   \draw[blue, thick, dashed, draw opacity=0.05] (0,0) rectangle (16,9);
+  % Example coordinates (you adjust until circles match galaxies)
+  \node[circle, draw=red, thick, minimum size=0.4cm] (A) at (8.1,6.8) {};
+  \node[circle, draw=red, thick, minimum size=0.4cm] (B) at (11.5, 5.1) {};
+  \node[circle, draw=green, thick, minimum size=0.5cm] (C) at (2.3,3) {};
+  \node[circle, draw=green, thick, minimum size=0.7cm] (D) at (9.2,2.1) {};
+
+  % Add text anchored above the nodes
+\node[above, text=red] at (A.north) {Star};
+\node[above, text=red] at (B.north) {Star};
+\node[below, text=green] at (C.south) {Galaxy};
+\node[below, text=green] at (D.south) {Galaxy};
+
+  % Arrows
+  \draw[<->, red, thick] (A) -- (B) node[midway, above, text=white] {$\rho(\theta)$};
+  \draw[<->, orange, thick] (A) -- (D) node[midway, left, text=white] {$\tau(\theta)$};
+  \draw[<->, green, thick] (C) -- (D) node[midway, below, text=white] {$\xi_\pm(\theta)$};
+\end{tikzpicture}
+```
