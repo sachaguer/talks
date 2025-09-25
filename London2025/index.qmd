@@ -225,7 +225,7 @@ Technical specifications of UNIONS:
 ">III\. And beyond</div>
 :::
 
-## PSF diagnostics
+## I\. PSF diagnostics
 
 <div style="
 position: absolute;
@@ -350,9 +350,9 @@ overflow: hidden;
 \end{tikzpicture}
 ```
 
-## Galaxy-PSF correlations{style="font-size: 30px;"}
+## Galaxy-PSF correlations{style="font-size: 30px; width: 120%; left: -50px"}
 
-PSF error model: $\delta \boldsymbol{e}^\mathrm{sys}_\mathrm{PSF} = \alpha \boldsymbol{e}_\mathrm{PSF} + \beta (\boldsymbol{e}_* - \boldsymbol{e}_\mathrm{PSF}) + \eta \boldsymbol{e}_\mathrm{PSF} \left(\frac{T_* - T_\mathrm{PSF}}{T_*} \right)$ with $\alpha$, $\beta$ and $\eta$ free parameters.
+PSF error model: $\delta \boldsymbol{e}^\mathrm{sys}_\mathrm{PSF} = \alpha \underbrace{\boldsymbol{e}_\mathrm{PSF}}_{\text{Leakage}} + \beta \underbrace{(\boldsymbol{e}_* - \boldsymbol{e}_\mathrm{PSF})}_{\text{Ellipticity error}} + \eta \underbrace{\boldsymbol{e}_\mathrm{PSF} \left(\frac{T_* - T_\mathrm{PSF}}{T_*} \right)}_{\text{Size error}}$. $\alpha$, $\beta$ and $\eta$ free parameters.
 
 \begin{equation}
     \left(
@@ -385,6 +385,50 @@ Systematic error: $\xi^\mathrm{sys}_\mathrm{PSF} = \alpha^2 \rho_0 + \beta^2 \rh
 
 <div style="
    position: absolute;
-   right: -10%;
+   right: 8%;
    bottom: 45%
 ">Constrain with MCMC</div>
+
+## Semi-analytical covariance ([Guerrini et al. (2025)](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html)){style="font-size: 30px;"}
+
+Analytical: based on analytical expressions of the covariance
+
+Semi: No theoretical predictions of the $\rho$- and $\tau$-statistics. Use measurements on data.
+
+![](images/semi_analytical_cov.png)
+
+## Prediction of the systematic additive bias{style="font-size: 30px;"}
+
+![](images/ratio_xi_sys_xi.png)
+
+## Estimation of PSF parameters{style="font-size: 30px;"}
+
+![](images/contours_tau_stat.png)
+
+<div style="
+   position: absolute;
+   right: 0%;
+   bottom: 50%;
+">
+Can provide priors for cosmological analysis!
+</div>
+
+## PSF systematics: Take-home messages{style="font-size: 30px;"}
+
+- PSF systematics are essential to understand to perform cosmic shear analysis.
+- $\rho$- and $\tau$-statistics are powerful tools to estimate the bias to the 2PCF.
+- Semi-analytical covariance ([Guerrini+2025](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html)) can speed up comparisons between catalogs.
+
+![](images/visual_inspection.png)
+
+## II\. Cosmic shear with 2pt statistics
+
+![](images/cosmic_shear_team.png)
+
+<div style="
+   position: absolute;
+   bottom: 0%;
+   right: -20%;
+   font-size: 30px;
+">and other contributors...</div>
+
