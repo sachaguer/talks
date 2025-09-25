@@ -349,3 +349,42 @@ overflow: hidden;
   \draw[<->, green, thick] (C) -- (D) node[midway, below, text=white] {$\xi_\pm(\theta)$};
 \end{tikzpicture}
 ```
+
+## Galaxy-PSF correlations{style="font-size: 30px;"}
+
+PSF error model: $\delta \boldsymbol{e}^\mathrm{sys}_\mathrm{PSF} = \alpha \boldsymbol{e}_\mathrm{PSF} + \beta (\boldsymbol{e}_* - \boldsymbol{e}_\mathrm{PSF}) + \eta \boldsymbol{e}_\mathrm{PSF} \left(\frac{T_* - T_\mathrm{PSF}}{T_*} \right)$ with $\alpha$, $\beta$ and $\eta$ free parameters.
+
+\begin{equation}
+    \left(
+        \begin{array}{l}
+            \tau_{0,1} \\ \tau_{2,1} \\ \tau_{5, 1} \\ \vdots \\
+            \tau_{0, n} \\ \tau_{2, n} \\ \tau_{5, n}
+        \end{array}
+    \right)
+    =
+    \left(
+      \begin{array}{llllll}
+        \rho_{0, 1} & \rho_{2, 1} & \rho_{5, 1} \\
+        \rho_{2, 1} & \rho_{1, 1} & \rho_{4, 1} \\
+        \rho_{5, 1} & \rho_{4, 1} & \rho_{3, 1} \\
+               & \ddots &        \\
+        \rho_{0, n} & \rho_{2, n} & \rho_{5, n} \\
+        \rho_{2, n} & \rho_{1, n} & \rho_{4, n} \\
+        \rho_{5, n} & \rho_{4, n} & \rho_{3, n} \\
+      \end{array}
+    \right)
+    \left(
+      \begin{array}{l}
+        \alpha \\ \beta \\ \eta \\
+      \end{array}
+    \right)
+    \label{eq:tau_matrix}
+\end{equation}
+
+Systematic error: $\xi^\mathrm{sys}_\mathrm{PSF} = \alpha^2 \rho_0 + \beta^2 \rho_1 + \eta^2 \rho_3 + 2 \alpha \beta \rho_2 + 2 \alpha \eta \rho_5 + 2 \beta \eta \rho_4$
+
+<div style="
+   position: absolute;
+   right: -10%;
+   bottom: 45%
+">Constrain with MCMC</div>
