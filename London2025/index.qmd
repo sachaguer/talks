@@ -432,3 +432,329 @@ Can provide priors for cosmological analysis!
    font-size: 30px;
 ">and other contributors...</div>
 
+## Analysis details{style="font-size: 30px"}
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+- Theoretical prediction: CAMB
+- Non-linear power spectrum: HMCode2020
+- Shear calibration with MetaCalibration.
+- Residual multiplicative bias estimated from image simulations. (Hervas Peter et al., in prep.)
+- Cosmology pipeline with [CosmoSIS](https://cosmosis.readthedocs.io/en/latest/).
+- Analysis in real space (Goh et al., in prep.) and harmonic space (Guerrini et al., in prep.).
+- PSF systematics accounted for in the inference.
+
+:::
+
+::: {.column width=50%}
+![Real CFHT exposure](images/real_cfht.png){height=220px}
+
+![Simulated exposure](images/sim_cfht.png){height=220px}
+
+:::
+
+::::
+
+## B-modes systematics{style="font-size: 30px"}
+
+:::: {.columns}
+
+::: {.column width=70%}
+Spin-2 shear fields can be decomposed into **E-modes**, containing the vast majority of lensing information, and **B-modes**, which are a probe of systematics at UNIONS noise levels.
+
+In the presence of masking, some **ambiguous** modes usually cannot be cleanly attributed to E or B.
+
+We use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-$C_\ell$.
+:::
+
+::: {.column width=30%}
+![Credit: BICEP2 Collaboration](images/e_b_modes.png)
+:::
+
+::::
+
+## Pure B-mode correlation functions{style="font-size:24px"}
+
+$$
+\xi_+^{E/B}(\vartheta) = \frac 1 2 \left[\xi_+(\vartheta) \pm \xi_-(\vartheta) + \int_\vartheta^{\vartheta_\mathrm{max}}\frac{\mathrm{d}\theta}{\theta} \xi_-(\theta) \left(4 - \frac{12\vartheta^2}{\theta^2} \right) \right] - \frac 1 2 \underbrace{[S_+(\vartheta) \pm S_-(\vartheta)]}_{\text{Integrals of $\xi_\pm$ with filter functions}}
+$$ 
+
+![Credit: C. Daley](images/b_mode_pure_functions.png){height=350px}
+
+B-modes on small scale ($\sim 3'$ in $\xi_+$ and $\sim 30'$ in $\xi_-$); large scales are ok.
+
+## B-modes with COSEBIS{style="font-size:30px"}
+
+![](images/cosebis_scale_cut.png)
+
+Pure functions and COSEBIS tell the same story.
+
+## B-modes in harmonic space{style="font-size:30px"}
+
+::: {.center}
+![](images/b_modes_cl.png){height=450px}
+:::
+
+B-modes on the smallest scales. Lower significance after removing the smallest objects from the catalogue. Data points and errorbars obtained with NaMaster.
+
+## Redshift distributions{style="font-size:30px"}
+
+:::: {.columns}
+
+::: {.column width=40%}
+Redshift distribution estimated using self-organizing map (SOMs).
+
+Three blinded reshift distribution produced to avoid confirmation bias. We make analysis choices given the output on the three blinds.
+:::
+
+::: {.column width=60%}
+![Credit: Anna Wittje](images/n_z.png)
+:::
+
+::::
+
+## Covariance (real space){style="font-size:30px"}
+
+:::: {.columns}
+
+::: {.column width=70%}
+![](images/treecorr_cov_real_space.png){height=250px}
+![](images/covariance_real_space.png){height=250px}
+:::
+::: {.column width=30%}
+Covariance estimated with CosmoCov and validated against data-drive jackknife and GLASS simulations (not shown here).
+
+Parameters marginalized over in inference:
+
+- PSF systematics
+- Intrinsic alignment
+- multiplicative bias
+- $n(z)$ bias
+:::
+::::
+
+## Covariance (harmonic space){style="font-size:30px"}
+
+:::: {.columns}
+
+::: {.column width=70%}
+![](images/corr_matrix_comparison.png){height=250px}
+![](images/corr_matrix_comparison_non_gaussian.png){height=250px}
+:::
+
+::: {.column width=30%}
+Gaussian covariance accounting for mask mode-coupling with iNKA (Namaster). Validation against OneCovariance (theory code) and GLASS mocks.
+
+Agreement between the error bars at the $10\%$ level
+:::
+
+::::
+
+## Inference{style="font-size:30px"}
+
+<div style="height: 500px">
+:::: {.columns}
+
+::: {.column width=50%}
+Real space $\xi_\pm(\vartheta)$
+
+![](images/contours_s8_omegam_xi.png){height=400px}
+:::
+::: {.column width=50%}
+Harmonic space $C_\ell$
+
+![](images/contours_s8_omegam.png){height=400px}
+:::
+
+::::
+</div>
+
+$\sim 2\times$ larger than DES, KiDS or HSC.
+
+Non-tomographic analysis significantly reduces constraining power.
+
+
+## III\. Beyond 2pt statistics
+
+::: {.center}
+![](images/flamingo.png){height=550px}
+:::
+
+## Higher-order statistics{style="font-size:30px"}
+
+:::: {.columns}
+
+::: {.column width=50%}
+The overdensity field is not a Gaussian field at late times.
+
+How can we capture the more information from the shear field?
+
+Craft summary statistics that capture **non-Gaussian information** from the field.
+:::
+
+::: {.column width=50%}
+![[Euclid Collaboration+2023](https://arxiv.org/abs/2301.12890)](images/euclid_hos.png)
+:::
+
+::::
+
+## Same methodology than 2pt?
+
+:::: {.columns}
+
+::: {.column width=50%}
+- Does the Gaussianity of the likelihood still hold?
+- Do we have a theorerical model of the higher-order summary?
+- Do we know how the higher-order summary respond to systematics?
+:::
+::: {.column width=50%}
+$$
+p(\theta | x) \propto \underbrace{p(x|\theta)}_\text{Likelihood} p(\theta)
+$$
+:::
+
+::::
+
+## Implicit Likelihood Inference (also known as SBI)
+
+```{r, engine='tikz'}
+\begin{tikzpicture}[scale=1.2, font=\small, node distance={40mm}, thick, main/.style = {draw, rectangle, minimum size=7mm, text centered}, label/.style = {align=center, text width=30mm}]
+   \pgfmathsetmacro{\height}{1.8}
+   \node[main] (Parameters) at (-9,\height){Parameters $\theta$}; 
+   
+   \node (Observation) at (-9,-\height){\includegraphics[width=30mm]{images/patches_on_sphere.png}};
+   \node[label, anchor=north] at (Observation.south) {UNIONS-like Observation $x$};
+   
+   \node (Compressed) at (-5,-\height){\includegraphics[width=30mm]{images/NN.png}};
+   \node[label, anchor=north] at (Compressed.south) {Compressed data $t = \mathcal{F}(x)$};
+   \node[label, anchor=south] at (Compressed.north) {Neural Network or Summary Statistic};
+   
+   \node (NDE) at (0,0){\includegraphics[width=30mm]{images/NN.png}};
+   \node[label, anchor=south] at (NDE.north) {Normalizing Flow (NLE, NPE)};
+   
+   \node[main, text width=25mm] (Posterior) [right of=NDE]{Posterior $p(\theta | t_{obs}, M)$}; 
+   \node[main] (UNIONS) at (3.34,-\height){UNIONS data}; 
+   % \node[main, below of = Posterior] (UNIONS) {UNIONS data}; 
+   
+   \draw[->] (Parameters.east) -- (-2.5,\height) -- (-2.5, 0) -- (NDE.west);
+   \draw[->] (Observation.east) -- (Compressed.west);
+   \draw[->] (Parameters.south) -- (Observation.north) node [pos=0.5, right] {Simulation} ;
+   \draw[->] (Compressed.east) -- (-2.5,-\height) -- (-2.5, 0) -- (NDE.west);
+   \draw[->] (NDE.east) -- (Posterior.west);
+   \draw[->] (UNIONS.north) -- (Posterior.south);
+\end{tikzpicture} 
+```
+
+## Normalizing Flows
+
+:::: {.columns}
+
+::: {.column width=40%}
+Apply several layers of a one-to-one map to simple distribution to match a more complex one.
+
+Alleviates the problem of the unknown likelihood.
+:::
+
+::: {.column width=60%}
+![](images/NDE.gif)
+:::
+
+::::
+
+## UNIONS forward model
+
+```{r, engine='tikz'}
+\begin{tikzpicture}[scale=1, font=\small, node distance={40mm}, thick, main/.style = {draw, rectangle, minimum size=7mm, text centered}, label/.style = {align=center, text width=30mm}]
+   
+   \node (Shear) at (-3,0){\includegraphics[width=30mm]{images/gamma1_fullsky.png}};
+
+   \node (GowerStreet) at (-12, 0){\includegraphics[width=60mm]{images/gower_street.png}} ;
+   \node[label, anchor=south] at (GowerStreet.north) {GowerStreet simulations};
+
+   \node (IA) at (-7, 2.5){\includegraphics[width=20mm]{images/intrinsic_alignment.jpg}};
+   \node[label, anchor=south] at (IA.north) {Intrinsic Alignment};
+
+   \node (PSF) at (-7, -2.5){\includegraphics[width=20mm]{images/PSF.png}};
+   \node[label, anchor=north] at (PSF.south) {Point-Spread Function};
+
+   \node (nz) at (1.5, 1.5){\includegraphics[width=30mm]{images/n_z.png}};
+   \node[label, anchor=south] at (nz.north) {Redshift distribution};
+
+   \node (mask) at (1.5, -1.5){\includegraphics[width=30mm]{images/patches_on_sphere.png}};
+   \node[label, anchor=north] at (mask.south) {Footprint};
+
+   \node (observation) at (6, 0) {\includegraphics[width=60mm]{images/shear_map_e1.png}};
+   \node[label, anchor=north] at (observation.south) {Observation};
+
+   
+   \draw[->] (GowerStreet.east) -- node[midway, above]{Ray-tracing/Higher-order effects} (Shear.west);
+
+   \draw[->] (IA.east) -- (-3, 2.5) -- (Shear.north);
+
+   \draw[->] (PSF.east) -- (-3, -2.5) -- (Shear.south);
+
+   \draw[->] (Shear.east) -- (observation.west);
+\end{tikzpicture} 
+```
+
+Available on [GitHub](https://github.com/sachaguer)
+
+## [JaxILI](https://github.com/sachaguer/jaxili), a pipeline for Implicit Likelihood Inference{style="font-size: 30px" auto-animate="true"}
+
+``` {.python code-line-numbers="4-5|7-9"}
+checkpoint_path = ... #Choose the checkpoint path
+checkpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.
+
+inference = NPE()
+inference = inference.append_simulations(theta, x)
+
+metrics, density_estimator = inference.train(
+    checkpoint_path=checkpoint_path,
+)
+```
+
+## [JaxILI](https://github.com/sachaguer/jaxili), a pipeline for Implicit Likelihood Inference{style="font-size: 30px" auto-animate="true"}
+
+``` python
+checkpoint_path = ... #Choose the checkpoint path
+checkpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.
+
+compressor = Compressor(
+    model_class=model_class,
+    model_hparams=model_hparams,
+)
+
+compressor = compressor.append_simulations(theta=theta, x=x)
+
+metrics, MSE_compression_function = compressor.train(
+    checkpoint_path=checkpoint_path
+)
+
+inference = NPE()
+inference = inference.append_simulations(theta, x)
+
+metrics, density_estimator = inference.train(
+    checkpoint_path=checkpoint_path,
+)
+```
+
+## [JaxILI](https://github.com/sachaguer/jaxili) on a cosmological toy model{style="font-size: 30px"}
+
+Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
+
+![Go [here](https://sachaguer.github.io/LesHouches2025/site/BBKS_FLI.html) for more](images/toy_model.png)
+
+Goal: Obtain constraints on the cosmological parameters using pixel level information.
+
+## [JaxILI](https://github.com/sachaguer/jaxili) on a cosmological toy model{style="font-size: 30px" auto-animate="true"}
+
+Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
+
+![](images/contours_bbks.png)
+
+## Extra material
+
+
+
