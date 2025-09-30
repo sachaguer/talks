@@ -1,10 +1,11 @@
 ---
 title: "Constraining cosmology with weak gravitational lensing"
 subtitle: "lessons learned from the Ultraviolet Near-Infrared Optical Northern Survey (UNIONS)"
-author: "Sacha Guerrini"
+author: "Sacha Guerrini, RHU seminar, 8th September 2025"
 format:
    revealjs: 
     theme: default
+    highlight-style: monokai
     slide-number: true
     chalkboard:
         buttons: false
@@ -118,7 +119,7 @@ w & \text{EoS of dark energy}
     color: white;
     position: absolute;
     bottom: 50px;
-    left: -200px
+    left: -100px
 ">
 Credit: RAS
 </div>
@@ -162,20 +163,20 @@ Credit: RAS
    left: 920px;
 ">$g$, $z$ bands</div>
 
-## The landscape of lensing surveys
+## The landscape of lensing surveys{style="font-size: 30px"}
 
-![](images/landscape_lensing.png){.absolute right=-200 bottom=100 height=500}
+![](images/landscape_lensing.png){.absolute right=-100 bottom=100 height=500}
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 Technical specifications of UNIONS:
 
-- Target area: $~ 5,000$ deg$^2$
+- Target area: $\sim 5,000$ deg$^2$
 - Depth: 24.5 ($r$-band)
-- Seeing: $~0.69"$ ($r$-band)
-- Processing with \texttt{ShapePipe} ([Farrens et al., 2022](https://arxiv.org/abs/2206.14689))
-- $~100$ million galaxies
+- Seeing: $\sim 0.69"$ ($r$-band)
+- Processing with ShapePipe ([Farrens et al., 2022](https://arxiv.org/abs/2206.14689))
+- $\sim 100$ million galaxies 
 :::
 
 ::::
@@ -754,7 +755,64 @@ Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 
 ![](images/contours_bbks.png)
 
-## Extra material
+## Application to UNIONS data{style="font-size=30px"}
 
+:::: {.columns}
 
+::: {.column width=40%}
+- CNN optimal compression
+- Extract information at the pixel level.
+- Cut the footprint in patches.
+:::
+
+::: {.column width=60%}
+![Credit: M. Maupas](images/patches.png)
+:::
+::::
+
+## Application to UNIONS data{style="font-size=30px"}
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](images/cnn_narrow_prior.png)
+:::
+::: {.column width=50%}
+![](images/cnn_wide_prior.png)
+:::
+::::
+
+## Conclusions
+
+- First cosmic shear cosmology results from UNIONS are incoming!
+- Allowed to develop tools used in *Euclid* cosmic shear analysis/validation of the data.
+- Exploring advanced Bayesian inference methods to extract more information from the available datasets.
+
+## Extra material: UNIONS multi-band coverage{style="font-size: 30px"}
+
+![](images/unions_multi_band.png)
+
+## Extra material: MetaCalibration{style="font-size: 30px"}
+
+![Credit: F. Hervas Peters](images/metacalibration.png)
+
+## Extra material: Scale cuts{style="font-size: 30px"}
+
+![](images/scale_cut_real_space.png)
+
+## Extra material: Best-fit{style="font-size: 30px"}
+
+![](images/beest_fit_real_space.png)
+
+## Extra material: $S_8$ constraints{style="font-size: 30px"}
+
+![](images/s8_whisker.png)
+
+## Extra material: real space vs harmonic space{style="font-size: 30px"}
+
+![](images/diff_real_vs_harmonic.png)
+
+## Extra material: MSE compression{style="font-size: 30px"}
+
+![](images/compression_output.png)
 
