@@ -1,0 +1,12 @@
+---
+title: "Sacha Guerrini's Talks"
+listing: 
+    type: default
+    sort: "date desc"
+    fields: [title, description, date, image]
+project:
+    render:
+        - 
+---
+
+---
