@@ -1,0 +1,604 @@
+---
+title: "Constraining cosmology with weak gravitational lensing"
+author: "Sacha Guerrini, UCL seminar, 9th September 2025"
+format:
+   revealjs: 
+    theme: default
+    highlight-style: monokai
+    slide-number: true
+    chalkboard:
+        buttons: false
+    preview-links: auto
+    footer: |
+        <div class="footer-logos">
+        <div class="logo-cea">
+        <img src="images/logo_cea.jpeg" alt="CEA" />
+        </div>
+        <div class="logo-crop">
+        <img src="images/cosmostat_logo.jpeg" alt="CosmoStat" />
+        </div>
+        </div>
+    title-slide-attributes:
+      data-background-image: "images/Perseus_euclid.jpg"
+      data-background-size: cover
+      data-background-position: center
+    css: styles.css
+---
+
+## Who am I?{style="font-size: 30px"}
+
+## Who am I?{style="font-size: 30px"}
+
+## My research interest{style="font-size: 30px"}
+
+Main research topics:
+
+- Weak gravitational lensing
+    - Point-Spread Function systematics
+    - Standard cosmic shear analysis
+    - Higher-order statistics
+- Forward modelling
+    - Simulation-Based Inference
+    - Differentiable simulators
+
+Other interests:
+
+- Strong gravitational lensing
+- Tests of General Relativity
+
+## UNIONS collaboration{style="font-size: 30px"}
+
+![](images/unions_logo.png)
+
+:::: {.columns}
+
+::: {.column width=40%}
+- Validation of the weak lensing sample
+- Cosmological constraints with cosmic shear
+- Constraints with higher-order statistics
+:::
+
+::: {.column width=60%}
+![](images/unions.jpg)
+:::
+
+::::
+
+## *Euclid* Consortium{style="font-size: 30px"}
+
+![](images/Euclid_consortium_logo.png){height=100px}
+
+- Member of the Weak Lensing Science Working Group
+   - Participation in standard cosmic shear analysis (WL1)
+   - Higher-Order Statistics Work Package
+   - Forward Modelling Work Package
+- Validation of PSF modelling and shape measurement in the ground segment
+
+## Cosmological context: $\Lambda$CDM{style="font-size: 20px;"}
+
+![Credit: NAOJ](images/cosmology.jpg)
+
+
+\begin{align}
+\left.
+\begin{array}{cc}
+H_0 & \text{Expansion rate}\\ 
+\Omega_m & \text{Matter density}\\ 
+\Omega_b & \text{Baryon density}\\ 
+\sigma_8 & \text{Clumpiness}\\ 
+w & \text{EoS of dark energy}
+\end{array}
+\right\} \text{Constrained using Bayesian inference}
+\end{align}
+
+## Cosmology with cosmic shear
+
+![Credit: S. Farrens](images/cosmic_shear_pipeline.png)
+
+::: {.fragment}
+<div class="first-part"></div>
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: rgb(240, 20, 20);
+   font-size: 24px;
+   position: absolute;
+   bottom: 280px;
+   left: 870px;
+   width: 200px;
+">I\. PSF diagnostics</div>
+:::
+
+::: {.fragment}
+<div class="second-part"></div>
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: rgb(14, 170, 14);
+   font-size: 24px;
+   position: absolute;
+   bottom: 180px;
+   left: -168px;
+   width: 200px;
+">II\. Cosmic shear with 2pt-statistics</div>
+:::
+
+::: {.fragment}
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: rgb(38, 65, 238);
+   font-size: 24px;
+   position: absolute;
+   bottom: 140px;
+   left: -168px;
+   width: 200px;
+">III\. And beyond</div>
+:::
+
+## I\. PSF diagnostics
+
+<div style="
+position: absolute;
+left: 50%;
+top: 30%;
+transform: translate(-50%, -50%);
+text-align: center;
+width:800px;
+height: 200px;
+overflow: hidden;
+">
+
+```{r, engine = 'tikz'}
+\usetikzlibrary{positioning} 
+\usetikzlibrary{calc}
+
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  % Define the terms as nodes
+  \definecolor{mygreen}{rgb}{0.05, 0.68, 0.05}
+
+  \node[text=mygreen] (term1) {Intrinsic ellipticity};
+  \node[right=1.5cm of term1, text=red] (term2) {Multiplicative bias};
+  \node[right=1.5cm of term2, text=red] (term3) {Additive bias};
+  
+  % Full equation with a box around epsilon^s
+  \node[above=1.5 cm of term2] (eq) {
+    $e = 
+      \tikz[baseline=(es.base)] \node[draw=mygreen, rectangle] (es) {$\epsilon^\mathrm{s}$}; 
+      + (1 + 
+      \tikz[baseline=(m.base)] \node[draw=red, rectangle] (m) {m};
+      )\gamma^\mathrm{true} +
+      \tikz[baseline=(c.base)] \node[draw=red, rectangle] (c) {c};$
+  };
+
+  \coordinate (left-arrow) at ($(eq.south) + (-1.5cm,0)$);
+  \coordinate (right-arrow) at ($(eq.south) + (2.3cm,0)$);
+  \coordinate (middle-arrow) at ($(eq.south) + (0.3cm,0)$);
+
+  % Arrows from labels to equation terms
+  \draw[->, mygreen] (term1.north) -- (left-arrow);
+  \draw[->, red] (term2.north) -- (middle-arrow);
+  \draw[->, red] (term3.north) -- (right-arrow);
+\end{tikzpicture}
+```
+
+
+</div>
+
+<div style="
+   position: absolute;
+   bottom: 10px;
+   left: 150px
+">
+<img src="images/mandelbaum_2018.png" alt="galaxy clustering" width="1000px" />
+</div>
+<div style="
+   font-size: 16pt;
+   height: 60px;
+   width: 250px;
+   position: absolute;
+   left: 900px;
+   bottom: 0px;
+">Credit: Mandelbaum (2018)</div>
+
+## {background-image="images/Perseus_euclid.jpg" background-size="cover"}
+
+```{r, engine='tikz', dev='svg', fig.width=16, fig.height=9}
+\begin{tikzpicture}[x=1cm, y=1cm, scale=1]
+  % Fix bounding box to slide aspect ratio (16:9, e.g. 16x9 cm)
+  \useasboundingbox (0,0) rectangle (16,9);
+
+   \draw[blue, thick, dashed, draw opacity=0.05] (0,0) rectangle (16,9);
+  % Example coordinates (you adjust until circles match galaxies)
+  \node[circle, draw=red, thick, minimum size=0.4cm] (A) at (8.1,6.8) {};
+  \node[circle, draw=red, thick, minimum size=0.4cm] (B) at (11.5, 5.1) {};
+  \node[circle, draw=green, thick, minimum size=0.5cm] (C) at (2.3,3) {};
+  \node[circle, draw=green, thick, minimum size=0.7cm] (D) at (9.2,2.1) {};
+
+  % Add text anchored above the nodes
+\node[above, text=red] at (A.north) {Star};
+\node[above, text=red] at (B.north) {Star};
+\node[below, text=green] at (C.south) {Galaxy};
+\node[below, text=green] at (D.south) {Galaxy};
+
+  % Arrows
+  \draw[<->, red, thick] (A) -- (B) node[midway, above, text=white] {$\rho(\theta)$};
+  \draw[<->, orange, thick] (A) -- (D) node[midway, left, text=white] {$\tau(\theta)$};
+  \draw[<->, green, thick] (C) -- (D) node[midway, below, text=white] {$\xi_\pm(\theta)$};
+\end{tikzpicture}
+```
+
+## Galaxy-PSF correlations{style="font-size: 30px; width: 120%; left: -50px"}
+
+PSF error model: $\delta \boldsymbol{e}^\mathrm{sys}_\mathrm{PSF} = \alpha \underbrace{\boldsymbol{e}_\mathrm{PSF}}_{\text{Leakage}} + \beta \underbrace{(\boldsymbol{e}_* - \boldsymbol{e}_\mathrm{PSF})}_{\text{Ellipticity error}} + \eta \underbrace{\boldsymbol{e}_\mathrm{PSF} \left(\frac{T_* - T_\mathrm{PSF}}{T_*} \right)}_{\text{Size error}}$. $\alpha$, $\beta$ and $\eta$ free parameters.
+
+\begin{equation}
+    \left(
+        \begin{array}{l}
+            \tau_{0,1} \\ \tau_{2,1} \\ \tau_{5, 1} \\ \vdots \\
+            \tau_{0, n} \\ \tau_{2, n} \\ \tau_{5, n}
+        \end{array}
+    \right)
+    =
+    \left(
+      \begin{array}{llllll}
+        \rho_{0, 1} & \rho_{2, 1} & \rho_{5, 1} \\
+        \rho_{2, 1} & \rho_{1, 1} & \rho_{4, 1} \\
+        \rho_{5, 1} & \rho_{4, 1} & \rho_{3, 1} \\
+               & \ddots &        \\
+        \rho_{0, n} & \rho_{2, n} & \rho_{5, n} \\
+        \rho_{2, n} & \rho_{1, n} & \rho_{4, n} \\
+        \rho_{5, n} & \rho_{4, n} & \rho_{3, n} \\
+      \end{array}
+    \right)
+    \left(
+      \begin{array}{l}
+        \alpha \\ \beta \\ \eta \\
+      \end{array}
+    \right)
+    \label{eq:tau_matrix}
+\end{equation}
+
+Systematic error: $\xi^\mathrm{sys}_\mathrm{PSF} = \alpha^2 \rho_0 + \beta^2 \rho_1 + \eta^2 \rho_3 + 2 \alpha \beta \rho_2 + 2 \alpha \eta \rho_5 + 2 \beta \eta \rho_4$
+
+<div style="
+   position: absolute;
+   right: 8%;
+   bottom: 45%
+">Constrain with MCMC</div>
+
+## Semi-analytical covariance ([Guerrini et al. (2025)](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html)){style="font-size: 30px;"}
+
+Analytical: based on analytical expressions of the covariance
+
+Semi: No theoretical predictions of the $\rho$- and $\tau$-statistics. Use measurements on data.
+
+![](images/semi_analytical_cov.png)
+
+## Prediction of the systematic additive bias{style="font-size: 30px;"}
+
+![](images/ratio_xi_sys_xi.png)
+
+## Estimation of PSF parameters{style="font-size: 30px;"}
+
+![](images/contours_tau_stat.png)
+
+<div style="
+   position: absolute;
+   right: 0%;
+   bottom: 50%;
+">
+Can provide priors for cosmological analysis!
+</div>
+
+## Application to *Euclid* data
+
+## PSF systematics: Take-home messages{style="font-size: 30px;"}
+
+- PSF systematics are essential to understand to perform cosmic shear analysis.
+- $\rho$- and $\tau$-statistics are powerful tools to estimate the bias to the 2PCF.
+- Semi-analytical covariance ([Guerrini+2025](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html)) can speed up comparisons between catalogs.
+
+## II\. Cosmic shear with 2pt statistics
+
+![](images/cosmic_shear_team.png)
+
+<div style="
+   position: absolute;
+   bottom: 0%;
+   right: -20%;
+   font-size: 30px;
+">and other contributors...</div>
+
+## Analysis details{style="font-size: 30px"}
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+- Theoretical prediction: CAMB
+- Non-linear power spectrum: HMCode2020
+- Shear calibration with MetaCalibration.
+- Residual multiplicative bias estimated from image simulations. (Hervas Peter et al., in prep.)
+- Cosmology pipeline with [CosmoSIS](https://cosmosis.readthedocs.io/en/latest/).
+- Analysis in real space (Goh et al., in prep.) and harmonic space (Guerrini et al., in prep.).
+- PSF systematics accounted for in the inference.
+
+:::
+
+::: {.column width=50%}
+![Real CFHT exposure](images/real_cfht.png){height=220px}
+
+![Simulated exposure](images/sim_cfht.png){height=220px}
+
+:::
+
+::::
+
+## B-modes systematics{style="font-size: 30px"}
+
+:::: {.columns}
+
+::: {.column width=70%}
+Spin-2 shear fields can be decomposed into **E-modes**, containing the vast majority of lensing information, and **B-modes**, which are a probe of systematics at UNIONS noise levels.
+
+In the presence of masking, some **ambiguous** modes usually cannot be cleanly attributed to E or B.
+
+We use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-$C_\ell$.
+:::
+
+::: {.column width=30%}
+![Credit: BICEP2 Collaboration](images/e_b_modes.png)
+:::
+
+::::
+
+## B-modes in harmonic space{style="font-size:30px"}
+
+::: {.center}
+![](images/b_modes_cl.png){height=450px}
+:::
+
+B-modes on the smallest scales. Lower significance after removing the smallest objects from the catalogue. Data points and errorbars obtained with NaMaster.
+
+## Covariance (harmonic space){style="font-size:30px"}
+
+:::: {.columns}
+
+::: {.column width=70%}
+![](images/corr_matrix_comparison.png){height=250px}
+![](images/corr_matrix_comparison_non_gaussian.png){height=250px}
+:::
+
+::: {.column width=30%}
+Gaussian covariance accounting for mask mode-coupling with iNKA (Namaster). Validation against OneCovariance (theory code) and GLASS mocks.
+
+Agreement between the error bars at the $10\%$ level
+:::
+
+::::
+
+## Inference{style="font-size:30px"}
+
+<div style="height: 500px">
+:::: {.columns}
+
+::: {.column width=50%}
+Real space $\xi_\pm(\vartheta)$
+
+![](images/contours_s8_omegam_xi.png){height=400px}
+:::
+::: {.column width=50%}
+Harmonic space $C_\ell$
+
+![](images/contours_s8_omegam.png){height=400px}
+:::
+
+::::
+</div>
+
+$\sim 2\times$ larger than DES, KiDS or HSC.
+
+Non-tomographic analysis significantly reduces constraining power.
+
+
+## III\. Beyond 2pt statistics
+
+::: {.center}
+![](images/flamingo.png){height=550px}
+:::
+
+## Implicit Likelihood Inference (also known as SBI)
+
+```{r, engine='tikz'}
+\begin{tikzpicture}[scale=1.2, font=\small, node distance={40mm}, thick, main/.style = {draw, rectangle, minimum size=7mm, text centered}, label/.style = {align=center, text width=30mm}]
+   \pgfmathsetmacro{\height}{1.8}
+   \node[main] (Parameters) at (-9,\height){Parameters $\theta$}; 
+   
+   \node (Observation) at (-9,-\height){\includegraphics[width=30mm]{images/patches_on_sphere.png}};
+   \node[label, anchor=north] at (Observation.south) {UNIONS-like Observation $x$};
+   
+   \node (Compressed) at (-5,-\height){\includegraphics[width=30mm]{images/NN.png}};
+   \node[label, anchor=north] at (Compressed.south) {Compressed data $t = \mathcal{F}(x)$};
+   \node[label, anchor=south] at (Compressed.north) {Neural Network or Summary Statistic};
+   
+   \node (NDE) at (0,0){\includegraphics[width=30mm]{images/NN.png}};
+   \node[label, anchor=south] at (NDE.north) {Normalizing Flow (NLE, NPE)};
+   
+   \node[main, text width=25mm] (Posterior) [right of=NDE]{Posterior $p(\theta | t_{obs}, M)$}; 
+   \node[main] (UNIONS) at (3.34,-\height){UNIONS data}; 
+   % \node[main, below of = Posterior] (UNIONS) {UNIONS data}; 
+   
+   \draw[->] (Parameters.east) -- (-2.5,\height) -- (-2.5, 0) -- (NDE.west);
+   \draw[->] (Observation.east) -- (Compressed.west);
+   \draw[->] (Parameters.south) -- (Observation.north) node [pos=0.5, right] {Simulation} ;
+   \draw[->] (Compressed.east) -- (-2.5,-\height) -- (-2.5, 0) -- (NDE.west);
+   \draw[->] (NDE.east) -- (Posterior.west);
+   \draw[->] (UNIONS.north) -- (Posterior.south);
+\end{tikzpicture} 
+```
+
+## UNIONS forward model
+
+```{r, engine='tikz'}
+\begin{tikzpicture}[scale=1, font=\small, node distance={40mm}, thick, main/.style = {draw, rectangle, minimum size=7mm, text centered}, label/.style = {align=center, text width=30mm}]
+   
+   \node (Shear) at (-3,0){\includegraphics[width=30mm]{images/gamma1_fullsky.png}};
+
+   \node (GowerStreet) at (-12, 0){\includegraphics[width=60mm]{images/gower_street.png}} ;
+   \node[label, anchor=south] at (GowerStreet.north) {GowerStreet simulations};
+
+   \node (IA) at (-7, 2.5){\includegraphics[width=20mm]{images/intrinsic_alignment.jpg}};
+   \node[label, anchor=south] at (IA.north) {Intrinsic Alignment};
+
+   \node (PSF) at (-7, -2.5){\includegraphics[width=20mm]{images/PSF.png}};
+   \node[label, anchor=north] at (PSF.south) {Point-Spread Function};
+
+   \node (nz) at (1.5, 1.5){\includegraphics[width=30mm]{images/n_z.png}};
+   \node[label, anchor=south] at (nz.north) {Redshift distribution};
+
+   \node (mask) at (1.5, -1.5){\includegraphics[width=30mm]{images/patches_on_sphere.png}};
+   \node[label, anchor=north] at (mask.south) {Footprint};
+
+   \node (observation) at (6, 0) {\includegraphics[width=60mm]{images/shear_map_e1.png}};
+   \node[label, anchor=north] at (observation.south) {Observation};
+
+   
+   \draw[->] (GowerStreet.east) -- node[midway, above]{Ray-tracing/Higher-order effects} (Shear.west);
+
+   \draw[->] (IA.east) -- (-3, 2.5) -- (Shear.north);
+
+   \draw[->] (PSF.east) -- (-3, -2.5) -- (Shear.south);
+
+   \draw[->] (Shear.east) -- (observation.west);
+\end{tikzpicture} 
+```
+
+Available on [GitHub](https://github.com/sachaguer), adapted from DESY3 analysis
+
+## [JaxILI](https://github.com/sachaguer/jaxili), a pipeline for Implicit Likelihood Inference{style="font-size: 30px" auto-animate="true"}
+
+``` {.python code-line-numbers="4-5|7-9"}
+checkpoint_path = ... #Choose the checkpoint path
+checkpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.
+
+inference = NPE()
+inference = inference.append_simulations(theta, x)
+
+metrics, density_estimator = inference.train(
+    checkpoint_path=checkpoint_path,
+)
+```
+
+## [JaxILI](https://github.com/sachaguer/jaxili), a pipeline for Implicit Likelihood Inference{style="font-size: 30px" auto-animate="true"}
+
+``` python
+checkpoint_path = ... #Choose the checkpoint path
+checkpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.
+
+compressor = Compressor(
+    model_class=model_class,
+    model_hparams=model_hparams,
+)
+
+compressor = compressor.append_simulations(theta=theta, x=x)
+
+metrics, MSE_compression_function = compressor.train(
+    checkpoint_path=checkpoint_path
+)
+
+inference = NPE()
+inference = inference.append_simulations(theta, x)
+
+metrics, density_estimator = inference.train(
+    checkpoint_path=checkpoint_path,
+)
+```
+
+## [JaxILI](https://github.com/sachaguer/jaxili) on a cosmological toy model{style="font-size: 30px"}
+
+Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
+
+![Go [here](https://sachaguer.github.io/LesHouches2025/site/BBKS_FLI.html) for more](images/toy_model.png)
+
+Goal: Obtain constraints on the cosmological parameters using pixel level information.
+
+## [JaxILI](https://github.com/sachaguer/jaxili) on a cosmological toy model{style="font-size: 30px" auto-animate="true"}
+
+Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
+
+:::: {.columns}
+
+::: {.column width=60%}
+![](images/contours_bbks.png)
+:::
+
+::: {.column width=40%}
+- Implicit contours obtained with MSE compression.
+- Loss of information compared to Explicit inference.
+- Unbiased constraints obtained.
+:::
+::::
+
+## Application to UNIONS data{style="font-size=30px"}
+
+:::: {.columns}
+
+::: {.column width=40%}
+- CNN optimal compression
+- Extract information at the pixel level.
+- Cut the footprint in patches.
+:::
+
+::: {.column width=60%}
+![Credit: M. Maupas](images/patches.png)
+:::
+::::
+
+## Application to UNIONS data{style="font-size=30px"}
+
+Project in stand-by due to changes in the fiducial analysis.
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](images/cnn_narrow_prior.png)
+:::
+::: {.column width=50%}
+![](images/cnn_wide_prior.png)
+:::
+::::
+
+## Conclusions
+
+- First cosmic shear cosmology results from UNIONS are incoming!
+- Allowed to develop tools used in *Euclid* cosmic shear analysis/validation of the data.
+- Exploring advanced Bayesian inference methods to extract more information from the available datasets.
+
+## Extra material: UNIONS multi-band coverage{style="font-size: 30px"}
+
+![](images/unions_multi_band.png)
+
+## Extra material: MetaCalibration{style="font-size: 30px"}
+
+![Credit: F. Hervas Peters](images/metacalibration.png)
+
+## Extra material: Scale cuts{style="font-size: 30px"}
+
+![](images/scale_cut_real_space.png)
+
+## Extra material: Best-fit{style="font-size: 30px"}
+
+![](images/beest_fit_real_space.png)
+
+## Extra material: $S_8$ constraints{style="font-size: 30px"}
+
+![](images/s8_whisker.png)
+
+## Extra material: real space vs harmonic space{style="font-size: 30px"}
+
+![](images/diff_real_vs_harmonic.png)
+
+## Extra material: MSE compression{style="font-size: 30px"}
+
+![](images/compression_output.png)
