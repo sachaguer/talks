@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17c909d5fd25ae21b861c0c7a49b2096.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.42">
+
+  <meta name="author" content="Sacha Guerrini, UCL seminar, 9th September 2025">
+  <title>Talks – Constraining cosmology with weak gravitational lensing</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2; background-color: #2e3440; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #75715e; } /* Annotation */
+    code span.at { color: #f92672; } /* Attribute */
+    code span.bn { color: #ae81ff; } /* BaseN */
+    code span.bu { color: #66d9ef; } /* BuiltIn */
+    code span.cf { color: #f92672; } /* ControlFlow */
+    code span.ch { color: #e6db74; } /* Char */
+    code span.cn { color: #ae81ff; } /* Constant */
+    code span.co { color: #75715e; } /* Comment */
+    code span.cv { color: #75715e; } /* CommentVar */
+    code span.do { color: #75715e; } /* Documentation */
+    code span.dt { color: #66d9ef; font-style: italic; } /* DataType */
+    code span.dv { color: #ae81ff; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #a6e22e; font-weight: bold; } /* Extension */
+    code span.fl { color: #ae81ff; } /* Float */
+    code span.fu { color: #a6e22e; } /* Function */
+    code span.im { color: #f92672; } /* Import */
+    code span.in { color: #f1fa8c; } /* Information */
+    code span.kw { color: #f92672; } /* Keyword */
+    code span.op { color: #f8f8f2; } /* Operator */
+    code span.ot { color: #a6e22e; } /* Other */
+    code span.pp { color: #f92672; } /* Preprocessor */
+    code span.re { color: #75715e; } /* RegionMarker */
+    code span.sc { color: #ae81ff; } /* SpecialChar */
+    code span.ss { color: #e6db74; } /* SpecialString */
+    code span.st { color: #e6db74; } /* String */
+    code span.va { color: #f8f8f2; } /* Variable */
+    code span.vs { color: #e6db74; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-219dd2876a5448c20a51b3c3f55b2909.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="images/Perseus_euclid.jpg" data-background-position="center" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title">Constraining cosmology with weak gravitational lensing</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Sacha Guerrini, UCL seminar, 9th September 2025 
+</div>
+</div>
+</div>
+
+</section>
+<section id="who-am-i" class="slide level2" style="font-size: 30px">
+<h2>Who am I?</h2>
+</section>
+<section id="who-am-i-1" class="slide level2" style="font-size: 30px">
+<h2>Who am I?</h2>
+</section>
+<section id="my-research-interest" class="slide level2" style="font-size: 30px">
+<h2>My research interest</h2>
+<p>Main research topics:</p>
+<ul>
+<li>Weak gravitational lensing
+<ul>
+<li>Point-Spread Function systematics</li>
+<li>Standard cosmic shear analysis</li>
+<li>Higher-order statistics</li>
+</ul></li>
+<li>Forward modelling
+<ul>
+<li>Simulation-Based Inference</li>
+<li>Differentiable simulators</li>
+</ul></li>
+</ul>
+<p>Other interests:</p>
+<ul>
+<li>Strong gravitational lensing</li>
+<li>Tests of General Relativity</li>
+</ul>
+</section>
+<section id="unions-collaboration" class="slide level2" style="font-size: 30px">
+<h2>UNIONS collaboration</h2>
+<p><img data-src="images/unions_logo.png"></p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Validation of the weak lensing sample</li>
+<li>Cosmological constraints with cosmic shear</li>
+<li>Constraints with higher-order statistics</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/unions.jpg"></p>
+</div></div>
+</section>
+<section id="euclid-consortium" class="slide level2" style="font-size: 30px">
+<h2><em>Euclid</em> Consortium</h2>
+<p><img data-src="images/Euclid_consortium_logo.png" height="100"></p>
+<ul>
+<li>Member of the Weak Lensing Science Working Group
+<ul>
+<li>Participation in standard cosmic shear analysis (WL1)</li>
+<li>Higher-Order Statistics Work Package</li>
+<li>Forward Modelling Work Package</li>
+</ul></li>
+<li>Validation of PSF modelling and shape measurement in the ground segment</li>
+</ul>
+</section>
+<section id="cosmological-context-lambdacdm" class="slide level2" style="font-size: 20px;">
+<h2>Cosmological context: <span class="math inline">\(\Lambda\)</span>CDM</h2>
+
+<img data-src="images/cosmology.jpg" class="r-stretch quarto-figure-center"><p class="caption">Credit: NAOJ</p><p><span class="math display">\[\begin{align}
+\left.
+\begin{array}{cc}
+H_0 &amp; \text{Expansion rate}\\
+\Omega_m &amp; \text{Matter density}\\
+\Omega_b &amp; \text{Baryon density}\\
+\sigma_8 &amp; \text{Clumpiness}\\
+w &amp; \text{EoS of dark energy}
+\end{array}
+\right\} \text{Constrained using Bayesian inference}
+\end{align}\]</span></p>
+</section>
+<section id="cosmology-with-cosmic-shear" class="slide level2">
+<h2>Cosmology with cosmic shear</h2>
+
+<img data-src="images/cosmic_shear_pipeline.png" class="r-stretch quarto-figure-center"><p class="caption">Credit: S. Farrens</p><div class="fragment">
+<div class="first-part">
+
+</div>
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: rgb(240, 20, 20);
+   font-size: 24px;
+   position: absolute;
+   bottom: 280px;
+   left: 870px;
+   width: 200px;
+">
+I. PSF diagnostics
+</div>
+</div>
+<div class="fragment">
+<div class="second-part">
+
+</div>
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: rgb(14, 170, 14);
+   font-size: 24px;
+   position: absolute;
+   bottom: 180px;
+   left: -168px;
+   width: 200px;
+">
+II. Cosmic shear with 2pt-statistics
+</div>
+</div>
+<div class="fragment">
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: rgb(38, 65, 238);
+   font-size: 24px;
+   position: absolute;
+   bottom: 140px;
+   left: -168px;
+   width: 200px;
+">
+III. And beyond
+</div>
+</div>
+</section>
+<section id="i.-psf-diagnostics" class="slide level2">
+<h2>I. PSF diagnostics</h2>
+<div style="
+position: absolute;
+left: 50%;
+top: 30%;
+transform: translate(-50%, -50%);
+text-align: center;
+width:800px;
+height: 200px;
+overflow: hidden;
+">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="ucl_presentation_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div style="
+   position: absolute;
+   bottom: 10px;
+   left: 150px
+">
+<p><img src="images/mandelbaum_2018.png" alt="galaxy clustering" width="1000px"></p>
+</div>
+<div style="
+   font-size: 16pt;
+   height: 60px;
+   width: 250px;
+   position: absolute;
+   left: 900px;
+   bottom: 0px;
+">
+Credit: Mandelbaum (2018)
+</div>
+</section>
+<section id="section" class="slide level2" data-background-image="images/Perseus_euclid.jpg" data-background-size="cover">
+<h2></h2>
+
+<img data-src="ucl_presentation_files/figure-revealjs/unnamed-chunk-2-1.svg" width="1536" class="r-stretch"></section>
+<section id="galaxy-psf-correlations" class="slide level2" style="font-size: 30px; width: 120%; left: -50px">
+<h2>Galaxy-PSF correlations</h2>
+<p>PSF error model: <span class="math inline">\(\delta \boldsymbol{e}^\mathrm{sys}_\mathrm{PSF} = \alpha \underbrace{\boldsymbol{e}_\mathrm{PSF}}_{\text{Leakage}} + \beta \underbrace{(\boldsymbol{e}_* - \boldsymbol{e}_\mathrm{PSF})}_{\text{Ellipticity error}} + \eta \underbrace{\boldsymbol{e}_\mathrm{PSF} \left(\frac{T_* - T_\mathrm{PSF}}{T_*} \right)}_{\text{Size error}}\)</span>. <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\eta\)</span> free parameters.</p>
+<p><span class="math display">\[\begin{equation}
+    \left(
+        \begin{array}{l}
+            \tau_{0,1} \\ \tau_{2,1} \\ \tau_{5, 1} \\ \vdots \\
+            \tau_{0, n} \\ \tau_{2, n} \\ \tau_{5, n}
+        \end{array}
+    \right)
+    =
+    \left(
+      \begin{array}{llllll}
+        \rho_{0, 1} &amp; \rho_{2, 1} &amp; \rho_{5, 1} \\
+        \rho_{2, 1} &amp; \rho_{1, 1} &amp; \rho_{4, 1} \\
+        \rho_{5, 1} &amp; \rho_{4, 1} &amp; \rho_{3, 1} \\
+               &amp; \ddots &amp;        \\
+        \rho_{0, n} &amp; \rho_{2, n} &amp; \rho_{5, n} \\
+        \rho_{2, n} &amp; \rho_{1, n} &amp; \rho_{4, n} \\
+        \rho_{5, n} &amp; \rho_{4, n} &amp; \rho_{3, n} \\
+      \end{array}
+    \right)
+    \left(
+      \begin{array}{l}
+        \alpha \\ \beta \\ \eta \\
+      \end{array}
+    \right)
+    \label{eq:tau_matrix}
+\end{equation}\]</span></p>
+<p>Systematic error: <span class="math inline">\(\xi^\mathrm{sys}_\mathrm{PSF} = \alpha^2 \rho_0 + \beta^2 \rho_1 + \eta^2 \rho_3 + 2 \alpha \beta \rho_2 + 2 \alpha \eta \rho_5 + 2 \beta \eta \rho_4\)</span></p>
+<div style="
+   position: absolute;
+   right: 8%;
+   bottom: 45%
+">
+Constrain with MCMC
+</div>
+</section>
+<section id="semi-analytical-covariance-guerrini-et-al.-2025" class="slide level2" style="font-size: 30px;">
+<h2>Semi-analytical covariance (<a href="https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html">Guerrini et al.&nbsp;(2025)</a>)</h2>
+<p>Analytical: based on analytical expressions of the covariance</p>
+<p>Semi: No theoretical predictions of the <span class="math inline">\(\rho\)</span>- and <span class="math inline">\(\tau\)</span>-statistics. Use measurements on data.</p>
+
+<img data-src="images/semi_analytical_cov.png" class="r-stretch"></section>
+<section id="prediction-of-the-systematic-additive-bias" class="slide level2" style="font-size: 30px;">
+<h2>Prediction of the systematic additive bias</h2>
+
+<img data-src="images/ratio_xi_sys_xi.png" class="r-stretch"></section>
+<section id="estimation-of-psf-parameters" class="slide level2" style="font-size: 30px;">
+<h2>Estimation of PSF parameters</h2>
+
+<img data-src="images/contours_tau_stat.png" class="r-stretch"><div style="
+   position: absolute;
+   right: 0%;
+   bottom: 50%;
+">
+<p>Can provide priors for cosmological analysis!</p>
+</div>
+</section>
+<section id="application-to-euclid-data" class="slide level2">
+<h2>Application to <em>Euclid</em> data</h2>
+</section>
+<section id="psf-systematics-take-home-messages" class="slide level2" style="font-size: 30px;">
+<h2>PSF systematics: Take-home messages</h2>
+<ul>
+<li>PSF systematics are essential to understand to perform cosmic shear analysis.</li>
+<li><span class="math inline">\(\rho\)</span>- and <span class="math inline">\(\tau\)</span>-statistics are powerful tools to estimate the bias to the 2PCF.</li>
+<li>Semi-analytical covariance (<a href="https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html">Guerrini+2025</a>) can speed up comparisons between catalogs.</li>
+</ul>
+</section>
+<section id="ii.-cosmic-shear-with-2pt-statistics" class="slide level2">
+<h2>II. Cosmic shear with 2pt statistics</h2>
+
+<img data-src="images/cosmic_shear_team.png" class="r-stretch"><div style="
+   position: absolute;
+   bottom: 0%;
+   right: -20%;
+   font-size: 30px;
+">
+and other contributors…
+</div>
+</section>
+<section id="analysis-details" class="slide level2" style="font-size: 30px">
+<h2>Analysis details</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Theoretical prediction: CAMB</li>
+<li>Non-linear power spectrum: HMCode2020</li>
+<li>Shear calibration with MetaCalibration.</li>
+<li>Residual multiplicative bias estimated from image simulations. (Hervas Peter et al., in prep.)</li>
+<li>Cosmology pipeline with <a href="https://cosmosis.readthedocs.io/en/latest/">CosmoSIS</a>.</li>
+<li>Analysis in real space (Goh et al., in prep.) and harmonic space (Guerrini et al., in prep.).</li>
+<li>PSF systematics accounted for in the inference.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/real_cfht.png" height="220"></p>
+<figcaption>Real CFHT exposure</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/sim_cfht.png" height="220"></p>
+<figcaption>Simulated exposure</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="b-modes-systematics" class="slide level2" style="font-size: 30px">
+<h2>B-modes systematics</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p>Spin-2 shear fields can be decomposed into <strong>E-modes</strong>, containing the vast majority of lensing information, and <strong>B-modes</strong>, which are a probe of systematics at UNIONS noise levels.</p>
+<p>In the presence of masking, some <strong>ambiguous</strong> modes usually cannot be cleanly attributed to E or B.</p>
+<p>We use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-<span class="math inline">\(C_\ell\)</span>.</p>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/e_b_modes.png"></p>
+<figcaption>Credit: BICEP2 Collaboration</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="b-modes-in-harmonic-space" class="slide level2" style="font-size:30px">
+<h2>B-modes in harmonic space</h2>
+<div class="center">
+<p><img data-src="images/b_modes_cl.png" height="450"></p>
+</div>
+<p>B-modes on the smallest scales. Lower significance after removing the smallest objects from the catalogue. Data points and errorbars obtained with NaMaster.</p>
+</section>
+<section id="covariance-harmonic-space" class="slide level2" style="font-size:30px">
+<h2>Covariance (harmonic space)</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="images/corr_matrix_comparison.png" height="250"> <img data-src="images/corr_matrix_comparison_non_gaussian.png" height="250"></p>
+</div><div class="column" style="width:30%;">
+<p>Gaussian covariance accounting for mask mode-coupling with iNKA (Namaster). Validation against OneCovariance (theory code) and GLASS mocks.</p>
+<p>Agreement between the error bars at the <span class="math inline">\(10\%\)</span> level</p>
+</div></div>
+</section>
+<section id="inference" class="slide level2" style="font-size:30px">
+<h2>Inference</h2>
+<div style="height: 500px">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Real space <span class="math inline">\(\xi_\pm(\vartheta)\)</span></p>
+<p><img data-src="images/contours_s8_omegam_xi.png" height="400"></p>
+</div><div class="column" style="width:50%;">
+<p>Harmonic space <span class="math inline">\(C_\ell\)</span></p>
+<p><img data-src="images/contours_s8_omegam.png" height="400"></p>
+</div></div>
+</div>
+<p><span class="math inline">\(\sim 2\times\)</span> larger than DES, KiDS or HSC.</p>
+<p>Non-tomographic analysis significantly reduces constraining power.</p>
+</section>
+<section id="iii.-beyond-2pt-statistics" class="slide level2">
+<h2>III. Beyond 2pt statistics</h2>
+<div class="center">
+<p><img data-src="images/flamingo.png" height="550"></p>
+</div>
+</section>
+<section id="implicit-likelihood-inference-also-known-as-sbi" class="slide level2">
+<h2>Implicit Likelihood Inference (also known as SBI)</h2>
+
+<img data-src="ucl_presentation_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="unions-forward-model" class="slide level2">
+<h2>UNIONS forward model</h2>
+
+<img data-src="ucl_presentation_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><p>Available on <a href="https://github.com/sachaguer">GitHub</a>, adapted from DESY3 analysis</p>
+</section>
+<section id="jaxili-a-pipeline-for-implicit-likelihood-inference" class="slide level2" style="font-size: 30px" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><a href="https://github.com/sachaguer/jaxili">JaxILI</a>, a pipeline for Implicit Likelihood Inference</h2>
+<div class="sourceCode" id="cb1" data-code-line-numbers="4-5|7-9"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb1-1" class="hljs-ln-code"><a></a>checkpoint_path <span class="op">=</span> ... <span class="co">#Choose the checkpoint path</span></span>
+<span id="cb1-2" class="hljs-ln-code"><a></a>checkpoint_path <span class="op">=</span> os.path.abspath(checkpoint_path) <span class="co">#Beware, this should be an absolute path.</span></span>
+<span id="cb1-3" class="hljs-ln-code"><a></a></span>
+<span id="cb1-4" class="hljs-ln-code"><a></a>inference <span class="op">=</span> NPE()</span>
+<span id="cb1-5" class="hljs-ln-code"><a></a>inference <span class="op">=</span> inference.append_simulations(theta, x)</span>
+<span id="cb1-6" class="hljs-ln-code"><a></a></span>
+<span id="cb1-7" class="hljs-ln-code"><a></a>metrics, density_estimator <span class="op">=</span> inference.train(</span>
+<span id="cb1-8" class="hljs-ln-code"><a></a>    checkpoint_path<span class="op">=</span>checkpoint_path,</span>
+<span id="cb1-9" class="hljs-ln-code"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="jaxili-a-pipeline-for-implicit-likelihood-inference-1" class="slide level2" style="font-size: 30px" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><a href="https://github.com/sachaguer/jaxili">JaxILI</a>, a pipeline for Implicit Likelihood Inference</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb2-1" class="hljs-ln-code"><a></a>checkpoint_path <span class="op">=</span> ... <span class="co">#Choose the checkpoint path</span></span>
+<span id="cb2-2" class="hljs-ln-code"><a></a>checkpoint_path <span class="op">=</span> os.path.abspath(checkpoint_path) <span class="co">#Beware, this should be an absolute path.</span></span>
+<span id="cb2-3" class="hljs-ln-code"><a></a></span>
+<span id="cb2-4" class="hljs-ln-code"><a></a>compressor <span class="op">=</span> Compressor(</span>
+<span id="cb2-5" class="hljs-ln-code"><a></a>    model_class<span class="op">=</span>model_class,</span>
+<span id="cb2-6" class="hljs-ln-code"><a></a>    model_hparams<span class="op">=</span>model_hparams,</span>
+<span id="cb2-7" class="hljs-ln-code"><a></a>)</span>
+<span id="cb2-8" class="hljs-ln-code"><a></a></span>
+<span id="cb2-9" class="hljs-ln-code"><a></a>compressor <span class="op">=</span> compressor.append_simulations(theta<span class="op">=</span>theta, x<span class="op">=</span>x)</span>
+<span id="cb2-10" class="hljs-ln-code"><a></a></span>
+<span id="cb2-11" class="hljs-ln-code"><a></a>metrics, MSE_compression_function <span class="op">=</span> compressor.train(</span>
+<span id="cb2-12" class="hljs-ln-code"><a></a>    checkpoint_path<span class="op">=</span>checkpoint_path</span>
+<span id="cb2-13" class="hljs-ln-code"><a></a>)</span>
+<span id="cb2-14" class="hljs-ln-code"><a></a></span>
+<span id="cb2-15" class="hljs-ln-code"><a></a>inference <span class="op">=</span> NPE()</span>
+<span id="cb2-16" class="hljs-ln-code"><a></a>inference <span class="op">=</span> inference.append_simulations(theta, x)</span>
+<span id="cb2-17" class="hljs-ln-code"><a></a></span>
+<span id="cb2-18" class="hljs-ln-code"><a></a>metrics, density_estimator <span class="op">=</span> inference.train(</span>
+<span id="cb2-19" class="hljs-ln-code"><a></a>    checkpoint_path<span class="op">=</span>checkpoint_path,</span>
+<span id="cb2-20" class="hljs-ln-code"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="jaxili-on-a-cosmological-toy-model" class="slide level2" style="font-size: 30px">
+<h2><a href="https://github.com/sachaguer/jaxili">JaxILI</a> on a cosmological toy model</h2>
+<p>Cosmological parameters: <span class="math inline">\(A_\mathrm{s}\)</span>, <span class="math inline">\(n_\mathrm{s}\)</span>, <span class="math inline">\(f_\mathrm{NL}\)</span></p>
+
+<img data-src="images/toy_model.png" class="r-stretch quarto-figure-center"><p class="caption">Go <a href="https://sachaguer.github.io/LesHouches2025/site/BBKS_FLI.html">here</a> for more</p><p>Goal: Obtain constraints on the cosmological parameters using pixel level information.</p>
+</section>
+<section id="jaxili-on-a-cosmological-toy-model-1" class="slide level2" style="font-size: 30px" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><a href="https://github.com/sachaguer/jaxili">JaxILI</a> on a cosmological toy model</h2>
+<p>Cosmological parameters: <span class="math inline">\(A_\mathrm{s}\)</span>, <span class="math inline">\(n_\mathrm{s}\)</span>, <span class="math inline">\(f_\mathrm{NL}\)</span></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="images/contours_bbks.png"></p>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>Implicit contours obtained with MSE compression.</li>
+<li>Loss of information compared to Explicit inference.</li>
+<li>Unbiased constraints obtained.</li>
+</ul>
+</div></div>
+</section>
+<section id="application-to-unions-data" class="slide level2" style="font-size=30px">
+<h2>Application to UNIONS data</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>CNN optimal compression</li>
+<li>Extract information at the pixel level.</li>
+<li>Cut the footprint in patches.</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/patches.png"></p>
+<figcaption>Credit: M. Maupas</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="application-to-unions-data-1" class="slide level2" style="font-size=30px">
+<h2>Application to UNIONS data</h2>
+<p>Project in stand-by due to changes in the fiducial analysis.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/cnn_narrow_prior.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/cnn_wide_prior.png"></p>
+</div></div>
+</section>
+<section id="conclusions" class="slide level2">
+<h2>Conclusions</h2>
+<ul>
+<li>First cosmic shear cosmology results from UNIONS are incoming!</li>
+<li>Allowed to develop tools used in <em>Euclid</em> cosmic shear analysis/validation of the data.</li>
+<li>Exploring advanced Bayesian inference methods to extract more information from the available datasets.</li>
+</ul>
+</section>
+<section id="extra-material-unions-multi-band-coverage" class="slide level2" style="font-size: 30px">
+<h2>Extra material: UNIONS multi-band coverage</h2>
+
+<img data-src="images/unions_multi_band.png" class="r-stretch"></section>
+<section id="extra-material-metacalibration" class="slide level2" style="font-size: 30px">
+<h2>Extra material: MetaCalibration</h2>
+
+<img data-src="images/metacalibration.png" class="r-stretch quarto-figure-center"><p class="caption">Credit: F. Hervas Peters</p></section>
+<section id="extra-material-scale-cuts" class="slide level2" style="font-size: 30px">
+<h2>Extra material: Scale cuts</h2>
+
+<img data-src="images/scale_cut_real_space.png" class="r-stretch"></section>
+<section id="extra-material-best-fit" class="slide level2" style="font-size: 30px">
+<h2>Extra material: Best-fit</h2>
+
+<img data-src="images/beest_fit_real_space.png" class="r-stretch"></section>
+<section id="extra-material-s_8-constraints" class="slide level2" style="font-size: 30px">
+<h2>Extra material: <span class="math inline">\(S_8\)</span> constraints</h2>
+
+<img data-src="images/s8_whisker.png" class="r-stretch"></section>
+<section id="extra-material-real-space-vs-harmonic-space" class="slide level2" style="font-size: 30px">
+<h2>Extra material: real space vs harmonic space</h2>
+
+<img data-src="images/diff_real_vs_harmonic.png" class="r-stretch"></section>
+<section id="extra-material-mse-compression" class="slide level2" style="font-size: 30px">
+<h2>Extra material: MSE compression</h2>
+
+
+
+<img data-src="images/compression_output.png" class="r-stretch"></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<div class="footer-logos">
+<div class="logo-cea">
+<p><img src="images/logo_cea.jpeg" alt="CEA"></p>
+</div>
+<div class="logo-crop">
+<p><img src="images/cosmostat_logo.jpeg" alt="CosmoStat"></p>
+</div>
+</div>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
