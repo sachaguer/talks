@@ -1,11 +1,11 @@
 ---
 title: "Constraining cosmology with weak gravitational lensing"
 subtitle: "lessons learned from the Ultraviolet Near-Infrared Optical Northern Survey (UNIONS)"
-author: "Sacha Guerrini, RHU seminar, 8th September 2025"
+author: "Sacha Guerrini, RHUL seminar, 8th October 2025"
 date-meta: "October 8, 2025"
 image: images/unions.jpg
 description: |
-   Talk given at the Royal Holoway University Seminar during a visit in London.
+   Talk given at the Royal Holloway University Seminar during a visit in London.
 format:
    revealjs: 
     theme: default
@@ -515,7 +515,7 @@ S. Guerrini, 08/10/2025, RHUL
 - Theoretical prediction: CAMB
 - Non-linear power spectrum: HMCode2020
 - Shear calibration with MetaCalibration.
-- Residual multiplicative bias estimated from image simulations. (Hervas Peter et al., in prep.)
+- Residual multiplicative bias estimated from image simulations. (Hervas Peters et al., in prep.)
 - Cosmology pipeline with [CosmoSIS](https://cosmosis.readthedocs.io/en/latest/).
 - Analysis in real space (Goh et al., in prep.) and harmonic space (Guerrini et al., in prep.).
 - PSF systematics accounted for in the inference.
@@ -898,7 +898,38 @@ S. Guerrini, 08/10/2025, RHUL
 
 Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 
+:::: {.columns}
+
+::: {.column width=60%}
 ![](images/contours_bbks.png)
+:::
+
+::: {.column width=40%}
+- Implicit contours obtained with MSE compression.
+- Loss of information compared to Explicit inference.
+- Unbiased constraints obtained.
+:::
+::::
+
+## An application of JaxILI in *Euclid*{style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
+:::: {.columns}
+
+::: {.column width=50%}
+![Credit: R. Paviot](images/nz_romain.png)
+:::
+
+::: {.column width=50%}
+- Simulation of realistic redshift distributions using Normalizing Flow.
+
+- $p(z_\mathrm{noisy} | z_\mathrm{true}, \mathrm{Flux})$ infered with Neural Posterior Esimation
+:::
+
+::::
 
 ## Application to UNIONS data{style="font-size=30px"}
 
