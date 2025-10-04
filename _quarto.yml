@@ -5,8 +5,13 @@ website:
   title: "Talks"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - text: "Home"
+        href: https://sachaguer.github.io/
+      - text: "Talks"
+        href: index.qmd
+    right:
+      - icon: github
+        href: https://github.com/sachaguer
 
 format:
   html:
