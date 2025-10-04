@@ -4,11 +4,14 @@ subtitle: "lessons learned from the Ultraviolet Near-Infrared Optical Northern S
 author: "Sacha Guerrini, RHU seminar, 8th September 2025"
 date-meta: "October 8, 2025"
 image: images/unions.jpg
+description: |
+   Talk given at the Royal Holoway University Seminar during a visit in London.
 format:
    revealjs: 
     theme: default
     highlight-style: monokai
     slide-number: true
+    countExcluded: true
     chalkboard:
         buttons: false
     preview-links: auto
@@ -33,6 +36,10 @@ format:
 
 ## Cosmological context: $\Lambda$CDM{style="font-size: 20px;"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 ![Credit: NAOJ](images/cosmology.jpg)
 
 
@@ -50,6 +57,10 @@ w & \text{EoS of dark energy}
 
 
 ## Cosmological probes and history of the Universe{style="font-size: 20px;"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![Credit: NAOJ](images/cosmology.jpg)
 
@@ -115,6 +126,10 @@ w & \text{EoS of dark energy}
 
 ## {background-video="images/grav_lensing.mp4"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 <div style="
     text-align: center;
     margin-top: 5px;
@@ -128,6 +143,10 @@ Credit: RAS
 
 ## Weak gravitational lensing
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 ![Credit: ESA](images/weak_lensing.png)
 
 - Percent-level effect
@@ -135,6 +154,10 @@ Credit: RAS
 - Requires a large number of galaxies
 
 ## The Ultraviolet Near-Infrared Optical Northern Survey ([Gwyn et al., 2025](https://arxiv.org/abs/2503.13783)){style="font-size: 24px;"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![](images/unions.jpg)
 
@@ -167,6 +190,10 @@ Credit: RAS
 
 ## The landscape of lensing surveys{style="font-size: 30px"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 ![](images/landscape_lensing.png){.absolute right=-100 bottom=100 height=500}
 
 :::: {.columns}
@@ -184,6 +211,10 @@ Technical specifications of UNIONS:
 ::::
 
 ## Cosmology with cosmic shear
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![Credit: S. Farrens](images/cosmic_shear_pipeline.png)
 
@@ -229,6 +260,10 @@ Technical specifications of UNIONS:
 :::
 
 ## I\. PSF diagnostics
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 <div style="
 position: absolute;
@@ -295,6 +330,10 @@ overflow: hidden;
 
 ## 
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 ![](images/psf_size.gif)
 
 ![](images/psf_anisotropy.gif)
@@ -328,6 +367,10 @@ overflow: hidden;
 
 ## {background-image="images/Perseus_euclid.jpg" background-size="cover"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 ```{r, engine='tikz', dev='svg', fig.width=16, fig.height=9}
 \begin{tikzpicture}[x=1cm, y=1cm, scale=1]
   % Fix bounding box to slide aspect ratio (16:9, e.g. 16x9 cm)
@@ -354,6 +397,10 @@ overflow: hidden;
 ```
 
 ## Galaxy-PSF correlations{style="font-size: 30px; width: 120%; left: -50px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 PSF error model: $\delta \boldsymbol{e}^\mathrm{sys}_\mathrm{PSF} = \alpha \underbrace{\boldsymbol{e}_\mathrm{PSF}}_{\text{Leakage}} + \beta \underbrace{(\boldsymbol{e}_* - \boldsymbol{e}_\mathrm{PSF})}_{\text{Ellipticity error}} + \eta \underbrace{\boldsymbol{e}_\mathrm{PSF} \left(\frac{T_* - T_\mathrm{PSF}}{T_*} \right)}_{\text{Size error}}$. $\alpha$, $\beta$ and $\eta$ free parameters.
 
@@ -394,6 +441,10 @@ Systematic error: $\xi^\mathrm{sys}_\mathrm{PSF} = \alpha^2 \rho_0 + \beta^2 \rh
 
 ## Semi-analytical covariance ([Guerrini et al. (2025)](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html)){style="font-size: 30px;"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 Analytical: based on analytical expressions of the covariance
 
 Semi: No theoretical predictions of the $\rho$- and $\tau$-statistics. Use measurements on data.
@@ -402,9 +453,17 @@ Semi: No theoretical predictions of the $\rho$- and $\tau$-statistics. Use measu
 
 ## Prediction of the systematic additive bias{style="font-size: 30px;"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 ![](images/ratio_xi_sys_xi.png)
 
 ## Estimation of PSF parameters{style="font-size: 30px;"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![](images/contours_tau_stat.png)
 
@@ -418,6 +477,10 @@ Can provide priors for cosmological analysis!
 
 ## PSF systematics: Take-home messages{style="font-size: 30px;"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 - PSF systematics are essential to understand to perform cosmic shear analysis.
 - $\rho$- and $\tau$-statistics are powerful tools to estimate the bias to the 2PCF.
 - Semi-analytical covariance ([Guerrini+2025](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html)) can speed up comparisons between catalogs.
@@ -425,6 +488,10 @@ Can provide priors for cosmological analysis!
 ![](images/visual_inspection.png)
 
 ## II\. Cosmic shear with 2pt statistics
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![](images/cosmic_shear_team.png)
 
@@ -436,6 +503,10 @@ Can provide priors for cosmological analysis!
 ">and other contributors...</div>
 
 ## Analysis details{style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 :::: {.columns}
 
@@ -462,6 +533,10 @@ Can provide priors for cosmological analysis!
 
 ## B-modes systematics{style="font-size: 30px"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 :::: {.columns}
 
 ::: {.column width=70%}
@@ -480,6 +555,10 @@ We use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-
 
 ## Pure B-mode correlation functions{style="font-size:24px"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 $$
 \xi_+^{E/B}(\vartheta) = \frac 1 2 \left[\xi_+(\vartheta) \pm \xi_-(\vartheta) + \int_\vartheta^{\vartheta_\mathrm{max}}\frac{\mathrm{d}\theta}{\theta} \xi_-(\theta) \left(4 - \frac{12\vartheta^2}{\theta^2} \right) \right] - \frac 1 2 \underbrace{[S_+(\vartheta) \pm S_-(\vartheta)]}_{\text{Integrals of $\xi_\pm$ with filter functions}}
 $$ 
@@ -490,11 +569,19 @@ B-modes on small scale ($\sim 3'$ in $\xi_+$ and $\sim 30'$ in $\xi_-$); large s
 
 ## B-modes with COSEBIS{style="font-size:30px"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 ![](images/cosebis_scale_cut.png)
 
 Pure functions and COSEBIS tell the same story.
 
 ## B-modes in harmonic space{style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ::: {.center}
 ![](images/b_modes_cl.png){height=450px}
@@ -503,6 +590,10 @@ Pure functions and COSEBIS tell the same story.
 B-modes on the smallest scales. Lower significance after removing the smallest objects from the catalogue. Data points and errorbars obtained with NaMaster.
 
 ## Redshift distributions{style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 :::: {.columns}
 
@@ -519,6 +610,10 @@ Three blinded reshift distribution produced to avoid confirmation bias. We make 
 ::::
 
 ## Covariance (real space){style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 :::: {.columns}
 
@@ -540,6 +635,10 @@ Parameters marginalized over in inference:
 
 ## Covariance (harmonic space){style="font-size:30px"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 :::: {.columns}
 
 ::: {.column width=70%}
@@ -556,6 +655,10 @@ Agreement between the error bars at the $10\%$ level
 ::::
 
 ## Inference{style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 <div style="height: 500px">
 :::: {.columns}
@@ -581,11 +684,19 @@ Non-tomographic analysis significantly reduces constraining power.
 
 ## III\. Beyond 2pt statistics
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 ::: {.center}
 ![](images/flamingo.png){height=550px}
 :::
 
 ## Higher-order statistics{style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 :::: {.columns}
 
@@ -605,6 +716,10 @@ Craft summary statistics that capture **non-Gaussian information** from the fiel
 
 ## Same methodology than 2pt?
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 :::: {.columns}
 
 ::: {.column width=50%}
@@ -621,6 +736,10 @@ $$
 ::::
 
 ## Implicit Likelihood Inference (also known as SBI)
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ```{r, engine='tikz'}
 \begin{tikzpicture}[scale=1.2, font=\small, node distance={40mm}, thick, main/.style = {draw, rectangle, minimum size=7mm, text centered}, label/.style = {align=center, text width=30mm}]
@@ -652,6 +771,10 @@ $$
 
 ## Normalizing Flows
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 :::: {.columns}
 
 ::: {.column width=40%}
@@ -667,6 +790,10 @@ Alleviates the problem of the unknown likelihood.
 ::::
 
 ## UNIONS forward model
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ```{r, engine='tikz'}
 \begin{tikzpicture}[scale=1, font=\small, node distance={40mm}, thick, main/.style = {draw, rectangle, minimum size=7mm, text centered}, label/.style = {align=center, text width=30mm}]
@@ -706,6 +833,10 @@ Available on [GitHub](https://github.com/sachaguer)
 
 ## [JaxILI](https://github.com/sachaguer/jaxili), a pipeline for Implicit Likelihood Inference{style="font-size: 30px" auto-animate="true"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 ``` {.python code-line-numbers="4-5|7-9"}
 checkpoint_path = ... #Choose the checkpoint path
 checkpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.
@@ -719,6 +850,10 @@ metrics, density_estimator = inference.train(
 ```
 
 ## [JaxILI](https://github.com/sachaguer/jaxili), a pipeline for Implicit Likelihood Inference{style="font-size: 30px" auto-animate="true"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ``` python
 checkpoint_path = ... #Choose the checkpoint path
@@ -745,6 +880,10 @@ metrics, density_estimator = inference.train(
 
 ## [JaxILI](https://github.com/sachaguer/jaxili) on a cosmological toy model{style="font-size: 30px"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 
 ![Go [here](https://sachaguer.github.io/LesHouches2025/site/BBKS_FLI.html) for more](images/toy_model.png)
@@ -753,11 +892,19 @@ Goal: Obtain constraints on the cosmological parameters using pixel level inform
 
 ## [JaxILI](https://github.com/sachaguer/jaxili) on a cosmological toy model{style="font-size: 30px" auto-animate="true"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 
 ![](images/contours_bbks.png)
 
 ## Application to UNIONS data{style="font-size=30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 :::: {.columns}
 
@@ -774,6 +921,10 @@ Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 
 ## Application to UNIONS data{style="font-size=30px"}
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 :::: {.columns}
 
 ::: {.column width=50%}
@@ -786,35 +937,67 @@ Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 
 ## Conclusions
 
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
+
 - First cosmic shear cosmology results from UNIONS are incoming!
 - Allowed to develop tools used in *Euclid* cosmic shear analysis/validation of the data.
 - Exploring advanced Bayesian inference methods to extract more information from the available datasets.
 
-## Extra material: UNIONS multi-band coverage{style="font-size: 30px"}
+## Extra material: UNIONS multi-band coverage{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![](images/unions_multi_band.png)
 
-## Extra material: MetaCalibration{style="font-size: 30px"}
+## Extra material: MetaCalibration{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![Credit: F. Hervas Peters](images/metacalibration.png)
 
-## Extra material: Scale cuts{style="font-size: 30px"}
+## Extra material: Scale cuts{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![](images/scale_cut_real_space.png)
 
-## Extra material: Best-fit{style="font-size: 30px"}
+## Extra material: Best-fit{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![](images/beest_fit_real_space.png)
 
-## Extra material: $S_8$ constraints{style="font-size: 30px"}
+## Extra material: $S_8$ constraints{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![](images/s8_whisker.png)
 
-## Extra material: real space vs harmonic space{style="font-size: 30px"}
+## Extra material: real space vs harmonic space{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![](images/diff_real_vs_harmonic.png)
 
-## Extra material: MSE compression{style="font-size: 30px"}
+## Extra material: MSE compression{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 08/10/2025, RHUL
+:::
 
 ![](images/compression_output.png)
 

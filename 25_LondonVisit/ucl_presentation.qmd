@@ -1,11 +1,15 @@
 ---
 title: "Constraining cosmology with weak gravitational lensing"
-author: "Sacha Guerrini, UCL seminar, 9th September 2025"
+author: "Sacha Guerrini, UCL seminar, 9th October 2025"
+data-meta: "October 9, 2025"
+description: |
+  Unformal talk at University College London during a visit in London.
 format:
    revealjs: 
     theme: default
     highlight-style: monokai
-    slide-number: true
+    slide-number: c/t
+    countExcluded: true
     chalkboard:
         buttons: false
     preview-links: auto
@@ -25,11 +29,126 @@ format:
     css: styles.css
 ---
 
-## Who am I?{style="font-size: 30px"}
+## Who am I?{style="font-size: 30px" background-image="images/background_bike.png"}
 
-## Who am I?{style="font-size: 30px"}
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
+:::: {.fragments}
+
+::: {.fragment}
+<div style="
+  position: absolute;
+  width: 300px;
+  left: 0px;
+  bottom: -30px;
+">
+<img src="images/strasbourg.jpg" alt="Strasbourg">
+<div>
+Strasbourg
+</div>
+</div>
+:::
+
+::: {.fragment}
+<div style="
+  position: absolute;
+  width: 300px;
+  right: 0px;
+  top: 0px;
+">
+<img src="images/oxford.jpg" alt="Oxford">
+</div>
+<div style="
+  position: absolute;
+  width: 200px;
+  right: 350px;
+  top: 0px;
+">
+<img src="images/oxford-logo.jpg" alt="Oxford">
+</div>
+<div style="
+  position: absolute;
+  width: 200px;
+  right: 350px;
+  top: 220px;
+">
+<img src="images/warped_galaxy.jpeg" alt="Oxford" width="250px">
+</div>
+:::
+
+::::
+
+## Who am I?{style="font-size: 30px" background-image="images/background_bike.png"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
+:::: {.fragments}
+
+::: {.fragment}
+<div style="
+  position: absolute;
+  width: 400px;
+  left: 0px;
+  bottom: -30px;
+">
+<img src="images/stockholm.jpg" alt="Stockholm" width="500px">
+</div>
+<div style="
+  position: absolute;
+  width: 300px;
+  left: 0px;
+  bottom: 150px;
+">
+<img src="images/su-logo.png" alt="Logo Stockholm" width="200px">
+</div>
+<div style="
+  position: absolute;
+  width: 400px;
+  left: 400px;
+  bottom: -40px;
+">
+<img src="images/sn_zwicky.png" alt="SN Zwicky" width="300px">
+</div>
+:::
+
+::: {.fragment}
+<div style="
+  position: absolute;
+  width: 300px;
+  right: 0px;
+  top: 0px;
+">
+<img src="images/paris.jpg" alt="Paris">
+</div>
+<div style="
+  position: absolute;
+  width: 300px;
+  right: 320px;
+  top: 0px;
+">
+<img src="images/leiden.jpg" alt="Leiden" width="250px">
+</div>
+<div style="
+  position: absolute;
+  width: 300px;
+  right: 500px;
+  top: 50px;
+">
+<img src="images/logo_cea.jpeg" alt="Logo CEA" width="150px">
+</div>
+:::
+
+::::
 
 ## My research interest{style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 Main research topics:
 
@@ -47,6 +166,10 @@ Other interests:
 - Tests of General Relativity
 
 ## UNIONS collaboration{style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![](images/unions_logo.png)
 
@@ -66,6 +189,10 @@ Other interests:
 
 ## *Euclid* Consortium{style="font-size: 30px"}
 
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
 ![](images/Euclid_consortium_logo.png){height=100px}
 
 - Member of the Weak Lensing Science Working Group
@@ -75,6 +202,10 @@ Other interests:
 - Validation of PSF modelling and shape measurement in the ground segment
 
 ## Cosmological context: $\Lambda$CDM{style="font-size: 20px;"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![Credit: NAOJ](images/cosmology.jpg)
 
@@ -92,6 +223,10 @@ w & \text{EoS of dark energy}
 \end{align}
 
 ## Cosmology with cosmic shear
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![Credit: S. Farrens](images/cosmic_shear_pipeline.png)
 
@@ -137,6 +272,10 @@ w & \text{EoS of dark energy}
 :::
 
 ## I\. PSF diagnostics
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 <div style="
 position: absolute;
@@ -201,7 +340,7 @@ overflow: hidden;
    bottom: 0px;
 ">Credit: Mandelbaum (2018)</div>
 
-## {background-image="images/Perseus_euclid.jpg" background-size="cover"}
+## {background-image="images/Perseus_euclid.jpg" background-size="cover" footer=false}
 
 ```{r, engine='tikz', dev='svg', fig.width=16, fig.height=9}
 \begin{tikzpicture}[x=1cm, y=1cm, scale=1]
@@ -228,46 +367,11 @@ overflow: hidden;
 \end{tikzpicture}
 ```
 
-## Galaxy-PSF correlations{style="font-size: 30px; width: 120%; left: -50px"}
-
-PSF error model: $\delta \boldsymbol{e}^\mathrm{sys}_\mathrm{PSF} = \alpha \underbrace{\boldsymbol{e}_\mathrm{PSF}}_{\text{Leakage}} + \beta \underbrace{(\boldsymbol{e}_* - \boldsymbol{e}_\mathrm{PSF})}_{\text{Ellipticity error}} + \eta \underbrace{\boldsymbol{e}_\mathrm{PSF} \left(\frac{T_* - T_\mathrm{PSF}}{T_*} \right)}_{\text{Size error}}$. $\alpha$, $\beta$ and $\eta$ free parameters.
-
-\begin{equation}
-    \left(
-        \begin{array}{l}
-            \tau_{0,1} \\ \tau_{2,1} \\ \tau_{5, 1} \\ \vdots \\
-            \tau_{0, n} \\ \tau_{2, n} \\ \tau_{5, n}
-        \end{array}
-    \right)
-    =
-    \left(
-      \begin{array}{llllll}
-        \rho_{0, 1} & \rho_{2, 1} & \rho_{5, 1} \\
-        \rho_{2, 1} & \rho_{1, 1} & \rho_{4, 1} \\
-        \rho_{5, 1} & \rho_{4, 1} & \rho_{3, 1} \\
-               & \ddots &        \\
-        \rho_{0, n} & \rho_{2, n} & \rho_{5, n} \\
-        \rho_{2, n} & \rho_{1, n} & \rho_{4, n} \\
-        \rho_{5, n} & \rho_{4, n} & \rho_{3, n} \\
-      \end{array}
-    \right)
-    \left(
-      \begin{array}{l}
-        \alpha \\ \beta \\ \eta \\
-      \end{array}
-    \right)
-    \label{eq:tau_matrix}
-\end{equation}
-
-Systematic error: $\xi^\mathrm{sys}_\mathrm{PSF} = \alpha^2 \rho_0 + \beta^2 \rho_1 + \eta^2 \rho_3 + 2 \alpha \beta \rho_2 + 2 \alpha \eta \rho_5 + 2 \beta \eta \rho_4$
-
-<div style="
-   position: absolute;
-   right: 8%;
-   bottom: 45%
-">Constrain with MCMC</div>
-
 ## Semi-analytical covariance ([Guerrini et al. (2025)](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html)){style="font-size: 30px;"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 Analytical: based on analytical expressions of the covariance
 
@@ -277,29 +381,37 @@ Semi: No theoretical predictions of the $\rho$- and $\tau$-statistics. Use measu
 
 ## Prediction of the systematic additive bias{style="font-size: 30px;"}
 
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
+:::: {.columns}
+
+::: {.column width=70%}
 ![](images/ratio_xi_sys_xi.png)
+:::
 
-## Estimation of PSF parameters{style="font-size: 30px;"}
-
-![](images/contours_tau_stat.png)
-
-<div style="
-   position: absolute;
-   right: 0%;
-   bottom: 50%;
-">
-Can provide priors for cosmological analysis!
-</div>
-
-## Application to *Euclid* data
+::: {.column width=30%}
+- Here applied to UNIONS but the pipeline currently runs to validate *Euclid* data processing.
+- Can probe heterogeneous contribution to PSF systematics from galaxies with different properties, e.g. magnitude, size
+:::
+::::
 
 ## PSF systematics: Take-home messages{style="font-size: 30px;"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 - PSF systematics are essential to understand to perform cosmic shear analysis.
 - $\rho$- and $\tau$-statistics are powerful tools to estimate the bias to the 2PCF.
 - Semi-analytical covariance ([Guerrini+2025](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html)) can speed up comparisons between catalogs.
 
 ## II\. Cosmic shear with 2pt statistics
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![](images/cosmic_shear_team.png)
 
@@ -311,6 +423,10 @@ Can provide priors for cosmological analysis!
 ">and other contributors...</div>
 
 ## Analysis details{style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 :::: {.columns}
 
@@ -337,6 +453,10 @@ Can provide priors for cosmological analysis!
 
 ## B-modes systematics{style="font-size: 30px"}
 
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
 :::: {.columns}
 
 ::: {.column width=70%}
@@ -355,6 +475,10 @@ We use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-
 
 ## B-modes in harmonic space{style="font-size:30px"}
 
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
 ::: {.center}
 ![](images/b_modes_cl.png){height=450px}
 :::
@@ -362,6 +486,10 @@ We use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-
 B-modes on the smallest scales. Lower significance after removing the smallest objects from the catalogue. Data points and errorbars obtained with NaMaster.
 
 ## Covariance (harmonic space){style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 :::: {.columns}
 
@@ -379,6 +507,10 @@ Agreement between the error bars at the $10\%$ level
 ::::
 
 ## Inference{style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 <div style="height: 500px">
 :::: {.columns}
@@ -404,11 +536,19 @@ Non-tomographic analysis significantly reduces constraining power.
 
 ## III\. Beyond 2pt statistics
 
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
 ::: {.center}
 ![](images/flamingo.png){height=550px}
 :::
 
 ## Implicit Likelihood Inference (also known as SBI)
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ```{r, engine='tikz'}
 \begin{tikzpicture}[scale=1.2, font=\small, node distance={40mm}, thick, main/.style = {draw, rectangle, minimum size=7mm, text centered}, label/.style = {align=center, text width=30mm}]
@@ -439,6 +579,10 @@ Non-tomographic analysis significantly reduces constraining power.
 ```
 
 ## UNIONS forward model
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ```{r, engine='tikz'}
 \begin{tikzpicture}[scale=1, font=\small, node distance={40mm}, thick, main/.style = {draw, rectangle, minimum size=7mm, text centered}, label/.style = {align=center, text width=30mm}]
@@ -478,6 +622,10 @@ Available on [GitHub](https://github.com/sachaguer), adapted from DESY3 analysis
 
 ## [JaxILI](https://github.com/sachaguer/jaxili), a pipeline for Implicit Likelihood Inference{style="font-size: 30px" auto-animate="true"}
 
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
 ``` {.python code-line-numbers="4-5|7-9"}
 checkpoint_path = ... #Choose the checkpoint path
 checkpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.
@@ -491,6 +639,10 @@ metrics, density_estimator = inference.train(
 ```
 
 ## [JaxILI](https://github.com/sachaguer/jaxili), a pipeline for Implicit Likelihood Inference{style="font-size: 30px" auto-animate="true"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ``` python
 checkpoint_path = ... #Choose the checkpoint path
@@ -517,6 +669,10 @@ metrics, density_estimator = inference.train(
 
 ## [JaxILI](https://github.com/sachaguer/jaxili) on a cosmological toy model{style="font-size: 30px"}
 
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
 Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 
 ![Go [here](https://sachaguer.github.io/LesHouches2025/site/BBKS_FLI.html) for more](images/toy_model.png)
@@ -524,6 +680,10 @@ Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 Goal: Obtain constraints on the cosmological parameters using pixel level information.
 
 ## [JaxILI](https://github.com/sachaguer/jaxili) on a cosmological toy model{style="font-size: 30px" auto-animate="true"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 
@@ -540,7 +700,31 @@ Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 :::
 ::::
 
+## An application of JaxILI in *Euclid*{style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
+:::: {.columns}
+
+::: {.column width=50%}
+![Credit: R. Paviot](images/nz_romain.png)
+:::
+
+::: {.column width=50%}
+- Simulation of realistic redshift distributions using Normalizing Flow.
+
+- $p(z_\mathrm{noisy} | z_\mathrm{true}, \mathrm{Flux})$ infered with Neural Posterior Esimation
+:::
+
+::::
+
 ## Application to UNIONS data{style="font-size=30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 :::: {.columns}
 
@@ -557,6 +741,10 @@ Cosmological parameters: $A_\mathrm{s}$, $n_\mathrm{s}$, $f_\mathrm{NL}$
 
 ## Application to UNIONS data{style="font-size=30px"}
 
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
 Project in stand-by due to changes in the fiducial analysis.
 
 :::: {.columns}
@@ -571,34 +759,109 @@ Project in stand-by due to changes in the fiducial analysis.
 
 ## Conclusions
 
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
 - First cosmic shear cosmology results from UNIONS are incoming!
 - Allowed to develop tools used in *Euclid* cosmic shear analysis/validation of the data.
 - Exploring advanced Bayesian inference methods to extract more information from the available datasets.
 
-## Extra material: UNIONS multi-band coverage{style="font-size: 30px"}
+## Extra material: UNIONS multi-band coverage{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![](images/unions_multi_band.png)
 
-## Extra material: MetaCalibration{style="font-size: 30px"}
+## Extra material: MetaCalibration{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![Credit: F. Hervas Peters](images/metacalibration.png)
 
-## Extra material: Scale cuts{style="font-size: 30px"}
+## Extra material: Galaxy-PSF correlations{visibility="uncounted" style="font-size: 30px; width: 120%; left: -50px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
+PSF error model: $\delta \boldsymbol{e}^\mathrm{sys}_\mathrm{PSF} = \alpha \underbrace{\boldsymbol{e}_\mathrm{PSF}}_{\text{Leakage}} + \beta \underbrace{(\boldsymbol{e}_* - \boldsymbol{e}_\mathrm{PSF})}_{\text{Ellipticity error}} + \eta \underbrace{\boldsymbol{e}_\mathrm{PSF} \left(\frac{T_* - T_\mathrm{PSF}}{T_*} \right)}_{\text{Size error}}$. $\alpha$, $\beta$ and $\eta$ free parameters.
+
+\begin{equation}
+    \left(
+        \begin{array}{l}
+            \tau_{0,1} \\ \tau_{2,1} \\ \tau_{5, 1} \\ \vdots \\
+            \tau_{0, n} \\ \tau_{2, n} \\ \tau_{5, n}
+        \end{array}
+    \right)
+    =
+    \left(
+      \begin{array}{llllll}
+        \rho_{0, 1} & \rho_{2, 1} & \rho_{5, 1} \\
+        \rho_{2, 1} & \rho_{1, 1} & \rho_{4, 1} \\
+        \rho_{5, 1} & \rho_{4, 1} & \rho_{3, 1} \\
+               & \ddots &        \\
+        \rho_{0, n} & \rho_{2, n} & \rho_{5, n} \\
+        \rho_{2, n} & \rho_{1, n} & \rho_{4, n} \\
+        \rho_{5, n} & \rho_{4, n} & \rho_{3, n} \\
+      \end{array}
+    \right)
+    \left(
+      \begin{array}{l}
+        \alpha \\ \beta \\ \eta \\
+      \end{array}
+    \right)
+    \label{eq:tau_matrix}
+\end{equation}
+
+Systematic error: $\xi^\mathrm{sys}_\mathrm{PSF} = \alpha^2 \rho_0 + \beta^2 \rho_1 + \eta^2 \rho_3 + 2 \alpha \beta \rho_2 + 2 \alpha \eta \rho_5 + 2 \beta \eta \rho_4$
+
+<div style="
+   position: absolute;
+   right: 8%;
+   bottom: 45%
+">Constrain with MCMC</div>
+
+## Extra material: Scale cuts{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![](images/scale_cut_real_space.png)
 
-## Extra material: Best-fit{style="font-size: 30px"}
+## Extra material: Best-fit{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![](images/beest_fit_real_space.png)
 
-## Extra material: $S_8$ constraints{style="font-size: 30px"}
+## Extra material: $S_8$ constraints{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![](images/s8_whisker.png)
 
-## Extra material: real space vs harmonic space{style="font-size: 30px"}
+## Extra material: real space vs harmonic space{visibility="uncounted" style="font-size: 30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![](images/diff_real_vs_harmonic.png)
 
-## Extra material: MSE compression{style="font-size: 30px"}
+## Extra material: MSE compression{style="font-size: 30px" visibility="uncounted"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
 
 ![](images/compression_output.png)
