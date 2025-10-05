@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-17c909d5fd25ae21b861c0c7a49b2096.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
-  <meta name="author" content="Sacha Guerrini, Imperial seminar, 7th October 2025">
+  <meta name="author" content="Sacha Guerrini, Imperial College seminar, 7th October 2025">
   <meta name="dcterms.date" content="October 7, 2025">
   <title>Constraining cosmology with weak gravitational lensing</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -201,7 +201,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Sacha Guerrini, Imperial seminar, 7th October 2025 
+Sacha Guerrini, Imperial College seminar, 7th October 2025 
 </div>
 </div>
 </div>
@@ -301,7 +301,10 @@ Sacha Guerrini, Imperial seminar, 7th October 2025
   right: 320px;
   top: 0px;
 ">
-<p><img src="images/leiden.jpg" alt="Leiden" width="250px"></p>
+<img src="images/leiden.jpg" alt="Leiden" width="200px">
+<div style="font-size: 20px">
+<p>EC meeting Leiden 2025</p>
+</div>
 </div>
 <div style="
   position: absolute;
@@ -592,6 +595,22 @@ and other contributors…
 </div>
 </div></div>
 </section>
+<section id="pure-b-mode-correlation-functions" class="slide level2" style="font-size:24px">
+<h2>Pure B-mode correlation functions</h2>
+<div class="footer">
+<p>S. Guerrini, 07/10/2025, Imperial College London</p>
+</div>
+<p><span class="math display">\[
+\xi_+^{E/B}(\vartheta) = \frac 1 2 \left[\xi_+(\vartheta) \pm \xi_-(\vartheta) + \int_\vartheta^{\vartheta_\mathrm{max}}\frac{\mathrm{d}\theta}{\theta} \xi_-(\theta) \left(4 - \frac{12\vartheta^2}{\theta^2} \right) \right] - \frac 1 2 \underbrace{[S_+(\vartheta) \pm S_-(\vartheta)]}_{\text{Integrals of $\xi_\pm$ with filter functions}}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/b_mode_pure_functions.png" height="350"></p>
+<figcaption>Credit: C. Daley</figcaption>
+</figure>
+</div>
+<p>B-modes on small scale (<span class="math inline">\(\sim 3'\)</span> in <span class="math inline">\(\xi_+\)</span> and <span class="math inline">\(\sim 30'\)</span> in <span class="math inline">\(\xi_-\)</span>); large scales are ok.</p>
+</section>
 <section id="b-modes-in-harmonic-space" class="slide level2" style="font-size:30px">
 <h2>B-modes in harmonic space</h2>
 <div class="footer">
@@ -649,6 +668,19 @@ and other contributors…
 </div>
 
 <img data-src="imperial_presentation_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="normalizing-flows" class="slide level2">
+<h2>Normalizing Flows</h2>
+<div class="footer">
+<p>S. Guerrini, 07/10/2025, Imperial College London</p>
+</div>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Apply several layers of a one-to-one map to simple distribution to match a more complex one.</p>
+<p>Alleviates the problem of the unknown likelihood.</p>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/NDE.gif"></p>
+</div></div>
+</section>
 <section id="unions-forward-model" class="slide level2">
 <h2>UNIONS forward model</h2>
 <div class="footer">
@@ -851,6 +883,14 @@ Constrain with MCMC
 </div>
 
 <img data-src="images/scale_cut_real_space.png" class="r-stretch"></section>
+<section id="b-modes-with-cosebis" class="slide level2" data-visibility="uncounted" style="font-size:30px">
+<h2>B-modes with COSEBIS</h2>
+<div class="footer">
+<p>S. Guerrini, 07/10/2025, Imperial College London</p>
+</div>
+
+<img data-src="images/cosebis_scale_cut.png" class="r-stretch"><p>Pure functions and COSEBIS tell the same story.</p>
+</section>
 <section id="extra-material-best-fit" class="slide level2" data-visibility="uncounted" style="font-size: 30px">
 <h2>Extra material: Best-fit</h2>
 <div class="footer">

@@ -18,7 +18,7 @@
     "href": "25_LondonVisit/ucl_presentation.html#who-am-i-1",
     "title": "Constraining cosmology with weak gravitational lensing",
     "section": "Who am I?",
-    "text": "Who am I?\n\nS. Guerrini, 09/10/2025, UCL"
+    "text": "Who am I?\n\nS. Guerrini, 09/10/2025, UCL\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEC meeting Leiden 2025"
   },
   {
     "objectID": "25_LondonVisit/ucl_presentation.html#my-research-interest",
@@ -231,6 +231,20 @@
     "text": "Extra material: Scale cuts\n\nS. Guerrini, 09/10/2025, UCL"
   },
   {
+    "objectID": "25_LondonVisit/ucl_presentation.html#pure-b-mode-correlation-functions",
+    "href": "25_LondonVisit/ucl_presentation.html#pure-b-mode-correlation-functions",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Pure B-mode correlation functions",
+    "text": "Pure B-mode correlation functions\n\nS. Guerrini, 09/10/2025, UCL\n\n\\[\n\\xi_+^{E/B}(\\vartheta) = \\frac 1 2 \\left[\\xi_+(\\vartheta) \\pm \\xi_-(\\vartheta) + \\int_\\vartheta^{\\vartheta_\\mathrm{max}}\\frac{\\mathrm{d}\\theta}{\\theta} \\xi_-(\\theta) \\left(4 - \\frac{12\\vartheta^2}{\\theta^2} \\right) \\right] - \\frac 1 2 \\underbrace{[S_+(\\vartheta) \\pm S_-(\\vartheta)]}_{\\text{Integrals of $\\xi_\\pm$ with filter functions}}\n\\]\n\n\n\nCredit: C. Daley\n\n\nB-modes on small scale (\\(\\sim 3'\\) in \\(\\xi_+\\) and \\(\\sim 30'\\) in \\(\\xi_-\\)); large scales are ok."
+  },
+  {
+    "objectID": "25_LondonVisit/ucl_presentation.html#b-modes-with-cosebis",
+    "href": "25_LondonVisit/ucl_presentation.html#b-modes-with-cosebis",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "B-modes with COSEBIS",
+    "text": "B-modes with COSEBIS\n\nS. Guerrini, 09/10/2025, UCL\n\n\nPure functions and COSEBIS tell the same story."
+  },
+  {
     "objectID": "25_LondonVisit/ucl_presentation.html#extra-material-best-fit",
     "href": "25_LondonVisit/ucl_presentation.html#extra-material-best-fit",
     "title": "Constraining cosmology with weak gravitational lensing",
@@ -320,13 +334,6 @@
     "title": "Constraining cosmology with weak gravitational lensing",
     "section": "",
     "text": "S. Guerrini, 08/10/2025, RHUL\n\n\n\n\nPSF size error\n\n\nPSF anisotropy\n\n\nCredit: A. Navarro"
-  },
-  {
-    "objectID": "25_LondonVisit/index.html#section-2",
-    "href": "25_LondonVisit/index.html#section-2",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "",
-    "text": "S. Guerrini, 08/10/2025, RHUL"
   },
   {
     "objectID": "25_LondonVisit/index.html#galaxy-psf-correlations",
@@ -592,7 +599,7 @@
     "href": "25_LondonVisit/imperial_presentation.html#who-am-i-1",
     "title": "Constraining cosmology with weak gravitational lensing",
     "section": "Who am I?",
-    "text": "Who am I?\n\nS. Guerrini, 07/10/2025, Imperial College London"
+    "text": "Who am I?\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEC meeting Leiden 2025"
   },
   {
     "objectID": "25_LondonVisit/imperial_presentation.html#my-research-interest",
@@ -679,6 +686,13 @@
     "text": "B-modes systematics\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nSpin-2 shear fields can be decomposed into E-modes, containing the vast majority of lensing information, and B-modes, which are a probe of systematics at UNIONS noise levels.\nIn the presence of masking, some ambiguous modes usually cannot be cleanly attributed to E or B.\nWe use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-\\(C_\\ell\\).\n\n\n\n\nCredit: BICEP2 Collaboration"
   },
   {
+    "objectID": "25_LondonVisit/imperial_presentation.html#pure-b-mode-correlation-functions",
+    "href": "25_LondonVisit/imperial_presentation.html#pure-b-mode-correlation-functions",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Pure B-mode correlation functions",
+    "text": "Pure B-mode correlation functions\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\\[\n\\xi_+^{E/B}(\\vartheta) = \\frac 1 2 \\left[\\xi_+(\\vartheta) \\pm \\xi_-(\\vartheta) + \\int_\\vartheta^{\\vartheta_\\mathrm{max}}\\frac{\\mathrm{d}\\theta}{\\theta} \\xi_-(\\theta) \\left(4 - \\frac{12\\vartheta^2}{\\theta^2} \\right) \\right] - \\frac 1 2 \\underbrace{[S_+(\\vartheta) \\pm S_-(\\vartheta)]}_{\\text{Integrals of $\\xi_\\pm$ with filter functions}}\n\\]\n\n\n\nCredit: C. Daley\n\n\nB-modes on small scale (\\(\\sim 3'\\) in \\(\\xi_+\\) and \\(\\sim 30'\\) in \\(\\xi_-\\)); large scales are ok."
+  },
+  {
     "objectID": "25_LondonVisit/imperial_presentation.html#b-modes-in-harmonic-space",
     "href": "25_LondonVisit/imperial_presentation.html#b-modes-in-harmonic-space",
     "title": "Constraining cosmology with weak gravitational lensing",
@@ -712,6 +726,13 @@
     "title": "Constraining cosmology with weak gravitational lensing",
     "section": "Implicit Likelihood Inference (also known as SBI)",
     "text": "Implicit Likelihood Inference (also known as SBI)\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#normalizing-flows",
+    "href": "25_LondonVisit/imperial_presentation.html#normalizing-flows",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Normalizing Flows",
+    "text": "Normalizing Flows\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nApply several layers of a one-to-one map to simple distribution to match a more complex one.\nAlleviates the problem of the unknown likelihood."
   },
   {
     "objectID": "25_LondonVisit/imperial_presentation.html#unions-forward-model",
@@ -803,6 +824,13 @@
     "title": "Constraining cosmology with weak gravitational lensing",
     "section": "Extra material: Scale cuts",
     "text": "Extra material: Scale cuts\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#b-modes-with-cosebis",
+    "href": "25_LondonVisit/imperial_presentation.html#b-modes-with-cosebis",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "B-modes with COSEBIS",
+    "text": "B-modes with COSEBIS\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nPure functions and COSEBIS tell the same story."
   },
   {
     "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-best-fit",
