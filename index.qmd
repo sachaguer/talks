@@ -2,7 +2,7 @@
 title: "Sacha Guerrini's Talks"
 listing: 
     type: default
-    sort: "date desc"
+    sort: "date-meta desc"
     fields: [title, description, date-meta, image]
 project:
     render:
