@@ -1,6 +1,6 @@
 ---
 title: "Constraining cosmology with weak gravitational lensing"
-author: "Sacha Guerrini, Imperial seminar, 7th October 2025"
+author: "Sacha Guerrini, Imperial College seminar, 7th October 2025"
 date-meta: "October 7, 2025"
 image: images/unions.jpg
 description: |
@@ -131,7 +131,10 @@ S. Guerrini, 07/10/2025, Imperial College London
   right: 320px;
   top: 0px;
 ">
-<img src="images/leiden.jpg" alt="Leiden" width="250px">
+<img src="images/leiden.jpg" alt="Leiden" width="200px">
+<div style="font-size: 20px">
+EC meeting Leiden 2025
+</div>
 </div>
 <div style="
   position: absolute;
@@ -474,6 +477,20 @@ We use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-
 
 ::::
 
+## Pure B-mode correlation functions{style="font-size:24px"}
+
+::: {.footer}
+S. Guerrini, 07/10/2025, Imperial College London
+:::
+
+$$
+\xi_+^{E/B}(\vartheta) = \frac 1 2 \left[\xi_+(\vartheta) \pm \xi_-(\vartheta) + \int_\vartheta^{\vartheta_\mathrm{max}}\frac{\mathrm{d}\theta}{\theta} \xi_-(\theta) \left(4 - \frac{12\vartheta^2}{\theta^2} \right) \right] - \frac 1 2 \underbrace{[S_+(\vartheta) \pm S_-(\vartheta)]}_{\text{Integrals of $\xi_\pm$ with filter functions}}
+$$ 
+
+![Credit: C. Daley](images/b_mode_pure_functions.png){height=350px}
+
+B-modes on small scale ($\sim 3'$ in $\xi_+$ and $\sim 30'$ in $\xi_-$); large scales are ok.
+
 ## B-modes in harmonic space{style="font-size:30px"}
 
 ::: {.footer}
@@ -578,6 +595,26 @@ S. Guerrini, 07/10/2025, Imperial College London
    \draw[->] (UNIONS.north) -- (Posterior.south);
 \end{tikzpicture} 
 ```
+
+## Normalizing Flows
+
+::: {.footer}
+S. Guerrini, 07/10/2025, Imperial College London
+:::
+
+:::: {.columns}
+
+::: {.column width=40%}
+Apply several layers of a one-to-one map to simple distribution to match a more complex one.
+
+Alleviates the problem of the unknown likelihood.
+:::
+
+::: {.column width=60%}
+![](images/NDE.gif)
+:::
+
+::::
 
 ## UNIONS forward model
 
@@ -834,6 +871,16 @@ S. Guerrini, 07/10/2025, Imperial College London
 :::
 
 ![](images/scale_cut_real_space.png)
+
+## B-modes with COSEBIS{visibility="uncounted" style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 07/10/2025, Imperial College London
+:::
+
+![](images/cosebis_scale_cut.png)
+
+Pure functions and COSEBIS tell the same story.
 
 ## Extra material: Best-fit{visibility="uncounted" style="font-size: 30px"}
 

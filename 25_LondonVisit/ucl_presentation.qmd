@@ -131,7 +131,10 @@ S. Guerrini, 09/10/2025, UCL
   right: 320px;
   top: 0px;
 ">
-<img src="images/leiden.jpg" alt="Leiden" width="250px">
+<img src="images/leiden.jpg" alt="Leiden" width="200px">
+<div style="font-size: 20px">
+EC meeting Leiden 2025
+</div>
 </div>
 <div style="
   position: absolute;
@@ -834,6 +837,30 @@ S. Guerrini, 09/10/2025, UCL
 :::
 
 ![](images/scale_cut_real_space.png)
+
+## Pure B-mode correlation functions{visibility="uncounted" style="font-size:24px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
+$$
+\xi_+^{E/B}(\vartheta) = \frac 1 2 \left[\xi_+(\vartheta) \pm \xi_-(\vartheta) + \int_\vartheta^{\vartheta_\mathrm{max}}\frac{\mathrm{d}\theta}{\theta} \xi_-(\theta) \left(4 - \frac{12\vartheta^2}{\theta^2} \right) \right] - \frac 1 2 \underbrace{[S_+(\vartheta) \pm S_-(\vartheta)]}_{\text{Integrals of $\xi_\pm$ with filter functions}}
+$$ 
+
+![Credit: C. Daley](images/b_mode_pure_functions.png){height=350px}
+
+B-modes on small scale ($\sim 3'$ in $\xi_+$ and $\sim 30'$ in $\xi_-$); large scales are ok.
+
+## B-modes with COSEBIS{visibility="uncounted" style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 09/10/2025, UCL
+:::
+
+![](images/cosebis_scale_cut.png)
+
+Pure functions and COSEBIS tell the same story.
 
 ## Extra material: Best-fit{visibility="uncounted" style="font-size: 30px"}
 

@@ -365,11 +365,7 @@ S. Guerrini, 08/10/2025, RHUL
    bottom: 0px;
 ">Credit: A. Navarro</div>
 
-## {background-image="images/Perseus_euclid.jpg" background-size="cover"}
-
-::: {.footer}
-S. Guerrini, 08/10/2025, RHUL
-:::
+## {background-image="images/Perseus_euclid.jpg" background-size="cover" footer=false}
 
 ```{r, engine='tikz', dev='svg', fig.width=16, fig.height=9}
 \begin{tikzpicture}[x=1cm, y=1cm, scale=1]
