@@ -226,6 +226,18 @@ w & \text{EoS of dark energy}
 \right\} \text{Constrained using Bayesian inference}
 \end{align}
 
+## Weak gravitational lensing
+
+::: {.footer}
+S. Guerrini, 07/10/2025, Imperial College London
+:::
+
+![Credit: ESA](images/weak_lensing.png)
+
+- Percent-level effect
+- Polluted by shape noise
+- Requires a large number of galaxies
+
 ## Cosmology with cosmic shear
 
 ::: {.footer}
