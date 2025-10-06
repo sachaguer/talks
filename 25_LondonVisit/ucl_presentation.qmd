@@ -609,7 +609,7 @@ S. Guerrini, 09/10/2025, UCL
    \node[label, anchor=north] at (mask.south) {Footprint};
 
    \node (observation) at (6, 0) {\includegraphics[width=60mm]{images/shear_map_e1.png}};
-   \node[label, anchor=north] at (observation.south) {Observation};
+   \node[label, anchor=north] at (observation.south) {oSimulated observation};
 
    
    \draw[->] (GowerStreet.east) -- node[midway, above]{Ray-tracing/Higher-order effects} (Shear.west);

@@ -574,6 +574,28 @@ S. Guerrini, 07/10/2025, Imperial College London
 ![](images/flamingo.png){height=550px}
 :::
 
+## Higher-order statistics{style="font-size:30px"}
+
+::: {.footer}
+S. Guerrini, 07/10/2025, Imperial College London
+:::
+
+:::: {.columns}
+
+::: {.column width=50%}
+The overdensity field is not a Gaussian field at late times.
+
+How can we capture the more information from the shear field?
+
+Craft summary statistics that capture **non-Gaussian information** from the field.
+:::
+
+::: {.column width=50%}
+![[Euclid Collaboration+2023](https://arxiv.org/abs/2301.12890)](images/euclid_hos.png)
+:::
+
+::::
+
 ## Implicit Likelihood Inference (also known as SBI)
 
 ::: {.footer}
@@ -655,7 +677,7 @@ S. Guerrini, 07/10/2025, Imperial College London
    \node[label, anchor=north] at (mask.south) {Footprint};
 
    \node (observation) at (6, 0) {\includegraphics[width=60mm]{images/shear_map_e1.png}};
-   \node[label, anchor=north] at (observation.south) {Observation};
+   \node[label, anchor=north] at (observation.south) {Simulated observation};
 
    
    \draw[->] (GowerStreet.east) -- node[midway, above]{Ray-tracing/Higher-order effects} (Shear.west);
