@@ -49,6 +49,13 @@
     "text": "Cosmological context: \\(\\Lambda\\)CDM\n\nS. Guerrini, 09/10/2025, UCL\n\n\nCredit: NAOJ\\[\\begin{align}\n\\left.\n\\begin{array}{cc}\nH_0 & \\text{Expansion rate}\\\\\n\\Omega_m & \\text{Matter density}\\\\\n\\Omega_b & \\text{Baryon density}\\\\\n\\sigma_8 & \\text{Clumpiness}\\\\\nw & \\text{EoS of dark energy}\n\\end{array}\n\\right\\} \\text{Constrained using Bayesian inference}\n\\end{align}\\]"
   },
   {
+    "objectID": "25_LondonVisit/ucl_presentation.html#weak-gravitational-lensing",
+    "href": "25_LondonVisit/ucl_presentation.html#weak-gravitational-lensing",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Weak gravitational lensing",
+    "text": "Weak gravitational lensing\n\nS. Guerrini, 09/10/2025, UCL\n\n\nCredit: ESA\nPercent-level effect\nPolluted by shape noise\nRequires a large number of galaxies"
+  },
+  {
     "objectID": "25_LondonVisit/ucl_presentation.html#cosmology-with-cosmic-shear",
     "href": "25_LondonVisit/ucl_presentation.html#cosmology-with-cosmic-shear",
     "title": "Constraining cosmology with weak gravitational lensing",
