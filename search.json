@@ -158,13 +158,6 @@
     "href": "25_LondonVisit/ucl_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference",
     "title": "Constraining cosmology with weak gravitational lensing",
     "section": "JaxILI, a pipeline for Implicit Likelihood Inference",
-    "text": "JaxILI, a pipeline for Implicit Likelihood Inference\n\nS. Guerrini, 09/10/2025, UCL\n\ncheckpoint_path = ... #Choose the checkpoint path\ncheckpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.\n\ninference = NPE()\ninference = inference.append_simulations(theta, x)\n\nmetrics, density_estimator = inference.train(\n    checkpoint_path=checkpoint_path,\n)"
-  },
-  {
-    "objectID": "25_LondonVisit/ucl_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference-1",
-    "href": "25_LondonVisit/ucl_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference-1",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "JaxILI, a pipeline for Implicit Likelihood Inference",
     "text": "JaxILI, a pipeline for Implicit Likelihood Inference\n\nS. Guerrini, 09/10/2025, UCL\n\ncheckpoint_path = ... #Choose the checkpoint path\ncheckpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.\n\ncompressor = Compressor(\n    model_class=model_class,\n    model_hparams=model_hparams,\n)\n\ncompressor = compressor.append_simulations(theta=theta, x=x)\n\nmetrics, MSE_compression_function = compressor.train(\n    checkpoint_path=checkpoint_path\n)\n\ninference = NPE()\ninference = inference.append_simulations(theta, x)\n\nmetrics, density_estimator = inference.train(\n    checkpoint_path=checkpoint_path,\n)"
   },
   {
