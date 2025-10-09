@@ -642,24 +642,6 @@ Available on [GitHub](https://github.com/sachaguer), adapted from DESY3 analysis
 S. Guerrini, 09/10/2025, UCL
 :::
 
-``` {.python code-line-numbers="4-5|7-9"}
-checkpoint_path = ... #Choose the checkpoint path
-checkpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.
-
-inference = NPE()
-inference = inference.append_simulations(theta, x)
-
-metrics, density_estimator = inference.train(
-    checkpoint_path=checkpoint_path,
-)
-```
-
-## [JaxILI](https://github.com/sachaguer/jaxili), a pipeline for Implicit Likelihood Inference{style="font-size: 30px" auto-animate="true"}
-
-::: {.footer}
-S. Guerrini, 09/10/2025, UCL
-:::
-
 ``` python
 checkpoint_path = ... #Choose the checkpoint path
 checkpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.
