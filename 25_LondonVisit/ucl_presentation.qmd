@@ -4,7 +4,7 @@ author: "Sacha Guerrini, UCL seminar, 9th October 2025"
 date-meta: "October 9, 2025"
 image: images/unions.jpg
 description: |
-  Unformal talk at University College London during a visit in London.
+  Informal talk at University College London during a visit in London.
 format:
    revealjs: 
     theme: default

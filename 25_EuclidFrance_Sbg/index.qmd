@@ -1,0 +1,52 @@
+---
+title: "Cosmic shear cosmology with the UNIONS data"
+subtitle: "*Euclid* France meeting, Strasbourg"
+author:
+   name: "<br> Sacha Guerrini"
+   affiliation: "CEA Paris-Saclay <br>"
+date: "November 17, 2025"
+date-format: long
+date-meta: "November 17, 2025"
+image: images/unions.jpg
+logo: images/Euclid_consortium_logo.png
+description: |
+   Talk given at the 2025 Euclid France meeting in Strasbourg.
+format:
+   revealjs: 
+    width: 1920
+    height: 1080
+    theme: [default, custom.scss]
+    highlight-style: monokai
+    slide-number: true
+    countExcluded: true
+    chalkboard:
+        buttons: false
+    preview-links: auto
+    menu: false
+    footer: |
+        <div class="footer-logos">
+        <div class="logo-cea">
+        <img src="images/logo_cea.jpeg" alt="CEA" />
+        </div>
+        <div class="logo-crop">
+        <img src="images/cosmostat_logo.jpeg" alt="CosmoStat" />
+        </div>
+        <div class="logo-white-bg">
+        <img src="images/unions_logo.png" alt="UNIONS" />
+        </div>
+        </div>
+    css: styles.css
+---
+
+## Weak gravitational Lensing
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+## Ultraviolet Near-Infrared Optical Northern Survey (UNIONS)
+
+blabla
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
