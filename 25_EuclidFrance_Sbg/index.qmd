@@ -44,9 +44,247 @@ format:
 Sacha Guerrini | *Euclid* France 2025
 :::
 
-## Ultraviolet Near-Infrared Optical Northern Survey (UNIONS)
+![Credit: ESA](images/weak_lensing.png)
 
-blabla
+- Percent-level effect
+- Polluted by shape noise
+- Requires a large number of galaxies
+
+## The Ultraviolet Near-Infrared Optical Northern Survey (UNIONS, [Gwyn et al., 2025](https://arxiv.org/abs/2503.13783))
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![](images/unions.jpg)
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 300px;
+   left: 50px;
+">$r$, $u$ bands</div>
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 300px;
+   left: 600px;
+">$i$ band</div>
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 350px;
+   left: 1150px;
+">$g$, $z$ bands</div>
+
+## *Euclid* photometry in the North
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![[Scaramella+2025](https://www.aanda.org/articles/aa/full_html/2022/06/aa41938-21/aa41938-21.html#top_full)](images/euclid_wide_and_ground_based.jpg)
+
+## The landscape of lensing surveys
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![](images/wright_lensing_surveys.png){.absolute right=0 bottom=100}
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 100px;
+   right: 0px;
+">[Wright+2025](https://arxiv.org/pdf/2503.19439)</div>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Technical specifications of UNIONS:
+
+- Target area: $\sim 5,000$ deg$^2$
+- Depth: 24.5 ($r$-band)
+- Seeing: $\sim 0.69"$ ($r$-band)
+- Processing with ShapePipe ([Farrens et al., 2022](https://arxiv.org/abs/2206.14689))
+- $\sim 100$ million galaxies 
+:::
+
+::::
+
+## Outline of the talk
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+1. Analysis choices for our cosmic shear analysis
+2. $B$-modes null test
+3. Control of systematics
+    - PSF systematics
+    - Instrinsic Alignment
+    - Shear $m$-bias
+    - $n(z)$ uncertainty
+4. Blinded constraints
+
+![](images/cosmic_shear_team.png){.absolute right=0 bottom=100 width=1300px}
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+">and others...</div>
+
+
+## Analysis choices
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+| | Configuration space (Goh et al., in prep.) | Harmonic space (Guerrini et al., in prep.) |
+| ---- | ---- | ---- |
+| Summary stat. | $\xi_\pm(\vartheta)$ | $C_\ell^{EE}$ |
+| Likelihood | Gaussian (CosmoSIS) | Gaussian (CosmoSIS) |
+| Covariance | CosmoCov (analytical) | iNKA + OneCovariance (semi-analytical) |
+| Measurement | TreeCorr | NaMaster |
+| Power spectrum | CAMB + HMCode2020 | CAMB + HMCode2020 |
+| PSF systematics | Modeled and marginalised | Negligible |
+| Scale cuts | $B$-modes test | Theoretical model |
+
+
+## $B$-modes null test (harmonic space)
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+:::: {.columns}
+
+::: {.column width=60%}
+![](/images/data_vectors_cell_bb.png)
+:::
+
+::: {.column width=40%}
+Different weak lensing catalog versions:
+
+- SP v1.4.5: Size cut - $\mathrm{HLR}_\mathrm{gal} / \mathrm{HLR}_\mathrm{PSF} > 0.5$
+- <span style="color: red;">SP v1.4.6: Size cut - $\mathrm{HLR}_\mathrm{gal} / \mathrm{HLR}_\mathrm{PSF} > 0.7$</span> 
+- SP v1.4.8: additionally mask star haloes
+:::
+
+::::
+
+## $B$-modes null test (configuration space)
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![](images/pure_correlation_146.png)
+
+Significant $B$-modes on small scales. Scale cuts on large scales derived from PSF leakage estimation.
+
+## $B$-modes null test (configuration space)
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![](images/cosebis_ptes_146.png)
+
+## Control of systematics
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+- Astrophysical systematics
+    - Intrinsic Alignment
+    - Baryons
+- Instrumental systematics
+    - PSF systematics
+    - Shear $m$-bias
+    - Redshift distribution uncertainty
+
+## Control of systematics{visibility="uncounted"}
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+- Astrophysical systematics
+    - <span style="color: red">Intrinsic Alignment</span>
+    - Baryons
+- Instrumental systematics
+    - <span style="color: red">PSF systematics</span>
+    - Shear $m$-bias
+    - Redshift distribution uncertainty
+
+## PSF systematics ([Guerrini+2025](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html))
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+PSF error model: $\delta e^\mathrm{obs} = \underbrace{\alpha e^\mathrm{PSF}}_{\mathrm{leakage}} + \underbrace{\beta (e^* - e^\mathrm{PSF})}_{\textrm{ellipticity residuals}} + \underbrace{\eta e^\mathrm{PSF} \left( \frac{T^* - T^\mathrm{PSF}}{T^*}\right)}_{\textrm{size residual}}$
+
+::: {.small-text}
+Galaxy-Star correlations: $\tau_0(\vartheta) = \langle e^\mathrm{obs} e^\mathrm{PSF} \rangle(\vartheta)$, $\tau_2(\vartheta) = \langle e^\mathrm{obs} \delta e^\mathrm{PSF} \rangle(\vartheta)$, $\tau_5(\vartheta) = \langle e^\mathrm{obs} \delta T^\mathrm{PSF} \rangle(\vartheta)$
+:::
+
+![](images/2025_11_10_tau_stats.png)
+
+## PSF systematics ([Guerrini+2025](https://www.aanda.org/articles/aa/full_html/2025/08/aa53512-24/aa53512-24.html))
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+blablabla
+![](images/2025_11_10_xi_sys_over_xi_plus.png)
+
+## Intrinsic Alignment
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+## Shear $m$-bias
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+## Redshift distribution uncertainty
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+## Blinded constraints
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+## Conclusion
+
 ::: {.footer}
 Sacha Guerrini | *Euclid* France 2025
 :::

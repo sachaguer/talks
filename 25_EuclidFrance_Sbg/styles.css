@@ -1,3 +1,7 @@
+.small-text {
+  font-size: 0.8em; /* or 80%, 12pt, etc. */
+}
+
 .footer-logos {
   display: flex;
   align-items: center;
