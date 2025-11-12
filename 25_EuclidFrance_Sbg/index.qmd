@@ -196,7 +196,7 @@ Different weak lensing catalog versions:
 Sacha Guerrini | *Euclid* France 2025
 :::
 
-![](images/pure_correlation_146.png)
+![Credit: C.Daley and A.Guinot](images/pure_correlation_146.png)
 
 Significant $B$-modes on small scales. Scale cuts on large scales derived from PSF leakage estimation.
 
@@ -206,7 +206,7 @@ Significant $B$-modes on small scales. Scale cuts on large scales derived from P
 Sacha Guerrini | *Euclid* France 2025
 :::
 
-![](images/cosebis_ptes_146.png)
+![Credit: C.Daley and A.Guinot](images/cosebis_ptes_146.png)
 
 ## Control of systematics
 
@@ -399,6 +399,20 @@ Sacha Guerrini | *Euclid* France 2025
 - We still have to assess the consistency between configuration and harmonic space analyses.
 - Some validation tools developed within UNIONS are applied on *Euclid* data for quality assessment (RR2/TR1/DR1).
 - The UNIONS data set has a unique overlap with spectroscopic surveys (BOSS/eBOSS/DESI).
-    - Already publications using galaxy-galaxy lensing on the arXiv
+    - Already publications using galaxy-galaxy lensing on the arXiv.
     - Direct measurement of Intrinsic Alignment ([Hervas Peters+2025](https://www.aanda.org/articles/aa/full_html/2025/07/aa53442-24/aa53442-24.html#figs))
-    - 3 publications on Intrinsic Alignment in preparation (see A. Corinaldi's talk)
+    - 3 publications on Intrinsic Alignment in preparation (see, namely, A. Corinaldi's talk)
+
+## Thank you for your attention and lookout for
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+| Paper index | Author | Title |
+| - | ---- | ------- |
+| 1 | Hervas Peters et al. | UNIONS: Weak lensing catalogues |
+| 2 | Daley et al. | UNIONS: $B$-mode validation and comparison for cosmic shear |
+| 3 | Hervas Peters et al. | UNIONS: image simulations and validation |
+| 4 | Goh et al. | UNIONS: Cosmological constraints from cosmic shear in configuration space |
+| 5 | Guerrini et al. | UNIONS: Cosmological constraints from cosmic shear in harmonic space |
