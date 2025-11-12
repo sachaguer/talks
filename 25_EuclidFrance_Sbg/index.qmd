@@ -63,7 +63,7 @@ Sacha Guerrini | *Euclid* France 2025
    margin-top: 5px;
    color: black;
    position: absolute;
-   bottom: 300px;
+   bottom: 350px;
    left: 50px;
 ">$r$, $u$ bands</div>
 
@@ -72,7 +72,7 @@ Sacha Guerrini | *Euclid* France 2025
    margin-top: 5px;
    color: black;
    position: absolute;
-   bottom: 300px;
+   bottom: 350px;
    left: 600px;
 ">$i$ band</div>
 
@@ -106,7 +106,7 @@ Sacha Guerrini | *Euclid* France 2025
    margin-top: 5px;
    color: black;
    position: absolute;
-   bottom: 100px;
+   bottom: 90px;
    right: 0px;
 ">[Wright+2025](https://arxiv.org/pdf/2503.19439)</div>
 
@@ -256,8 +256,25 @@ Galaxy-Star correlations: $\tau_0(\vartheta) = \langle e^\mathrm{obs} e^\mathrm{
 Sacha Guerrini | *Euclid* France 2025
 :::
 
-blablabla
-![](images/2025_11_10_xi_sys_over_xi_plus.png)
+:::: {.columns}
+
+::: {.column width=30%}
+Galaxy-PSF correlation helps to:
+
+- Select our weak lensing sample
+- Choose scale cuts for the inference
+
+:::
+
+::: {.column width=70%}
+![](images/2025_11_10_xi_sys_over_xi_plus.png){width=75%}
+:::
+
+::::
+
+$$
+\xi_\mathrm{sys}(\vartheta) = \alpha \tau_0(\vartheta) + \beta \tau_2(\vartheta) + \eta \tau_5(\vartheta)
+$$
 
 ## Intrinsic Alignment
 
@@ -265,11 +282,75 @@ blablabla
 Sacha Guerrini | *Euclid* France 2025
 :::
 
+In a non-tomographic setup, $S_8$ and $A_\mathrm{IA}$ are strongly degenerate.
+
+$$
+A_\mathrm{IA} = f_\mathrm{r} A_\mathrm{IA, r} + f_\mathrm{b} A_\mathrm{IA, b}
+$$
+
+![[Hervas Peters+2025](https://www.aanda.org/articles/aa/full_html/2025/07/aa53442-24/aa53442-24.html#figs)](images/direct_ia_measurement_fhp.png)
+
+Direct measurements can be used to derive a prior for different galaxy types.
+
+## Intrinsic Alignment
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+:::: {.columns}
+
+::: {.column width=50%}
+1. Separate red and blue galaxies.
+2. Estimate red and blue fractions.
+3. Estimate $A_\mathrm{IA, b}$ from direct measurement ([Johnston+2019](https://www.aanda.org/articles/aa/full_html/2019/04/aa34714-18/aa34714-18.html)).
+4. Estimate $A_\mathrm{IA, r}$ sampling from IA/luminosity relationship.
+5. Add Gaussian errors in quadrature.
+6. Doubling the width of the prior to be conservative.
+:::
+
+::: {.column width=50%}
+![](images/ia_dependency_tb.png){width=150%}
+:::
+
+::::
+
 ## Shear $m$-bias
 
 ::: {.footer}
 Sacha Guerrini | *Euclid* France 2025
 :::
+
+$m$-bias corrected with MetaCalibration. Further calibration required from image simulations due to blending.
+
+<div style="width:80%">
+<p float="left">
+  <img src="images/real_cfht.png" width="49%" />
+  <img src="images/sim_cfht.png" width="49%" />
+</p>
+</div>
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 150px;
+   left: 0px;
+">Real exposure</div>
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 100px;
+   left: 850px;
+">Simulated exposure</div>
+
+Hervas Peters+in prep.
+
+
 
 ## Redshift distribution uncertainty
 
@@ -277,14 +358,47 @@ Sacha Guerrini | *Euclid* France 2025
 Sacha Guerrini | *Euclid* France 2025
 :::
 
+Analysis blinded by the use of 3 different redshift blinds.
+
+![](images/n_z.png)
+
 ## Blinded constraints
 
 ::: {.footer}
 Sacha Guerrini | *Euclid* France 2025
 :::
 
+<p float="left">
+  <img src="images/contours_s8_omegam_blind_update.png" width="49%" />
+  <img src="images/contours_s8_omegam_cell_blind_update.png" width="49%" />
+</p>
+
+## Blinded constraints (harmonic space)
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![Guerrini+in prep.](images/whisker_plot_harmonic_space.png)
+
+## Blinded constraints (configuration space)
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![Goh+in prep.](images/whisker_plot_config_space.png)
+
 ## Conclusion
 
 ::: {.footer}
 Sacha Guerrini | *Euclid* France 2025
 :::
+
+- First cosmological constraints from UNIONS are incoming.
+- We still have to assess the consistency between configuration and harmonic space analyses.
+- Some validation tools developed within UNIONS are applied on *Euclid* data for quality assessment (RR2/TR1/DR1).
+- The UNIONS data set has a unique overlap with spectroscopic surveys (BOSS/eBOSS/DESI).
+    - Already publications using galaxy-galaxy lensing on the arXiv
+    - Direct measurement of Intrinsic Alignment ([Hervas Peters+2025](https://www.aanda.org/articles/aa/full_html/2025/07/aa53442-24/aa53442-24.html#figs))
+    - 3 publications on Intrinsic Alignment in preparation (see A. Corinaldi's talk)
