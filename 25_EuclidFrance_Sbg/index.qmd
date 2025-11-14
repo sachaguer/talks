@@ -398,7 +398,7 @@ Sacha Guerrini | *Euclid* France 2025
 - First cosmological constraints from UNIONS are incoming.
 - We still have to assess the consistency between configuration and harmonic space analyses.
 - Some validation tools developed within UNIONS are applied on *Euclid* data for quality assessment (RR2/TR1/DR1).
-- The UNIONS data set has a unique overlap with spectroscopic surveys (BOSS/eBOSS/DESI).
+- The UNIONS dataset has a unique overlap with spectroscopic surveys (BOSS/eBOSS/DESI).
     - Already publications using galaxy-galaxy lensing on the arXiv.
     - Direct measurement of Intrinsic Alignment ([Hervas Peters+2025](https://www.aanda.org/articles/aa/full_html/2025/07/aa53442-24/aa53442-24.html#figs))
     - 3 publications on Intrinsic Alignment in preparation (see, namely, A. Corinaldi's talk)
