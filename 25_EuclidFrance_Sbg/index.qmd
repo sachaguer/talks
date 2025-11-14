@@ -310,7 +310,7 @@ Sacha Guerrini | *Euclid* France 2025
 :::
 
 ::: {.column width=50%}
-![](images/ia_dependency_tb.png){width=150%}
+![Credit: F. Hervas Peters](images/ia_dependency_tb.png){width=150%}
 :::
 
 ::::
@@ -360,7 +360,7 @@ Sacha Guerrini | *Euclid* France 2025
 
 Analysis blinded by the use of 3 different redshift blinds.
 
-![](images/n_z.png)
+![Credit: A.Wittje](images/n_z.png)
 
 ## Blinded constraints
 
