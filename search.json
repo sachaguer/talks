@@ -3,8 +3,8 @@
     "objectID": "25_EuclidFrance_Sbg/index.html#weak-gravitational-lensing",
     "href": "25_EuclidFrance_Sbg/index.html#weak-gravitational-lensing",
     "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Weak gravitational Lensing",
-    "text": "Weak gravitational Lensing\n\nSacha Guerrini | Euclid France 2025\n\n\nCredit: ESA\nPercent-level effect\nPolluted by shape noise\nRequires a large number of galaxies"
+    "section": "Weak gravitational lensing",
+    "text": "Weak gravitational lensing\n\nSacha Guerrini | Euclid France 2025\n\n\nCredit: ESA\nPercent-level effect\nPolluted by shape noise\nRequires a large number of galaxies"
   },
   {
     "objectID": "25_EuclidFrance_Sbg/index.html#the-ultraviolet-near-infrared-optical-northern-survey-unions-gwyn-et-al.-2025",
@@ -81,7 +81,7 @@
     "href": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025",
     "title": "Cosmic shear cosmology with the UNIONS data",
     "section": "PSF systematics (Guerrini+2025)",
-    "text": "PSF systematics (Guerrini+2025)\n\nSacha Guerrini | Euclid France 2025\n\nPSF error model: \\(\\delta e^\\mathrm{obs} = \\underbrace{\\alpha e^\\mathrm{PSF}}_{\\mathrm{leakage}} + \\underbrace{\\beta (e^* - e^\\mathrm{PSF})}_{\\textrm{ellipticity residuals}} + \\underbrace{\\eta e^\\mathrm{PSF} \\left( \\frac{T^* - T^\\mathrm{PSF}}{T^*}\\right)}_{\\textrm{size residual}}\\)\n\nGalaxy-Star correlations: \\(\\tau_0(\\vartheta) = \\langle e^\\mathrm{obs} e^\\mathrm{PSF} \\rangle(\\vartheta)\\), \\(\\tau_2(\\vartheta) = \\langle e^\\mathrm{obs} \\delta e^\\mathrm{PSF} \\rangle(\\vartheta)\\), \\(\\tau_5(\\vartheta) = \\langle e^\\mathrm{obs} \\delta T^\\mathrm{PSF} \\rangle(\\vartheta)\\)"
+    "text": "PSF systematics (Guerrini+2025)\n\nSacha Guerrini | Euclid France 2025\n\nPSF error model: \\(\\delta e^\\mathrm{obs} = \\underbrace{\\alpha e^\\mathrm{PSF}}_{\\mathrm{leakage}} + \\underbrace{\\beta (e^* - e^\\mathrm{PSF})}_{\\textrm{ellipticity residuals}} + \\underbrace{\\eta e^\\mathrm{PSF} \\left( \\frac{T^* - T^\\mathrm{PSF}}{T^*}\\right)}_{\\textrm{size residuals}}\\)\n\nGalaxy-Star correlations: \\(\\tau_0(\\vartheta) = \\langle e^\\mathrm{obs} e^\\mathrm{PSF} \\rangle(\\vartheta)\\), \\(\\tau_2(\\vartheta) = \\langle e^\\mathrm{obs} \\delta e^\\mathrm{PSF} \\rangle(\\vartheta)\\), \\(\\tau_5(\\vartheta) = \\langle e^\\mathrm{obs} \\delta T^\\mathrm{PSF} \\rangle(\\vartheta)\\)"
   },
   {
     "objectID": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025-1",
@@ -151,7 +151,35 @@
     "href": "25_EuclidFrance_Sbg/index.html#redshift-distribution-uncertainty",
     "title": "Cosmic shear cosmology with the UNIONS data",
     "section": "Redshift distribution uncertainty",
-    "text": "Redshift distribution uncertainty\n\nSacha Guerrini | Euclid France 2025\n\nAnalysis blinded by the use of 3 different redshift blinds.\n\n\n\nCredit: A.Wittje"
+    "text": "Redshift distribution uncertainty\n\nSacha Guerrini | Euclid France 2025\n\nAnalysis blinded by the use of 3 different redshift blinds.\n\nCredit: A.Wittje"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#psf-systematics-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#psf-systematics-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "PSF systematics (harmonic space)",
+    "text": "PSF systematics (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#scale-cuts-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#scale-cuts-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Scale cuts (harmonic space)",
+    "text": "Scale cuts (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#data-vector-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#data-vector-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Data vector (harmonic space)",
+    "text": "Data vector (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#covariance-validation-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#covariance-validation-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Covariance validation (harmonic space)",
+    "text": "Covariance validation (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
   },
   {
     "objectID": "25_LondonVisit/imperial_presentation.html#who-am-i",
