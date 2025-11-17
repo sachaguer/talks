@@ -135,8 +135,6 @@ Sacha Guerrini | *Euclid* France 2025
 3. Control of systematics
     - PSF systematics
     - Instrinsic Alignment
-    - Shear $m$-bias
-    - $n(z)$ uncertainty
 4. Blinded constraints
 
 ![](images/cosmic_shear_team.png){.absolute right=0 bottom=100 width=1300px}
@@ -315,44 +313,7 @@ Sacha Guerrini | *Euclid* France 2025
 
 ::::
 
-## Shear $m$-bias
-
-::: {.footer}
-Sacha Guerrini | *Euclid* France 2025
-:::
-
-$m$-bias corrected with MetaCalibration. Further calibration required from image simulations due to blending.
-
-<div style="width:80%">
-<p float="left">
-  <img src="images/real_cfht.png" width="49%" />
-  <img src="images/sim_cfht.png" width="49%" />
-</p>
-</div>
-
-<div style="
-   text-align: center;
-   margin-top: 5px;
-   color: black;
-   position: absolute;
-   bottom: 150px;
-   left: 0px;
-">Real exposure</div>
-
-<div style="
-   text-align: center;
-   margin-top: 5px;
-   color: black;
-   position: absolute;
-   bottom: 100px;
-   left: 850px;
-">Simulated exposure</div>
-
-Hervas Peters+in prep.
-
-
-
-## Redshift distribution uncertainty
+## Blinded constraints
 
 ::: {.footer}
 Sacha Guerrini | *Euclid* France 2025
@@ -360,17 +321,9 @@ Sacha Guerrini | *Euclid* France 2025
 
 Analysis blinded by the use of 3 different redshift blinds.
 
-![Credit: A.Wittje](images/n_z.png)
-
-## Blinded constraints
-
-::: {.footer}
-Sacha Guerrini | *Euclid* France 2025
-:::
-
 <p float="left">
-  <img src="images/contours_s8_omegam_blind_update.png" width="49%" />
-  <img src="images/contours_s8_omegam_cell_blind_update.png" width="49%" />
+  <img src="images/contours_s8_omegam_blind_update.png" width="45%" />
+  <img src="images/contours_s8_omegam_cell_blind_update.png" width="45%" />
 </p>
 
 ## Blinded constraints (harmonic space)
@@ -416,3 +369,48 @@ Sacha Guerrini | *Euclid* France 2025
 | 3 | Hervas Peters et al. | UNIONS: image simulations and validation |
 | 4 | Goh et al. | UNIONS: Cosmological constraints from cosmic shear in configuration space |
 | 5 | Guerrini et al. | UNIONS: Cosmological constraints from cosmic shear in harmonic space |
+
+## Shear $m$-bias{visibility="uncounted"}
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+$m$-bias corrected with MetaCalibration. Further calibration required from image simulations due to blending.
+
+<div style="width:80%">
+<p float="left">
+  <img src="images/real_cfht.png" width="49%" />
+  <img src="images/sim_cfht.png" width="49%" />
+</p>
+</div>
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 150px;
+   left: 0px;
+">Real exposure</div>
+
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 100px;
+   left: 850px;
+">Simulated exposure</div>
+
+Hervas Peters+in prep.
+
+## Redshift distribution uncertainty{visibility="uncounted"}
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+Analysis blinded by the use of 3 different redshift blinds.
+
+![Credit: A.Wittje](images/n_z.png)
