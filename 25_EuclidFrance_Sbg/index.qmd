@@ -240,7 +240,7 @@ Sacha Guerrini | *Euclid* France 2025
 Sacha Guerrini | *Euclid* France 2025
 :::
 
-PSF error model: $\delta e^\mathrm{obs} = \underbrace{\alpha e^\mathrm{PSF}}_{\mathrm{leakage}} + \underbrace{\beta (e^* - e^\mathrm{PSF})}_{\textrm{ellipticity residuals}} + \underbrace{\eta e^\mathrm{PSF} \left( \frac{T^* - T^\mathrm{PSF}}{T^*}\right)}_{\textrm{size residual}}$
+PSF error model: $\delta e^\mathrm{obs} = \underbrace{\alpha e^\mathrm{PSF}}_{\mathrm{leakage}} + \underbrace{\beta (e^* - e^\mathrm{PSF})}_{\textrm{ellipticity residuals}} + \underbrace{\eta e^\mathrm{PSF} \left( \frac{T^* - T^\mathrm{PSF}}{T^*}\right)}_{\textrm{size residuals}}$
 
 ::: {.small-text}
 Galaxy-Star correlations: $\tau_0(\vartheta) = \langle e^\mathrm{obs} e^\mathrm{PSF} \rangle(\vartheta)$, $\tau_2(\vartheta) = \langle e^\mathrm{obs} \delta e^\mathrm{PSF} \rangle(\vartheta)$, $\tau_5(\vartheta) = \langle e^\mathrm{obs} \delta T^\mathrm{PSF} \rangle(\vartheta)$
@@ -414,3 +414,35 @@ Sacha Guerrini | *Euclid* France 2025
 Analysis blinded by the use of 3 different redshift blinds.
 
 ![Credit: A.Wittje](images/n_z.png)
+
+## PSF systematics (harmonic space){visibility="uncounted"}
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![](images/leakage_bias_fraction_ee.png)
+
+## Scale cuts (harmonic space){visibility="uncounted"}
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![](images/Cl_integrand_vs_k.png)
+
+## Data vector (harmonic space){visibility="uncounted"}
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![](images/data_vectors_cell.png)
+
+## Covariance validation (harmonic space){visibility="uncounted"}
+
+::: {.footer}
+Sacha Guerrini | *Euclid* France 2025
+:::
+
+![](images/relative_errorbar_comparison_non_gaussian_update.png)
