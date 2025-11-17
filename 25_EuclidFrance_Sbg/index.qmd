@@ -38,7 +38,7 @@ format:
     css: styles.css
 ---
 
-## Weak gravitational Lensing
+## Weak gravitational lensing
 
 ::: {.footer}
 Sacha Guerrini | *Euclid* France 2025
