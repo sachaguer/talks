@@ -2,7 +2,7 @@
 title: "Constraining cosmology with weak gravitational lensing"
 subtitle: "lessons learned from the Ultraviolet Near-Infrared Optical Northern Survey (UNIONS)"
 author: "Sacha Guerrini, RHUL seminar, 8th October 2025"
-date-meta: "2025-10-08"
+date-meta: 2025-10-08
 image: images/unions.jpg
 description: |
    Talk given at the Royal Holloway University Seminar during a visit in London.

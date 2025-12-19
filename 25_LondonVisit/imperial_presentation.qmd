@@ -1,7 +1,7 @@
 ---
 title: "Constraining cosmology with weak gravitational lensing"
 author: "Sacha Guerrini, Imperial College seminar, 7th October 2025"
-date-meta: "2025-10-07"
+date-meta: 2025-10-07
 image: images/unions.jpg
 description: |
   Unformal talk at Imperial College during a visit in London.
