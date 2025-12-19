@@ -1,474 +1,5 @@
 [
   {
-    "objectID": "25_EuclidFrance_Sbg/index.html#weak-gravitational-lensing",
-    "href": "25_EuclidFrance_Sbg/index.html#weak-gravitational-lensing",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Weak gravitational lensing",
-    "text": "Weak gravitational lensing\n\nSacha Guerrini | Euclid France 2025\n\n\nCredit: ESA\nPercent-level effect\nPolluted by shape noise\nRequires a large number of galaxies"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#the-ultraviolet-near-infrared-optical-northern-survey-unions-gwyn-et-al.-2025",
-    "href": "25_EuclidFrance_Sbg/index.html#the-ultraviolet-near-infrared-optical-northern-survey-unions-gwyn-et-al.-2025",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "The Ultraviolet Near-Infrared Optical Northern Survey (UNIONS, Gwyn et al., 2025)",
-    "text": "The Ultraviolet Near-Infrared Optical Northern Survey (UNIONS, Gwyn et al., 2025)\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\\(r\\), \\(u\\) bands\n\n\n\\(i\\) band\n\n\n\\(g\\), \\(z\\) bands"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#euclid-photometry-in-the-north",
-    "href": "25_EuclidFrance_Sbg/index.html#euclid-photometry-in-the-north",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Euclid photometry in the North",
-    "text": "Euclid photometry in the North\n\nSacha Guerrini | Euclid France 2025\n\n\nScaramella+2025"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#the-landscape-of-lensing-surveys",
-    "href": "25_EuclidFrance_Sbg/index.html#the-landscape-of-lensing-surveys",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "The landscape of lensing surveys",
-    "text": "The landscape of lensing surveys\n\nSacha Guerrini | Euclid France 2025\n\n\n\nWright+2025\n\n\n\nTechnical specifications of UNIONS:\n\nTarget area: \\(\\sim 5,000\\) deg\\(^2\\)\nDepth: 24.5 (\\(r\\)-band)\nSeeing: \\(\\sim 0.69\"\\) (\\(r\\)-band)\nProcessing with ShapePipe (Farrens et al., 2022)\n\\(\\sim 100\\) million galaxies"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#outline-of-the-talk",
-    "href": "25_EuclidFrance_Sbg/index.html#outline-of-the-talk",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Outline of the talk",
-    "text": "Outline of the talk\n\nSacha Guerrini | Euclid France 2025\n\n\nAnalysis choices for our cosmic shear analysis\n\\(B\\)-modes null test\nControl of systematics\n\nPSF systematics\nInstrinsic Alignment\n\nBlinded constraints\n\n\n\nand others…"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#analysis-choices",
-    "href": "25_EuclidFrance_Sbg/index.html#analysis-choices",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Analysis choices",
-    "text": "Analysis choices\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\n\n\n\n\n\n\nConfiguration space (Goh et al., in prep.)\nHarmonic space (Guerrini et al., in prep.)\n\n\n\n\nSummary stat.\n\\(\\xi_\\pm(\\vartheta)\\)\n\\(C_\\ell^{EE}\\)\n\n\nLikelihood\nGaussian (CosmoSIS)\nGaussian (CosmoSIS)\n\n\nCovariance\nCosmoCov (analytical)\niNKA + OneCovariance (semi-analytical)\n\n\nMeasurement\nTreeCorr\nNaMaster\n\n\nPower spectrum\nCAMB + HMCode2020\nCAMB + HMCode2020\n\n\nPSF systematics\nModeled and marginalised\nNegligible\n\n\nScale cuts\n\\(B\\)-modes test\nTheoretical model"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-harmonic-space",
-    "href": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-harmonic-space",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "\\(B\\)-modes null test (harmonic space)",
-    "text": "\\(B\\)-modes null test (harmonic space)\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\n\nDifferent weak lensing catalog versions:\n\nSP v1.4.5: Size cut - \\(\\mathrm{HLR}_\\mathrm{gal} / \\mathrm{HLR}_\\mathrm{PSF} &gt; 0.5\\)\nSP v1.4.6: Size cut - \\(\\mathrm{HLR}_\\mathrm{gal} / \\mathrm{HLR}_\\mathrm{PSF} &gt; 0.7\\)\nSP v1.4.8: additionally mask star haloes"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-configuration-space",
-    "href": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-configuration-space",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "\\(B\\)-modes null test (configuration space)",
-    "text": "\\(B\\)-modes null test (configuration space)\n\nSacha Guerrini | Euclid France 2025\n\n\nCredit: C.Daley and A.GuinotSignificant \\(B\\)-modes on small scales. Scale cuts on large scales derived from PSF leakage estimation."
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-configuration-space-1",
-    "href": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-configuration-space-1",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "\\(B\\)-modes null test (configuration space)",
-    "text": "\\(B\\)-modes null test (configuration space)\n\nSacha Guerrini | Euclid France 2025\n\n\nCredit: C.Daley and A.Guinot"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#control-of-systematics",
-    "href": "25_EuclidFrance_Sbg/index.html#control-of-systematics",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Control of systematics",
-    "text": "Control of systematics\n\nSacha Guerrini | Euclid France 2025\n\n\nAstrophysical systematics\n\nIntrinsic Alignment\nBaryons\n\nInstrumental systematics\n\nPSF systematics\nShear \\(m\\)-bias\nRedshift distribution uncertainty"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#control-of-systematics-1",
-    "href": "25_EuclidFrance_Sbg/index.html#control-of-systematics-1",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Control of systematics",
-    "text": "Control of systematics\n\nSacha Guerrini | Euclid France 2025\n\n\nAstrophysical systematics\n\nIntrinsic Alignment\nBaryons\n\nInstrumental systematics\n\nPSF systematics\nShear \\(m\\)-bias\nRedshift distribution uncertainty"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025",
-    "href": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "PSF systematics (Guerrini+2025)",
-    "text": "PSF systematics (Guerrini+2025)\n\nSacha Guerrini | Euclid France 2025\n\nPSF error model: \\(\\delta e^\\mathrm{obs} = \\underbrace{\\alpha e^\\mathrm{PSF}}_{\\mathrm{leakage}} + \\underbrace{\\beta (e^* - e^\\mathrm{PSF})}_{\\textrm{ellipticity residuals}} + \\underbrace{\\eta e^\\mathrm{PSF} \\left( \\frac{T^* - T^\\mathrm{PSF}}{T^*}\\right)}_{\\textrm{size residuals}}\\)\n\nGalaxy-Star correlations: \\(\\tau_0(\\vartheta) = \\langle e^\\mathrm{obs} e^\\mathrm{PSF} \\rangle(\\vartheta)\\), \\(\\tau_2(\\vartheta) = \\langle e^\\mathrm{obs} \\delta e^\\mathrm{PSF} \\rangle(\\vartheta)\\), \\(\\tau_5(\\vartheta) = \\langle e^\\mathrm{obs} \\delta T^\\mathrm{PSF} \\rangle(\\vartheta)\\)"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025-1",
-    "href": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025-1",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "PSF systematics (Guerrini+2025)",
-    "text": "PSF systematics (Guerrini+2025)\n\nSacha Guerrini | Euclid France 2025\n\n\n\nGalaxy-PSF correlation helps to:\n\nSelect our weak lensing sample\nChoose scale cuts for the inference\n\n\n\n\n\\[\n\\xi_\\mathrm{sys}(\\vartheta) = \\alpha \\tau_0(\\vartheta) + \\beta \\tau_2(\\vartheta) + \\eta \\tau_5(\\vartheta)\n\\]"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#intrinsic-alignment",
-    "href": "25_EuclidFrance_Sbg/index.html#intrinsic-alignment",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Intrinsic Alignment",
-    "text": "Intrinsic Alignment\n\nSacha Guerrini | Euclid France 2025\n\nIn a non-tomographic setup, \\(S_8\\) and \\(A_\\mathrm{IA}\\) are strongly degenerate.\n\\[\nA_\\mathrm{IA} = f_\\mathrm{r} A_\\mathrm{IA, r} + f_\\mathrm{b} A_\\mathrm{IA, b}\n\\]\n\nHervas Peters+2025Direct measurements can be used to derive a prior for different galaxy types."
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#intrinsic-alignment-1",
-    "href": "25_EuclidFrance_Sbg/index.html#intrinsic-alignment-1",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Intrinsic Alignment",
-    "text": "Intrinsic Alignment\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\nSeparate red and blue galaxies.\nEstimate red and blue fractions.\nEstimate \\(A_\\mathrm{IA, b}\\) from direct measurement (Johnston+2019).\nEstimate \\(A_\\mathrm{IA, r}\\) sampling from IA/luminosity relationship.\nAdd Gaussian errors in quadrature.\nDoubling the width of the prior to be conservative.\n\n\n\n\n\nCredit: F. Hervas Peters"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#blinded-constraints",
-    "href": "25_EuclidFrance_Sbg/index.html#blinded-constraints",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Blinded constraints",
-    "text": "Blinded constraints\n\nSacha Guerrini | Euclid France 2025\n\nAnalysis blinded by the use of 3 different redshift blinds."
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#blinded-constraints-harmonic-space",
-    "href": "25_EuclidFrance_Sbg/index.html#blinded-constraints-harmonic-space",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Blinded constraints (harmonic space)",
-    "text": "Blinded constraints (harmonic space)\n\nSacha Guerrini | Euclid France 2025\n\n\nGuerrini+in prep."
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#blinded-constraints-configuration-space",
-    "href": "25_EuclidFrance_Sbg/index.html#blinded-constraints-configuration-space",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Blinded constraints (configuration space)",
-    "text": "Blinded constraints (configuration space)\n\nSacha Guerrini | Euclid France 2025\n\n\nGoh+in prep."
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#conclusion",
-    "href": "25_EuclidFrance_Sbg/index.html#conclusion",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nSacha Guerrini | Euclid France 2025\n\n\nFirst cosmological constraints from UNIONS are incoming.\nWe still have to assess the consistency between configuration and harmonic space analyses.\nSome validation tools developed within UNIONS are applied on Euclid data for quality assessment (RR2/TR1/DR1).\nThe UNIONS dataset has a unique overlap with spectroscopic surveys (BOSS/eBOSS/DESI).\n\nAlready publications using galaxy-galaxy lensing on the arXiv.\nDirect measurement of Intrinsic Alignment (Hervas Peters+2025)\n3 publications on Intrinsic Alignment in preparation (see, namely, A. Corinaldi’s talk)"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#thank-you-for-your-attention-and-lookout-for",
-    "href": "25_EuclidFrance_Sbg/index.html#thank-you-for-your-attention-and-lookout-for",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Thank you for your attention and lookout for",
-    "text": "Thank you for your attention and lookout for\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\n\n\n\n\n\nPaper index\nAuthor\nTitle\n\n\n\n\n1\nHervas Peters et al.\nUNIONS: Weak lensing catalogues\n\n\n2\nDaley et al.\nUNIONS: \\(B\\)-mode validation and comparison for cosmic shear\n\n\n3\nHervas Peters et al.\nUNIONS: image simulations and validation\n\n\n4\nGoh et al.\nUNIONS: Cosmological constraints from cosmic shear in configuration space\n\n\n5\nGuerrini et al.\nUNIONS: Cosmological constraints from cosmic shear in harmonic space"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#shear-m-bias",
-    "href": "25_EuclidFrance_Sbg/index.html#shear-m-bias",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Shear \\(m\\)-bias",
-    "text": "Shear \\(m\\)-bias\n\nSacha Guerrini | Euclid France 2025\n\n\\(m\\)-bias corrected with MetaCalibration. Further calibration required from image simulations due to blending.\n\n\n \n\n\n\nReal exposure\n\n\nSimulated exposure\n\nHervas Peters+in prep."
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#redshift-distribution-uncertainty",
-    "href": "25_EuclidFrance_Sbg/index.html#redshift-distribution-uncertainty",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Redshift distribution uncertainty",
-    "text": "Redshift distribution uncertainty\n\nSacha Guerrini | Euclid France 2025\n\nAnalysis blinded by the use of 3 different redshift blinds.\n\nCredit: A.Wittje"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#psf-systematics-harmonic-space",
-    "href": "25_EuclidFrance_Sbg/index.html#psf-systematics-harmonic-space",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "PSF systematics (harmonic space)",
-    "text": "PSF systematics (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#scale-cuts-harmonic-space",
-    "href": "25_EuclidFrance_Sbg/index.html#scale-cuts-harmonic-space",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Scale cuts (harmonic space)",
-    "text": "Scale cuts (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#data-vector-harmonic-space",
-    "href": "25_EuclidFrance_Sbg/index.html#data-vector-harmonic-space",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Data vector (harmonic space)",
-    "text": "Data vector (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
-  },
-  {
-    "objectID": "25_EuclidFrance_Sbg/index.html#covariance-validation-harmonic-space",
-    "href": "25_EuclidFrance_Sbg/index.html#covariance-validation-harmonic-space",
-    "title": "Cosmic shear cosmology with the UNIONS data",
-    "section": "Covariance validation (harmonic space)",
-    "text": "Covariance validation (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#who-am-i",
-    "href": "25_LondonVisit/imperial_presentation.html#who-am-i",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Who am I?",
-    "text": "Who am I?\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\nStrasbourg"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#who-am-i-1",
-    "href": "25_LondonVisit/imperial_presentation.html#who-am-i-1",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Who am I?",
-    "text": "Who am I?\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEC meeting Leiden 2025"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#my-research-interest",
-    "href": "25_LondonVisit/imperial_presentation.html#my-research-interest",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "My research interest",
-    "text": "My research interest\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nMain research topics:\n\nWeak gravitational lensing\n\nPoint-Spread Function systematics\nStandard cosmic shear analysis\nHigher-order statistics\n\nForward modelling\n\nSimulation-Based Inference\nDifferentiable simulators\n\n\nOther interests:\n\nStrong gravitational lensing\nTests of General Relativity"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#unions-collaboration",
-    "href": "25_LondonVisit/imperial_presentation.html#unions-collaboration",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "UNIONS collaboration",
-    "text": "UNIONS collaboration\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\nValidation of the weak lensing sample\nCosmological constraints with cosmic shear\nConstraints with higher-order statistics"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#euclid-consortium",
-    "href": "25_LondonVisit/imperial_presentation.html#euclid-consortium",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Euclid Consortium",
-    "text": "Euclid Consortium\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nMember of the Weak Lensing Science Working Group\n\nParticipation in standard cosmic shear analysis (WL1)\nHigher-Order Statistics Work Package\nForward Modelling Work Package\n\nValidation of PSF modelling and shape measurement in the ground segment"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#cosmological-context-lambdacdm",
-    "href": "25_LondonVisit/imperial_presentation.html#cosmological-context-lambdacdm",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Cosmological context: \\(\\Lambda\\)CDM",
-    "text": "Cosmological context: \\(\\Lambda\\)CDM\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nCredit: NAOJ\\[\\begin{align}\n\\left.\n\\begin{array}{cc}\nH_0 & \\text{Expansion rate}\\\\\n\\Omega_m & \\text{Matter density}\\\\\n\\Omega_b & \\text{Baryon density}\\\\\n\\sigma_8 & \\text{Clumpiness}\\\\\nw & \\text{EoS of dark energy}\n\\end{array}\n\\right\\} \\text{Constrained using Bayesian inference}\n\\end{align}\\]"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#weak-gravitational-lensing",
-    "href": "25_LondonVisit/imperial_presentation.html#weak-gravitational-lensing",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Weak gravitational lensing",
-    "text": "Weak gravitational lensing\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nCredit: ESA\nPercent-level effect\nPolluted by shape noise\nRequires a large number of galaxies"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#cosmology-with-cosmic-shear",
-    "href": "25_LondonVisit/imperial_presentation.html#cosmology-with-cosmic-shear",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Cosmology with cosmic shear",
-    "text": "Cosmology with cosmic shear\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nCredit: S. Farrens\n\n\n\n\nI. PSF diagnostics\n\n\n\n\n\n\n\nII. Cosmic shear with 2pt-statistics\n\n\n\n\nIII. And beyond"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#i.-psf-diagnostics",
-    "href": "25_LondonVisit/imperial_presentation.html#i.-psf-diagnostics",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "I. PSF diagnostics",
-    "text": "I. PSF diagnostics\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCredit: Mandelbaum (2018)"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#semi-analytical-covariance-guerrini-et-al.-2025",
-    "href": "25_LondonVisit/imperial_presentation.html#semi-analytical-covariance-guerrini-et-al.-2025",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Semi-analytical covariance (Guerrini et al. (2025))",
-    "text": "Semi-analytical covariance (Guerrini et al. (2025))\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nAnalytical: based on analytical expressions of the covariance\nSemi: No theoretical predictions of the \\(\\rho\\)- and \\(\\tau\\)-statistics. Use measurements on data."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#prediction-of-the-systematic-additive-bias",
-    "href": "25_LondonVisit/imperial_presentation.html#prediction-of-the-systematic-additive-bias",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Prediction of the systematic additive bias",
-    "text": "Prediction of the systematic additive bias\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\nHere applied to UNIONS but the pipeline currently runs to validate Euclid data processing.\nCan probe heterogeneous contribution to PSF systematics from galaxies with different properties, e.g. magnitude, size"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#psf-systematics-take-home-messages",
-    "href": "25_LondonVisit/imperial_presentation.html#psf-systematics-take-home-messages",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "PSF systematics: Take-home messages",
-    "text": "PSF systematics: Take-home messages\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nPSF systematics are essential to understand to perform cosmic shear analysis.\n\\(\\rho\\)- and \\(\\tau\\)-statistics are powerful tools to estimate the bias to the 2PCF.\nSemi-analytical covariance (Guerrini+2025) can speed up comparisons between catalogs."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#ii.-cosmic-shear-with-2pt-statistics",
-    "href": "25_LondonVisit/imperial_presentation.html#ii.-cosmic-shear-with-2pt-statistics",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "II. Cosmic shear with 2pt statistics",
-    "text": "II. Cosmic shear with 2pt statistics\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nand other contributors…"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#analysis-details",
-    "href": "25_LondonVisit/imperial_presentation.html#analysis-details",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Analysis details",
-    "text": "Analysis details\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\nTheoretical prediction: CAMB\nNon-linear power spectrum: HMCode2020\nShear calibration with MetaCalibration.\nResidual multiplicative bias estimated from image simulations. (Hervas Peters et al., in prep.)\nCosmology pipeline with CosmoSIS.\nAnalysis in real space (Goh et al., in prep.) and harmonic space (Guerrini et al., in prep.).\nPSF systematics accounted for in the inference.\n\n\n\n\n\nReal CFHT exposure\n\n\n\n\n\nSimulated exposure"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#b-modes-systematics",
-    "href": "25_LondonVisit/imperial_presentation.html#b-modes-systematics",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "B-modes systematics",
-    "text": "B-modes systematics\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nSpin-2 shear fields can be decomposed into E-modes, containing the vast majority of lensing information, and B-modes, which are a probe of systematics at UNIONS noise levels.\nIn the presence of masking, some ambiguous modes usually cannot be cleanly attributed to E or B.\nWe use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-\\(C_\\ell\\).\n\n\n\n\nCredit: BICEP2 Collaboration"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#pure-b-mode-correlation-functions",
-    "href": "25_LondonVisit/imperial_presentation.html#pure-b-mode-correlation-functions",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Pure B-mode correlation functions",
-    "text": "Pure B-mode correlation functions\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\\[\n\\xi_+^{E/B}(\\vartheta) = \\frac 1 2 \\left[\\xi_+(\\vartheta) \\pm \\xi_-(\\vartheta) + \\int_\\vartheta^{\\vartheta_\\mathrm{max}}\\frac{\\mathrm{d}\\theta}{\\theta} \\xi_-(\\theta) \\left(4 - \\frac{12\\vartheta^2}{\\theta^2} \\right) \\right] - \\frac 1 2 \\underbrace{[S_+(\\vartheta) \\pm S_-(\\vartheta)]}_{\\text{Integrals of $\\xi_\\pm$ with filter functions}}\n\\]\n\n\n\nCredit: C. Daley\n\n\nB-modes on small scale (\\(\\sim 3'\\) in \\(\\xi_+\\) and \\(\\sim 30'\\) in \\(\\xi_-\\)); large scales are ok."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#b-modes-in-harmonic-space",
-    "href": "25_LondonVisit/imperial_presentation.html#b-modes-in-harmonic-space",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "B-modes in harmonic space",
-    "text": "B-modes in harmonic space\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\nB-modes on the smallest scales. Lower significance after removing the smallest objects from the catalogue. Data points and errorbars obtained with NaMaster."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#covariance-harmonic-space",
-    "href": "25_LondonVisit/imperial_presentation.html#covariance-harmonic-space",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Covariance (harmonic space)",
-    "text": "Covariance (harmonic space)\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n \n\nGaussian covariance accounting for mask mode-coupling with iNKA (Namaster). Validation against OneCovariance (theory code) and GLASS mocks.\nAgreement between the error bars at the \\(10\\%\\) level"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#inference",
-    "href": "25_LondonVisit/imperial_presentation.html#inference",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Inference",
-    "text": "Inference\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\nReal space \\(\\xi_\\pm(\\vartheta)\\)\n\n\nHarmonic space \\(C_\\ell\\)\n\n\n\n\\(\\sim 2\\times\\) larger than DES, KiDS or HSC.\nNon-tomographic analysis significantly reduces constraining power."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#iii.-beyond-2pt-statistics",
-    "href": "25_LondonVisit/imperial_presentation.html#iii.-beyond-2pt-statistics",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "III. Beyond 2pt statistics",
-    "text": "III. Beyond 2pt statistics\n\nS. Guerrini, 07/10/2025, Imperial College London"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#higher-order-statistics",
-    "href": "25_LondonVisit/imperial_presentation.html#higher-order-statistics",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Higher-order statistics",
-    "text": "Higher-order statistics\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nThe overdensity field is not a Gaussian field at late times.\nHow can we capture the more information from the shear field?\nCraft summary statistics that capture non-Gaussian information from the field.\n\n\n\n\nEuclid Collaboration+2023"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#implicit-likelihood-inference-also-known-as-sbi",
-    "href": "25_LondonVisit/imperial_presentation.html#implicit-likelihood-inference-also-known-as-sbi",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Implicit Likelihood Inference (also known as SBI)",
-    "text": "Implicit Likelihood Inference (also known as SBI)\n\nS. Guerrini, 07/10/2025, Imperial College London"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#normalizing-flows",
-    "href": "25_LondonVisit/imperial_presentation.html#normalizing-flows",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Normalizing Flows",
-    "text": "Normalizing Flows\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nApply several layers of a one-to-one map to simple distribution to match a more complex one.\nAlleviates the problem of the unknown likelihood."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#unions-forward-model",
-    "href": "25_LondonVisit/imperial_presentation.html#unions-forward-model",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "UNIONS forward model",
-    "text": "UNIONS forward model\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nAvailable on GitHub, adapted from DESY3 analysis"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference",
-    "href": "25_LondonVisit/imperial_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "JaxILI, a pipeline for Implicit Likelihood Inference",
-    "text": "JaxILI, a pipeline for Implicit Likelihood Inference\n\nS. Guerrini, 07/10/2025, Imperial College London\n\ncheckpoint_path = ... #Choose the checkpoint path\ncheckpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.\n\ninference = NPE()\ninference = inference.append_simulations(theta, x)\n\nmetrics, density_estimator = inference.train(\n    checkpoint_path=checkpoint_path,\n)"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference-1",
-    "href": "25_LondonVisit/imperial_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference-1",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "JaxILI, a pipeline for Implicit Likelihood Inference",
-    "text": "JaxILI, a pipeline for Implicit Likelihood Inference\n\nS. Guerrini, 07/10/2025, Imperial College London\n\ncheckpoint_path = ... #Choose the checkpoint path\ncheckpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.\n\ncompressor = Compressor(\n    model_class=model_class,\n    model_hparams=model_hparams,\n)\n\ncompressor = compressor.append_simulations(theta=theta, x=x)\n\nmetrics, MSE_compression_function = compressor.train(\n    checkpoint_path=checkpoint_path\n)\n\ninference = NPE()\ninference = inference.append_simulations(theta, x)\n\nmetrics, density_estimator = inference.train(\n    checkpoint_path=checkpoint_path,\n)"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#jaxili-on-a-cosmological-toy-model",
-    "href": "25_LondonVisit/imperial_presentation.html#jaxili-on-a-cosmological-toy-model",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "JaxILI on a cosmological toy model",
-    "text": "JaxILI on a cosmological toy model\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nCosmological parameters: \\(A_\\mathrm{s}\\), \\(n_\\mathrm{s}\\), \\(f_\\mathrm{NL}\\)\n\nGo here for moreGoal: Obtain constraints on the cosmological parameters using pixel level information."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#jaxili-on-a-cosmological-toy-model-1",
-    "href": "25_LondonVisit/imperial_presentation.html#jaxili-on-a-cosmological-toy-model-1",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "JaxILI on a cosmological toy model",
-    "text": "JaxILI on a cosmological toy model\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nCosmological parameters: \\(A_\\mathrm{s}\\), \\(n_\\mathrm{s}\\), \\(f_\\mathrm{NL}\\)\n\n\n\n\n\nImplicit contours obtained with MSE compression.\nLoss of information compared to Explicit inference.\nUnbiased constraints obtained."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#an-application-of-jaxili-in-euclid",
-    "href": "25_LondonVisit/imperial_presentation.html#an-application-of-jaxili-in-euclid",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "An application of JaxILI in Euclid",
-    "text": "An application of JaxILI in Euclid\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\nCredit: R. Paviot\n\n\n\n\nSimulation of realistic redshift distributions using Normalizing Flow.\n\\(p(z_\\mathrm{noisy} | z_\\mathrm{true}, \\mathrm{Flux})\\) infered with Neural Posterior Esimation"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#application-to-unions-data",
-    "href": "25_LondonVisit/imperial_presentation.html#application-to-unions-data",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Application to UNIONS data",
-    "text": "Application to UNIONS data\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\nCNN optimal compression\nExtract information at the pixel level.\nCut the footprint in patches.\n\n\n\n\n\nCredit: M. Maupas"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#application-to-unions-data-1",
-    "href": "25_LondonVisit/imperial_presentation.html#application-to-unions-data-1",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Application to UNIONS data",
-    "text": "Application to UNIONS data\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nProject in stand-by due to changes in the fiducial analysis."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#conclusions",
-    "href": "25_LondonVisit/imperial_presentation.html#conclusions",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Conclusions",
-    "text": "Conclusions\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nFirst cosmic shear cosmology results from UNIONS are incoming!\nAllowed to develop tools used in Euclid cosmic shear analysis/validation of the data.\nExploring advanced Bayesian inference methods to extract more information from the available datasets."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-unions-multi-band-coverage",
-    "href": "25_LondonVisit/imperial_presentation.html#extra-material-unions-multi-band-coverage",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Extra material: UNIONS multi-band coverage",
-    "text": "Extra material: UNIONS multi-band coverage\n\nS. Guerrini, 07/10/2025, Imperial College London"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-metacalibration",
-    "href": "25_LondonVisit/imperial_presentation.html#extra-material-metacalibration",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Extra material: MetaCalibration",
-    "text": "Extra material: MetaCalibration\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nCredit: F. Hervas Peters"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-galaxy-psf-correlations",
-    "href": "25_LondonVisit/imperial_presentation.html#extra-material-galaxy-psf-correlations",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Extra material: Galaxy-PSF correlations",
-    "text": "Extra material: Galaxy-PSF correlations\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nPSF error model: \\(\\delta \\boldsymbol{e}^\\mathrm{sys}_\\mathrm{PSF} = \\alpha \\underbrace{\\boldsymbol{e}_\\mathrm{PSF}}_{\\text{Leakage}} + \\beta \\underbrace{(\\boldsymbol{e}_* - \\boldsymbol{e}_\\mathrm{PSF})}_{\\text{Ellipticity error}} + \\eta \\underbrace{\\boldsymbol{e}_\\mathrm{PSF} \\left(\\frac{T_* - T_\\mathrm{PSF}}{T_*} \\right)}_{\\text{Size error}}\\). \\(\\alpha\\), \\(\\beta\\) and \\(\\eta\\) free parameters.\n\\[\\begin{equation}\n    \\left(\n        \\begin{array}{l}\n            \\tau_{0,1} \\\\ \\tau_{2,1} \\\\ \\tau_{5, 1} \\\\ \\vdots \\\\\n            \\tau_{0, n} \\\\ \\tau_{2, n} \\\\ \\tau_{5, n}\n        \\end{array}\n    \\right)\n    =\n    \\left(\n      \\begin{array}{llllll}\n        \\rho_{0, 1} & \\rho_{2, 1} & \\rho_{5, 1} \\\\\n        \\rho_{2, 1} & \\rho_{1, 1} & \\rho_{4, 1} \\\\\n        \\rho_{5, 1} & \\rho_{4, 1} & \\rho_{3, 1} \\\\\n               & \\ddots &        \\\\\n        \\rho_{0, n} & \\rho_{2, n} & \\rho_{5, n} \\\\\n        \\rho_{2, n} & \\rho_{1, n} & \\rho_{4, n} \\\\\n        \\rho_{5, n} & \\rho_{4, n} & \\rho_{3, n} \\\\\n      \\end{array}\n    \\right)\n    \\left(\n      \\begin{array}{l}\n        \\alpha \\\\ \\beta \\\\ \\eta \\\\\n      \\end{array}\n    \\right)\n    \\label{eq:tau_matrix}\n\\end{equation}\\]\nSystematic error: \\(\\xi^\\mathrm{sys}_\\mathrm{PSF} = \\alpha^2 \\rho_0 + \\beta^2 \\rho_1 + \\eta^2 \\rho_3 + 2 \\alpha \\beta \\rho_2 + 2 \\alpha \\eta \\rho_5 + 2 \\beta \\eta \\rho_4\\)\n\nConstrain with MCMC"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-scale-cuts",
-    "href": "25_LondonVisit/imperial_presentation.html#extra-material-scale-cuts",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Extra material: Scale cuts",
-    "text": "Extra material: Scale cuts\n\nS. Guerrini, 07/10/2025, Imperial College London"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#b-modes-with-cosebis",
-    "href": "25_LondonVisit/imperial_presentation.html#b-modes-with-cosebis",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "B-modes with COSEBIS",
-    "text": "B-modes with COSEBIS\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nPure functions and COSEBIS tell the same story."
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-best-fit",
-    "href": "25_LondonVisit/imperial_presentation.html#extra-material-best-fit",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Extra material: Best-fit",
-    "text": "Extra material: Best-fit\n\nS. Guerrini, 07/10/2025, Imperial College London"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-s_8-constraints",
-    "href": "25_LondonVisit/imperial_presentation.html#extra-material-s_8-constraints",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Extra material: \\(S_8\\) constraints",
-    "text": "Extra material: \\(S_8\\) constraints\n\nS. Guerrini, 07/10/2025, Imperial College London"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-real-space-vs-harmonic-space",
-    "href": "25_LondonVisit/imperial_presentation.html#extra-material-real-space-vs-harmonic-space",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Extra material: real space vs harmonic space",
-    "text": "Extra material: real space vs harmonic space\n\nS. Guerrini, 07/10/2025, Imperial College London"
-  },
-  {
-    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-mse-compression",
-    "href": "25_LondonVisit/imperial_presentation.html#extra-material-mse-compression",
-    "title": "Constraining cosmology with weak gravitational lensing",
-    "section": "Extra material: MSE compression",
-    "text": "Extra material: MSE compression\n\nS. Guerrini, 07/10/2025, Imperial College London"
-  },
-  {
     "objectID": "25_LondonVisit/index.html#cosmological-context-lambdacdm",
     "href": "25_LondonVisit/index.html#cosmological-context-lambdacdm",
     "title": "Constraining cosmology with weak gravitational lensing",
@@ -784,6 +315,482 @@
     "text": "Extra material: MSE compression\n\nS. Guerrini, 08/10/2025, RHUL"
   },
   {
+    "objectID": "25_LondonVisit/imperial_presentation.html#who-am-i",
+    "href": "25_LondonVisit/imperial_presentation.html#who-am-i",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Who am I?",
+    "text": "Who am I?\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\nStrasbourg"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#who-am-i-1",
+    "href": "25_LondonVisit/imperial_presentation.html#who-am-i-1",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Who am I?",
+    "text": "Who am I?\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEC meeting Leiden 2025"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#my-research-interest",
+    "href": "25_LondonVisit/imperial_presentation.html#my-research-interest",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "My research interest",
+    "text": "My research interest\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nMain research topics:\n\nWeak gravitational lensing\n\nPoint-Spread Function systematics\nStandard cosmic shear analysis\nHigher-order statistics\n\nForward modelling\n\nSimulation-Based Inference\nDifferentiable simulators\n\n\nOther interests:\n\nStrong gravitational lensing\nTests of General Relativity"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#unions-collaboration",
+    "href": "25_LondonVisit/imperial_presentation.html#unions-collaboration",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "UNIONS collaboration",
+    "text": "UNIONS collaboration\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\nValidation of the weak lensing sample\nCosmological constraints with cosmic shear\nConstraints with higher-order statistics"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#euclid-consortium",
+    "href": "25_LondonVisit/imperial_presentation.html#euclid-consortium",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Euclid Consortium",
+    "text": "Euclid Consortium\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nMember of the Weak Lensing Science Working Group\n\nParticipation in standard cosmic shear analysis (WL1)\nHigher-Order Statistics Work Package\nForward Modelling Work Package\n\nValidation of PSF modelling and shape measurement in the ground segment"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#cosmological-context-lambdacdm",
+    "href": "25_LondonVisit/imperial_presentation.html#cosmological-context-lambdacdm",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Cosmological context: \\(\\Lambda\\)CDM",
+    "text": "Cosmological context: \\(\\Lambda\\)CDM\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nCredit: NAOJ\\[\\begin{align}\n\\left.\n\\begin{array}{cc}\nH_0 & \\text{Expansion rate}\\\\\n\\Omega_m & \\text{Matter density}\\\\\n\\Omega_b & \\text{Baryon density}\\\\\n\\sigma_8 & \\text{Clumpiness}\\\\\nw & \\text{EoS of dark energy}\n\\end{array}\n\\right\\} \\text{Constrained using Bayesian inference}\n\\end{align}\\]"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#weak-gravitational-lensing",
+    "href": "25_LondonVisit/imperial_presentation.html#weak-gravitational-lensing",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Weak gravitational lensing",
+    "text": "Weak gravitational lensing\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nCredit: ESA\nPercent-level effect\nPolluted by shape noise\nRequires a large number of galaxies"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#cosmology-with-cosmic-shear",
+    "href": "25_LondonVisit/imperial_presentation.html#cosmology-with-cosmic-shear",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Cosmology with cosmic shear",
+    "text": "Cosmology with cosmic shear\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nCredit: S. Farrens\n\n\n\n\nI. PSF diagnostics\n\n\n\n\n\n\n\nII. Cosmic shear with 2pt-statistics\n\n\n\n\nIII. And beyond"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#i.-psf-diagnostics",
+    "href": "25_LondonVisit/imperial_presentation.html#i.-psf-diagnostics",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "I. PSF diagnostics",
+    "text": "I. PSF diagnostics\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCredit: Mandelbaum (2018)"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#semi-analytical-covariance-guerrini-et-al.-2025",
+    "href": "25_LondonVisit/imperial_presentation.html#semi-analytical-covariance-guerrini-et-al.-2025",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Semi-analytical covariance (Guerrini et al. (2025))",
+    "text": "Semi-analytical covariance (Guerrini et al. (2025))\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nAnalytical: based on analytical expressions of the covariance\nSemi: No theoretical predictions of the \\(\\rho\\)- and \\(\\tau\\)-statistics. Use measurements on data."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#prediction-of-the-systematic-additive-bias",
+    "href": "25_LondonVisit/imperial_presentation.html#prediction-of-the-systematic-additive-bias",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Prediction of the systematic additive bias",
+    "text": "Prediction of the systematic additive bias\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\nHere applied to UNIONS but the pipeline currently runs to validate Euclid data processing.\nCan probe heterogeneous contribution to PSF systematics from galaxies with different properties, e.g. magnitude, size"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#psf-systematics-take-home-messages",
+    "href": "25_LondonVisit/imperial_presentation.html#psf-systematics-take-home-messages",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "PSF systematics: Take-home messages",
+    "text": "PSF systematics: Take-home messages\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nPSF systematics are essential to understand to perform cosmic shear analysis.\n\\(\\rho\\)- and \\(\\tau\\)-statistics are powerful tools to estimate the bias to the 2PCF.\nSemi-analytical covariance (Guerrini+2025) can speed up comparisons between catalogs."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#ii.-cosmic-shear-with-2pt-statistics",
+    "href": "25_LondonVisit/imperial_presentation.html#ii.-cosmic-shear-with-2pt-statistics",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "II. Cosmic shear with 2pt statistics",
+    "text": "II. Cosmic shear with 2pt statistics\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nand other contributors…"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#analysis-details",
+    "href": "25_LondonVisit/imperial_presentation.html#analysis-details",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Analysis details",
+    "text": "Analysis details\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\nTheoretical prediction: CAMB\nNon-linear power spectrum: HMCode2020\nShear calibration with MetaCalibration.\nResidual multiplicative bias estimated from image simulations. (Hervas Peters et al., in prep.)\nCosmology pipeline with CosmoSIS.\nAnalysis in real space (Goh et al., in prep.) and harmonic space (Guerrini et al., in prep.).\nPSF systematics accounted for in the inference.\n\n\n\n\n\nReal CFHT exposure\n\n\n\n\n\nSimulated exposure"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#b-modes-systematics",
+    "href": "25_LondonVisit/imperial_presentation.html#b-modes-systematics",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "B-modes systematics",
+    "text": "B-modes systematics\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nSpin-2 shear fields can be decomposed into E-modes, containing the vast majority of lensing information, and B-modes, which are a probe of systematics at UNIONS noise levels.\nIn the presence of masking, some ambiguous modes usually cannot be cleanly attributed to E or B.\nWe use three B-mode approaches: pure correlation functions, COSEBIS, and pseudo-\\(C_\\ell\\).\n\n\n\n\nCredit: BICEP2 Collaboration"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#pure-b-mode-correlation-functions",
+    "href": "25_LondonVisit/imperial_presentation.html#pure-b-mode-correlation-functions",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Pure B-mode correlation functions",
+    "text": "Pure B-mode correlation functions\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\\[\n\\xi_+^{E/B}(\\vartheta) = \\frac 1 2 \\left[\\xi_+(\\vartheta) \\pm \\xi_-(\\vartheta) + \\int_\\vartheta^{\\vartheta_\\mathrm{max}}\\frac{\\mathrm{d}\\theta}{\\theta} \\xi_-(\\theta) \\left(4 - \\frac{12\\vartheta^2}{\\theta^2} \\right) \\right] - \\frac 1 2 \\underbrace{[S_+(\\vartheta) \\pm S_-(\\vartheta)]}_{\\text{Integrals of $\\xi_\\pm$ with filter functions}}\n\\]\n\n\n\nCredit: C. Daley\n\n\nB-modes on small scale (\\(\\sim 3'\\) in \\(\\xi_+\\) and \\(\\sim 30'\\) in \\(\\xi_-\\)); large scales are ok."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#b-modes-in-harmonic-space",
+    "href": "25_LondonVisit/imperial_presentation.html#b-modes-in-harmonic-space",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "B-modes in harmonic space",
+    "text": "B-modes in harmonic space\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\nB-modes on the smallest scales. Lower significance after removing the smallest objects from the catalogue. Data points and errorbars obtained with NaMaster."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#covariance-harmonic-space",
+    "href": "25_LondonVisit/imperial_presentation.html#covariance-harmonic-space",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Covariance (harmonic space)",
+    "text": "Covariance (harmonic space)\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n \n\nGaussian covariance accounting for mask mode-coupling with iNKA (Namaster). Validation against OneCovariance (theory code) and GLASS mocks.\nAgreement between the error bars at the \\(10\\%\\) level"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#inference",
+    "href": "25_LondonVisit/imperial_presentation.html#inference",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Inference",
+    "text": "Inference\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\nReal space \\(\\xi_\\pm(\\vartheta)\\)\n\n\nHarmonic space \\(C_\\ell\\)\n\n\n\n\\(\\sim 2\\times\\) larger than DES, KiDS or HSC.\nNon-tomographic analysis significantly reduces constraining power."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#iii.-beyond-2pt-statistics",
+    "href": "25_LondonVisit/imperial_presentation.html#iii.-beyond-2pt-statistics",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "III. Beyond 2pt statistics",
+    "text": "III. Beyond 2pt statistics\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#higher-order-statistics",
+    "href": "25_LondonVisit/imperial_presentation.html#higher-order-statistics",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Higher-order statistics",
+    "text": "Higher-order statistics\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nThe overdensity field is not a Gaussian field at late times.\nHow can we capture the more information from the shear field?\nCraft summary statistics that capture non-Gaussian information from the field.\n\n\n\n\nEuclid Collaboration+2023"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#implicit-likelihood-inference-also-known-as-sbi",
+    "href": "25_LondonVisit/imperial_presentation.html#implicit-likelihood-inference-also-known-as-sbi",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Implicit Likelihood Inference (also known as SBI)",
+    "text": "Implicit Likelihood Inference (also known as SBI)\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#normalizing-flows",
+    "href": "25_LondonVisit/imperial_presentation.html#normalizing-flows",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Normalizing Flows",
+    "text": "Normalizing Flows\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\nApply several layers of a one-to-one map to simple distribution to match a more complex one.\nAlleviates the problem of the unknown likelihood."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#unions-forward-model",
+    "href": "25_LondonVisit/imperial_presentation.html#unions-forward-model",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "UNIONS forward model",
+    "text": "UNIONS forward model\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nAvailable on GitHub, adapted from DESY3 analysis"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference",
+    "href": "25_LondonVisit/imperial_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "JaxILI, a pipeline for Implicit Likelihood Inference",
+    "text": "JaxILI, a pipeline for Implicit Likelihood Inference\n\nS. Guerrini, 07/10/2025, Imperial College London\n\ncheckpoint_path = ... #Choose the checkpoint path\ncheckpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.\n\ninference = NPE()\ninference = inference.append_simulations(theta, x)\n\nmetrics, density_estimator = inference.train(\n    checkpoint_path=checkpoint_path,\n)"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference-1",
+    "href": "25_LondonVisit/imperial_presentation.html#jaxili-a-pipeline-for-implicit-likelihood-inference-1",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "JaxILI, a pipeline for Implicit Likelihood Inference",
+    "text": "JaxILI, a pipeline for Implicit Likelihood Inference\n\nS. Guerrini, 07/10/2025, Imperial College London\n\ncheckpoint_path = ... #Choose the checkpoint path\ncheckpoint_path = os.path.abspath(checkpoint_path) #Beware, this should be an absolute path.\n\ncompressor = Compressor(\n    model_class=model_class,\n    model_hparams=model_hparams,\n)\n\ncompressor = compressor.append_simulations(theta=theta, x=x)\n\nmetrics, MSE_compression_function = compressor.train(\n    checkpoint_path=checkpoint_path\n)\n\ninference = NPE()\ninference = inference.append_simulations(theta, x)\n\nmetrics, density_estimator = inference.train(\n    checkpoint_path=checkpoint_path,\n)"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#jaxili-on-a-cosmological-toy-model",
+    "href": "25_LondonVisit/imperial_presentation.html#jaxili-on-a-cosmological-toy-model",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "JaxILI on a cosmological toy model",
+    "text": "JaxILI on a cosmological toy model\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nCosmological parameters: \\(A_\\mathrm{s}\\), \\(n_\\mathrm{s}\\), \\(f_\\mathrm{NL}\\)\n\nGo here for moreGoal: Obtain constraints on the cosmological parameters using pixel level information."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#jaxili-on-a-cosmological-toy-model-1",
+    "href": "25_LondonVisit/imperial_presentation.html#jaxili-on-a-cosmological-toy-model-1",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "JaxILI on a cosmological toy model",
+    "text": "JaxILI on a cosmological toy model\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nCosmological parameters: \\(A_\\mathrm{s}\\), \\(n_\\mathrm{s}\\), \\(f_\\mathrm{NL}\\)\n\n\n\n\n\nImplicit contours obtained with MSE compression.\nLoss of information compared to Explicit inference.\nUnbiased constraints obtained."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#an-application-of-jaxili-in-euclid",
+    "href": "25_LondonVisit/imperial_presentation.html#an-application-of-jaxili-in-euclid",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "An application of JaxILI in Euclid",
+    "text": "An application of JaxILI in Euclid\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\n\n\nCredit: R. Paviot\n\n\n\n\nSimulation of realistic redshift distributions using Normalizing Flow.\n\\(p(z_\\mathrm{noisy} | z_\\mathrm{true}, \\mathrm{Flux})\\) infered with Neural Posterior Esimation"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#application-to-unions-data",
+    "href": "25_LondonVisit/imperial_presentation.html#application-to-unions-data",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Application to UNIONS data",
+    "text": "Application to UNIONS data\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\n\n\nCNN optimal compression\nExtract information at the pixel level.\nCut the footprint in patches.\n\n\n\n\n\nCredit: M. Maupas"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#application-to-unions-data-1",
+    "href": "25_LondonVisit/imperial_presentation.html#application-to-unions-data-1",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Application to UNIONS data",
+    "text": "Application to UNIONS data\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nProject in stand-by due to changes in the fiducial analysis."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#conclusions",
+    "href": "25_LondonVisit/imperial_presentation.html#conclusions",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nFirst cosmic shear cosmology results from UNIONS are incoming!\nAllowed to develop tools used in Euclid cosmic shear analysis/validation of the data.\nExploring advanced Bayesian inference methods to extract more information from the available datasets."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-unions-multi-band-coverage",
+    "href": "25_LondonVisit/imperial_presentation.html#extra-material-unions-multi-band-coverage",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Extra material: UNIONS multi-band coverage",
+    "text": "Extra material: UNIONS multi-band coverage\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-metacalibration",
+    "href": "25_LondonVisit/imperial_presentation.html#extra-material-metacalibration",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Extra material: MetaCalibration",
+    "text": "Extra material: MetaCalibration\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nCredit: F. Hervas Peters"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-galaxy-psf-correlations",
+    "href": "25_LondonVisit/imperial_presentation.html#extra-material-galaxy-psf-correlations",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Extra material: Galaxy-PSF correlations",
+    "text": "Extra material: Galaxy-PSF correlations\n\nS. Guerrini, 07/10/2025, Imperial College London\n\nPSF error model: \\(\\delta \\boldsymbol{e}^\\mathrm{sys}_\\mathrm{PSF} = \\alpha \\underbrace{\\boldsymbol{e}_\\mathrm{PSF}}_{\\text{Leakage}} + \\beta \\underbrace{(\\boldsymbol{e}_* - \\boldsymbol{e}_\\mathrm{PSF})}_{\\text{Ellipticity error}} + \\eta \\underbrace{\\boldsymbol{e}_\\mathrm{PSF} \\left(\\frac{T_* - T_\\mathrm{PSF}}{T_*} \\right)}_{\\text{Size error}}\\). \\(\\alpha\\), \\(\\beta\\) and \\(\\eta\\) free parameters.\n\\[\\begin{equation}\n    \\left(\n        \\begin{array}{l}\n            \\tau_{0,1} \\\\ \\tau_{2,1} \\\\ \\tau_{5, 1} \\\\ \\vdots \\\\\n            \\tau_{0, n} \\\\ \\tau_{2, n} \\\\ \\tau_{5, n}\n        \\end{array}\n    \\right)\n    =\n    \\left(\n      \\begin{array}{llllll}\n        \\rho_{0, 1} & \\rho_{2, 1} & \\rho_{5, 1} \\\\\n        \\rho_{2, 1} & \\rho_{1, 1} & \\rho_{4, 1} \\\\\n        \\rho_{5, 1} & \\rho_{4, 1} & \\rho_{3, 1} \\\\\n               & \\ddots &        \\\\\n        \\rho_{0, n} & \\rho_{2, n} & \\rho_{5, n} \\\\\n        \\rho_{2, n} & \\rho_{1, n} & \\rho_{4, n} \\\\\n        \\rho_{5, n} & \\rho_{4, n} & \\rho_{3, n} \\\\\n      \\end{array}\n    \\right)\n    \\left(\n      \\begin{array}{l}\n        \\alpha \\\\ \\beta \\\\ \\eta \\\\\n      \\end{array}\n    \\right)\n    \\label{eq:tau_matrix}\n\\end{equation}\\]\nSystematic error: \\(\\xi^\\mathrm{sys}_\\mathrm{PSF} = \\alpha^2 \\rho_0 + \\beta^2 \\rho_1 + \\eta^2 \\rho_3 + 2 \\alpha \\beta \\rho_2 + 2 \\alpha \\eta \\rho_5 + 2 \\beta \\eta \\rho_4\\)\n\nConstrain with MCMC"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-scale-cuts",
+    "href": "25_LondonVisit/imperial_presentation.html#extra-material-scale-cuts",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Extra material: Scale cuts",
+    "text": "Extra material: Scale cuts\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#b-modes-with-cosebis",
+    "href": "25_LondonVisit/imperial_presentation.html#b-modes-with-cosebis",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "B-modes with COSEBIS",
+    "text": "B-modes with COSEBIS\n\nS. Guerrini, 07/10/2025, Imperial College London\n\n\nPure functions and COSEBIS tell the same story."
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-best-fit",
+    "href": "25_LondonVisit/imperial_presentation.html#extra-material-best-fit",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Extra material: Best-fit",
+    "text": "Extra material: Best-fit\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-s_8-constraints",
+    "href": "25_LondonVisit/imperial_presentation.html#extra-material-s_8-constraints",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Extra material: \\(S_8\\) constraints",
+    "text": "Extra material: \\(S_8\\) constraints\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-real-space-vs-harmonic-space",
+    "href": "25_LondonVisit/imperial_presentation.html#extra-material-real-space-vs-harmonic-space",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Extra material: real space vs harmonic space",
+    "text": "Extra material: real space vs harmonic space\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_LondonVisit/imperial_presentation.html#extra-material-mse-compression",
+    "href": "25_LondonVisit/imperial_presentation.html#extra-material-mse-compression",
+    "title": "Constraining cosmology with weak gravitational lensing",
+    "section": "Extra material: MSE compression",
+    "text": "Extra material: MSE compression\n\nS. Guerrini, 07/10/2025, Imperial College London"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#weak-gravitational-lensing",
+    "href": "25_EuclidFrance_Sbg/index.html#weak-gravitational-lensing",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Weak gravitational lensing",
+    "text": "Weak gravitational lensing\n\nSacha Guerrini | Euclid France 2025\n\n\nCredit: ESA\nPercent-level effect\nPolluted by shape noise\nRequires a large number of galaxies"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#the-ultraviolet-near-infrared-optical-northern-survey-unions-gwyn-et-al.-2025",
+    "href": "25_EuclidFrance_Sbg/index.html#the-ultraviolet-near-infrared-optical-northern-survey-unions-gwyn-et-al.-2025",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "The Ultraviolet Near-Infrared Optical Northern Survey (UNIONS, Gwyn et al., 2025)",
+    "text": "The Ultraviolet Near-Infrared Optical Northern Survey (UNIONS, Gwyn et al., 2025)\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\\(r\\), \\(u\\) bands\n\n\n\\(i\\) band\n\n\n\\(g\\), \\(z\\) bands"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#euclid-photometry-in-the-north",
+    "href": "25_EuclidFrance_Sbg/index.html#euclid-photometry-in-the-north",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Euclid photometry in the North",
+    "text": "Euclid photometry in the North\n\nSacha Guerrini | Euclid France 2025\n\n\nScaramella+2025"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#the-landscape-of-lensing-surveys",
+    "href": "25_EuclidFrance_Sbg/index.html#the-landscape-of-lensing-surveys",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "The landscape of lensing surveys",
+    "text": "The landscape of lensing surveys\n\nSacha Guerrini | Euclid France 2025\n\n\n\nWright+2025\n\n\n\nTechnical specifications of UNIONS:\n\nTarget area: \\(\\sim 5,000\\) deg\\(^2\\)\nDepth: 24.5 (\\(r\\)-band)\nSeeing: \\(\\sim 0.69\"\\) (\\(r\\)-band)\nProcessing with ShapePipe (Farrens et al., 2022)\n\\(\\sim 100\\) million galaxies"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#outline-of-the-talk",
+    "href": "25_EuclidFrance_Sbg/index.html#outline-of-the-talk",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Outline of the talk",
+    "text": "Outline of the talk\n\nSacha Guerrini | Euclid France 2025\n\n\nAnalysis choices for our cosmic shear analysis\n\\(B\\)-modes null test\nControl of systematics\n\nPSF systematics\nInstrinsic Alignment\n\nBlinded constraints\n\n\n\nand others…"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#analysis-choices",
+    "href": "25_EuclidFrance_Sbg/index.html#analysis-choices",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Analysis choices",
+    "text": "Analysis choices\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\n\n\n\n\n\n\nConfiguration space (Goh et al., in prep.)\nHarmonic space (Guerrini et al., in prep.)\n\n\n\n\nSummary stat.\n\\(\\xi_\\pm(\\vartheta)\\)\n\\(C_\\ell^{EE}\\)\n\n\nLikelihood\nGaussian (CosmoSIS)\nGaussian (CosmoSIS)\n\n\nCovariance\nCosmoCov (analytical)\niNKA + OneCovariance (semi-analytical)\n\n\nMeasurement\nTreeCorr\nNaMaster\n\n\nPower spectrum\nCAMB + HMCode2020\nCAMB + HMCode2020\n\n\nPSF systematics\nModeled and marginalised\nNegligible\n\n\nScale cuts\n\\(B\\)-modes test\nTheoretical model"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "\\(B\\)-modes null test (harmonic space)",
+    "text": "\\(B\\)-modes null test (harmonic space)\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\n\nDifferent weak lensing catalog versions:\n\nSP v1.4.5: Size cut - \\(\\mathrm{HLR}_\\mathrm{gal} / \\mathrm{HLR}_\\mathrm{PSF} &gt; 0.5\\)\nSP v1.4.6: Size cut - \\(\\mathrm{HLR}_\\mathrm{gal} / \\mathrm{HLR}_\\mathrm{PSF} &gt; 0.7\\)\nSP v1.4.8: additionally mask star haloes"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-configuration-space",
+    "href": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-configuration-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "\\(B\\)-modes null test (configuration space)",
+    "text": "\\(B\\)-modes null test (configuration space)\n\nSacha Guerrini | Euclid France 2025\n\n\nCredit: C.Daley and A.GuinotSignificant \\(B\\)-modes on small scales. Scale cuts on large scales derived from PSF leakage estimation."
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-configuration-space-1",
+    "href": "25_EuclidFrance_Sbg/index.html#b-modes-null-test-configuration-space-1",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "\\(B\\)-modes null test (configuration space)",
+    "text": "\\(B\\)-modes null test (configuration space)\n\nSacha Guerrini | Euclid France 2025\n\n\nCredit: C.Daley and A.Guinot"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#control-of-systematics",
+    "href": "25_EuclidFrance_Sbg/index.html#control-of-systematics",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Control of systematics",
+    "text": "Control of systematics\n\nSacha Guerrini | Euclid France 2025\n\n\nAstrophysical systematics\n\nIntrinsic Alignment\nBaryons\n\nInstrumental systematics\n\nPSF systematics\nShear \\(m\\)-bias\nRedshift distribution uncertainty"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#control-of-systematics-1",
+    "href": "25_EuclidFrance_Sbg/index.html#control-of-systematics-1",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Control of systematics",
+    "text": "Control of systematics\n\nSacha Guerrini | Euclid France 2025\n\n\nAstrophysical systematics\n\nIntrinsic Alignment\nBaryons\n\nInstrumental systematics\n\nPSF systematics\nShear \\(m\\)-bias\nRedshift distribution uncertainty"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025",
+    "href": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "PSF systematics (Guerrini+2025)",
+    "text": "PSF systematics (Guerrini+2025)\n\nSacha Guerrini | Euclid France 2025\n\nPSF error model: \\(\\delta e^\\mathrm{obs} = \\underbrace{\\alpha e^\\mathrm{PSF}}_{\\mathrm{leakage}} + \\underbrace{\\beta (e^* - e^\\mathrm{PSF})}_{\\textrm{ellipticity residuals}} + \\underbrace{\\eta e^\\mathrm{PSF} \\left( \\frac{T^* - T^\\mathrm{PSF}}{T^*}\\right)}_{\\textrm{size residuals}}\\)\n\nGalaxy-Star correlations: \\(\\tau_0(\\vartheta) = \\langle e^\\mathrm{obs} e^\\mathrm{PSF} \\rangle(\\vartheta)\\), \\(\\tau_2(\\vartheta) = \\langle e^\\mathrm{obs} \\delta e^\\mathrm{PSF} \\rangle(\\vartheta)\\), \\(\\tau_5(\\vartheta) = \\langle e^\\mathrm{obs} \\delta T^\\mathrm{PSF} \\rangle(\\vartheta)\\)"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025-1",
+    "href": "25_EuclidFrance_Sbg/index.html#psf-systematics-guerrini2025-1",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "PSF systematics (Guerrini+2025)",
+    "text": "PSF systematics (Guerrini+2025)\n\nSacha Guerrini | Euclid France 2025\n\n\n\nGalaxy-PSF correlation helps to:\n\nSelect our weak lensing sample\nChoose scale cuts for the inference\n\n\n\n\n\\[\n\\xi_\\mathrm{sys}(\\vartheta) = \\alpha \\tau_0(\\vartheta) + \\beta \\tau_2(\\vartheta) + \\eta \\tau_5(\\vartheta)\n\\]"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#intrinsic-alignment",
+    "href": "25_EuclidFrance_Sbg/index.html#intrinsic-alignment",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Intrinsic Alignment",
+    "text": "Intrinsic Alignment\n\nSacha Guerrini | Euclid France 2025\n\nIn a non-tomographic setup, \\(S_8\\) and \\(A_\\mathrm{IA}\\) are strongly degenerate.\n\\[\nA_\\mathrm{IA} = f_\\mathrm{r} A_\\mathrm{IA, r} + f_\\mathrm{b} A_\\mathrm{IA, b}\n\\]\n\nHervas Peters+2025Direct measurements can be used to derive a prior for different galaxy types."
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#intrinsic-alignment-1",
+    "href": "25_EuclidFrance_Sbg/index.html#intrinsic-alignment-1",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Intrinsic Alignment",
+    "text": "Intrinsic Alignment\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\nSeparate red and blue galaxies.\nEstimate red and blue fractions.\nEstimate \\(A_\\mathrm{IA, b}\\) from direct measurement (Johnston+2019).\nEstimate \\(A_\\mathrm{IA, r}\\) sampling from IA/luminosity relationship.\nAdd Gaussian errors in quadrature.\nDoubling the width of the prior to be conservative.\n\n\n\n\n\nCredit: F. Hervas Peters"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#blinded-constraints",
+    "href": "25_EuclidFrance_Sbg/index.html#blinded-constraints",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Blinded constraints",
+    "text": "Blinded constraints\n\nSacha Guerrini | Euclid France 2025\n\nAnalysis blinded by the use of 3 different redshift blinds."
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#blinded-constraints-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#blinded-constraints-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Blinded constraints (harmonic space)",
+    "text": "Blinded constraints (harmonic space)\n\nSacha Guerrini | Euclid France 2025\n\n\nGuerrini+in prep."
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#blinded-constraints-configuration-space",
+    "href": "25_EuclidFrance_Sbg/index.html#blinded-constraints-configuration-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Blinded constraints (configuration space)",
+    "text": "Blinded constraints (configuration space)\n\nSacha Guerrini | Euclid France 2025\n\n\nGoh+in prep."
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#conclusion",
+    "href": "25_EuclidFrance_Sbg/index.html#conclusion",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nSacha Guerrini | Euclid France 2025\n\n\nFirst cosmological constraints from UNIONS are incoming.\nWe still have to assess the consistency between configuration and harmonic space analyses.\nSome validation tools developed within UNIONS are applied on Euclid data for quality assessment (RR2/TR1/DR1).\nThe UNIONS dataset has a unique overlap with spectroscopic surveys (BOSS/eBOSS/DESI).\n\nAlready publications using galaxy-galaxy lensing on the arXiv.\nDirect measurement of Intrinsic Alignment (Hervas Peters+2025)\n3 publications on Intrinsic Alignment in preparation (see, namely, A. Corinaldi’s talk)"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#thank-you-for-your-attention-and-lookout-for",
+    "href": "25_EuclidFrance_Sbg/index.html#thank-you-for-your-attention-and-lookout-for",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Thank you for your attention and lookout for",
+    "text": "Thank you for your attention and lookout for\n\nSacha Guerrini | Euclid France 2025\n\n\n\n\n\n\n\n\n\nPaper index\nAuthor\nTitle\n\n\n\n\n1\nHervas Peters et al.\nUNIONS: Weak lensing catalogues\n\n\n2\nDaley et al.\nUNIONS: \\(B\\)-mode validation and comparison for cosmic shear\n\n\n3\nHervas Peters et al.\nUNIONS: image simulations and validation\n\n\n4\nGoh et al.\nUNIONS: Cosmological constraints from cosmic shear in configuration space\n\n\n5\nGuerrini et al.\nUNIONS: Cosmological constraints from cosmic shear in harmonic space"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#shear-m-bias",
+    "href": "25_EuclidFrance_Sbg/index.html#shear-m-bias",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Shear \\(m\\)-bias",
+    "text": "Shear \\(m\\)-bias\n\nSacha Guerrini | Euclid France 2025\n\n\\(m\\)-bias corrected with MetaCalibration. Further calibration required from image simulations due to blending.\n\n\n \n\n\n\nReal exposure\n\n\nSimulated exposure\n\nHervas Peters+in prep."
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#redshift-distribution-uncertainty",
+    "href": "25_EuclidFrance_Sbg/index.html#redshift-distribution-uncertainty",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Redshift distribution uncertainty",
+    "text": "Redshift distribution uncertainty\n\nSacha Guerrini | Euclid France 2025\n\nAnalysis blinded by the use of 3 different redshift blinds.\n\nCredit: A.Wittje"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#psf-systematics-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#psf-systematics-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "PSF systematics (harmonic space)",
+    "text": "PSF systematics (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#scale-cuts-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#scale-cuts-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Scale cuts (harmonic space)",
+    "text": "Scale cuts (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#data-vector-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#data-vector-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Data vector (harmonic space)",
+    "text": "Data vector (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
+  },
+  {
+    "objectID": "25_EuclidFrance_Sbg/index.html#covariance-validation-harmonic-space",
+    "href": "25_EuclidFrance_Sbg/index.html#covariance-validation-harmonic-space",
+    "title": "Cosmic shear cosmology with the UNIONS data",
+    "section": "Covariance validation (harmonic space)",
+    "text": "Covariance validation (harmonic space)\n\nSacha Guerrini | Euclid France 2025"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sacha Guerrini’s Talks",
+    "section": "",
+    "text": "Cosmic shear cosmology with the UNIONS data\n\n\nEuclid France meeting, Strasbourg\n\n\nTalk given at the 2025 Euclid France meeting in Strasbourg. \n\n\n\n\n\n2025-11-17\n\n\n\n\n\n\n\n\n\n\n\n\nConstraining cosmology with weak gravitational lensing\n\n\n\n\n\nInformal talk at University College London during a visit in London. \n\n\n\n\n\n2025-10-09\n\n\n\n\n\n\n\n\n\n\n\n\nConstraining cosmology with weak gravitational lensing\n\n\nlessons learned from the Ultraviolet Near-Infrared Optical Northern Survey (UNIONS)\n\n\nTalk given at the Royal Holloway University Seminar during a visit in London. \n\n\n\n\n\n2025-10-08\n\n\n\n\n\n\n\n\n\n\n\n\nConstraining cosmology with weak gravitational lensing\n\n\n\n\n\nUnformal talk at Imperial College during a visit in London. \n\n\n\n\n\n2025-10-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "25_LondonVisit/ucl_presentation.html#who-am-i",
     "href": "25_LondonVisit/ucl_presentation.html#who-am-i",
     "title": "Constraining cosmology with weak gravitational lensing",
@@ -1048,12 +1055,5 @@
     "title": "Constraining cosmology with weak gravitational lensing",
     "section": "Extra material: MSE compression",
     "text": "Extra material: MSE compression\n\nS. Guerrini, 09/10/2025, UCL"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Sacha Guerrini’s Talks",
-    "section": "",
-    "text": "Constraining cosmology with weak gravitational lensing\n\n\n\n\n\nInformal talk at University College London during a visit in London. \n\n\n\n\n\nOctober 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nConstraining cosmology with weak gravitational lensing\n\n\nlessons learned from the Ultraviolet Near-Infrared Optical Northern Survey (UNIONS)\n\n\nTalk given at the Royal Holloway University Seminar during a visit in London. \n\n\n\n\n\nOctober 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nConstraining cosmology with weak gravitational lensing\n\n\n\n\n\nUnformal talk at Imperial College during a visit in London. \n\n\n\n\n\nOctober 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCosmic shear cosmology with the UNIONS data\n\n\nEuclid France meeting, Strasbourg\n\n\nTalk given at the 2025 Euclid France meeting in Strasbourg. \n\n\n\n\n\nNovember 17, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]

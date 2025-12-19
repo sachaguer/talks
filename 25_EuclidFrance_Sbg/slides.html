@@ -148,7 +148,7 @@
   <p class="date">November 17, 2025</p>
 </section>
 <section id="weak-gravitational-lensing" class="slide level2">
-<h2>Weak gravitational lensing</h2>
+<h2>Weak gravitational Lensing</h2>
 <div class="footer">
 <p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
 </div>
@@ -243,6 +243,8 @@
 <ul>
 <li>PSF systematics</li>
 <li>Instrinsic Alignment</li>
+<li>Shear <span class="math inline">\(m\)</span>-bias</li>
+<li><span class="math inline">\(n(z)\)</span> uncertainty</li>
 </ul></li>
 <li>Blinded constraints</li>
 </ol>
@@ -390,7 +392,7 @@ and others…
 <div class="footer">
 <p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
 </div>
-<p>PSF error model: <span class="math inline">\(\delta e^\mathrm{obs} = \underbrace{\alpha e^\mathrm{PSF}}_{\mathrm{leakage}} + \underbrace{\beta (e^* - e^\mathrm{PSF})}_{\textrm{ellipticity residuals}} + \underbrace{\eta e^\mathrm{PSF} \left( \frac{T^* - T^\mathrm{PSF}}{T^*}\right)}_{\textrm{size residuals}}\)</span></p>
+<p>PSF error model: <span class="math inline">\(\delta e^\mathrm{obs} = \underbrace{\alpha e^\mathrm{PSF}}_{\mathrm{leakage}} + \underbrace{\beta (e^* - e^\mathrm{PSF})}_{\textrm{ellipticity residuals}} + \underbrace{\eta e^\mathrm{PSF} \left( \frac{T^* - T^\mathrm{PSF}}{T^*}\right)}_{\textrm{size residual}}\)</span></p>
 <div class="small-text">
 <p>Galaxy-Star correlations: <span class="math inline">\(\tau_0(\vartheta) = \langle e^\mathrm{obs} e^\mathrm{PSF} \rangle(\vartheta)\)</span>, <span class="math inline">\(\tau_2(\vartheta) = \langle e^\mathrm{obs} \delta e^\mathrm{PSF} \rangle(\vartheta)\)</span>, <span class="math inline">\(\tau_5(\vartheta) = \langle e^\mathrm{obs} \delta T^\mathrm{PSF} \rangle(\vartheta)\)</span></p>
 </div>
@@ -451,14 +453,54 @@ A_\mathrm{IA} = f_\mathrm{r} A_\mathrm{IA, r} + f_\mathrm{b} A_\mathrm{IA, b}
 </div>
 </div></div>
 </section>
+<section id="shear-m-bias" class="slide level2">
+<h2>Shear <span class="math inline">\(m\)</span>-bias</h2>
+<div class="footer">
+<p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
+</div>
+<p><span class="math inline">\(m\)</span>-bias corrected with MetaCalibration. Further calibration required from image simulations due to blending.</p>
+<div style="width:80%">
+<p float="left">
+<img src="images/real_cfht.png" width="49%"> <img src="images/sim_cfht.png" width="49%">
+</p>
+</div>
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 150px;
+   left: 0px;
+">
+Real exposure
+</div>
+<div style="
+   text-align: center;
+   margin-top: 5px;
+   color: black;
+   position: absolute;
+   bottom: 100px;
+   left: 850px;
+">
+Simulated exposure
+</div>
+<p>Hervas Peters+in prep.</p>
+</section>
+<section id="redshift-distribution-uncertainty" class="slide level2">
+<h2>Redshift distribution uncertainty</h2>
+<div class="footer">
+<p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
+</div>
+<p>Analysis blinded by the use of 3 different redshift blinds.</p>
+
+<img data-src="images/n_z.png" class="r-stretch quarto-figure-center"><p class="caption">Credit: A.Wittje</p></section>
 <section id="blinded-constraints" class="slide level2">
 <h2>Blinded constraints</h2>
 <div class="footer">
 <p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
 </div>
-<p>Analysis blinded by the use of 3 different redshift blinds.</p>
 <p float="left">
-<img src="images/contours_s8_omegam_blind_update.png" width="45%"> <img src="images/contours_s8_omegam_cell_blind_update.png" width="45%">
+<img src="images/contours_s8_omegam_blind_update.png" width="49%"> <img src="images/contours_s8_omegam_cell_blind_update.png" width="49%">
 </p>
 </section>
 <section id="blinded-constraints-harmonic-space" class="slide level2">
@@ -538,78 +580,9 @@ A_\mathrm{IA} = f_\mathrm{r} A_\mathrm{IA, r} + f_\mathrm{b} A_\mathrm{IA, b}
 </tr>
 </tbody>
 </table>
+
+
 </section>
-<section id="shear-m-bias" class="slide level2" data-visibility="uncounted">
-<h2>Shear <span class="math inline">\(m\)</span>-bias</h2>
-<div class="footer">
-<p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
-</div>
-<p><span class="math inline">\(m\)</span>-bias corrected with MetaCalibration. Further calibration required from image simulations due to blending.</p>
-<div style="width:80%">
-<p float="left">
-<img src="images/real_cfht.png" width="49%"> <img src="images/sim_cfht.png" width="49%">
-</p>
-</div>
-<div style="
-   text-align: center;
-   margin-top: 5px;
-   color: black;
-   position: absolute;
-   bottom: 150px;
-   left: 0px;
-">
-Real exposure
-</div>
-<div style="
-   text-align: center;
-   margin-top: 5px;
-   color: black;
-   position: absolute;
-   bottom: 100px;
-   left: 850px;
-">
-Simulated exposure
-</div>
-<p>Hervas Peters+in prep.</p>
-</section>
-<section id="redshift-distribution-uncertainty" class="slide level2" data-visibility="uncounted">
-<h2>Redshift distribution uncertainty</h2>
-<div class="footer">
-<p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
-</div>
-<p>Analysis blinded by the use of 3 different redshift blinds.</p>
-
-<img data-src="images/n_z.png" class="r-stretch quarto-figure-center"><p class="caption">Credit: A.Wittje</p></section>
-<section id="psf-systematics-harmonic-space" class="slide level2" data-visibility="uncounted">
-<h2>PSF systematics (harmonic space)</h2>
-<div class="footer">
-<p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
-</div>
-
-<img data-src="images/leakage_bias_fraction_ee.png" class="r-stretch"></section>
-<section id="scale-cuts-harmonic-space" class="slide level2" data-visibility="uncounted">
-<h2>Scale cuts (harmonic space)</h2>
-<div class="footer">
-<p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
-</div>
-
-<img data-src="images/Cl_integrand_vs_k.png" class="r-stretch"></section>
-<section id="data-vector-harmonic-space" class="slide level2" data-visibility="uncounted">
-<h2>Data vector (harmonic space)</h2>
-<div class="footer">
-<p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
-</div>
-
-<img data-src="images/data_vectors_cell.png" class="r-stretch"></section>
-<section id="covariance-validation-harmonic-space" class="slide level2" data-visibility="uncounted">
-<h2>Covariance validation (harmonic space)</h2>
-<div class="footer">
-<p>Sacha Guerrini | <em>Euclid</em> France 2025</p>
-</div>
-
-
-
-<img data-src="images/relative_errorbar_comparison_non_gaussian_update.png" class="r-stretch"></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/Euclid_consortium_logo.png" class="slide-logo"></p>
