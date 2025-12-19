@@ -6,7 +6,7 @@ author:
    affiliation: "CEA Paris-Saclay <br>"
 date: "November 17, 2025"
 date-format: long
-date-meta: "November 17, 2025"
+date-meta: "2025-11-17"
 image: images/unions.jpg
 logo: images/Euclid_consortium_logo.png
 description: |

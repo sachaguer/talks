@@ -1,7 +1,7 @@
 ---
 title: "Constraining cosmology with weak gravitational lensing"
 author: "Sacha Guerrini, UCL seminar, 9th October 2025"
-date-meta: "October 9, 2025"
+date-meta: "2025-10-09"
 image: images/unions.jpg
 description: |
   Informal talk at University College London during a visit in London.
