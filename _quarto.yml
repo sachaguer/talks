@@ -2,6 +2,7 @@ project:
   type: website
 
 website:
+  favicon: assets/milky-way.png
   navbar:
     right:
       - text: "About"
